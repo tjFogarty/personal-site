@@ -1,0 +1,23 @@
+{
+  "name": "tj-craft",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "laravel-mix": "^1.6.1",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "less-plugin-glob": "^2.0.1",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0"
+  },
+  "dependencies": {
+    "tailwindcss": "^0.1.6"
+  }
+}
