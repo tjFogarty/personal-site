@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4ed731bc337c3470a930d85dcf93ab3",
+    "content-hash": "8f37befe716ca1fb4eac6d0f60fee4c7",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -404,6 +404,56 @@
                 "yii2"
             ],
             "time": "2017-11-09T21:08:24+00:00"
+        },
+        {
+            "name": "craftcms/contact-form",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/contact-form.git",
+                "reference": "98bd431af174d62ab409764b2efa23872cadf617"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/98bd431af174d62ab409764b2efa23872cadf617",
+                "reference": "98bd431af174d62ab409764b2efa23872cadf617",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-beta.27"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Contact Form",
+                "handle": "contact-form",
+                "changelogUrl": "https://raw.githubusercontent.com/craftcms/contact-form/v2/CHANGELOG.md",
+                "downloadUrl": "https://github.com/craftcms/contact-form/archive/v2.zip",
+                "components": {
+                    "mailer": "craft\\contactform\\Mailer"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\contactform\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Add a simple contact form to your Craft CMS site",
+            "keywords": [
+                "cms",
+                "craftcms",
+                "yii2"
+            ],
+            "time": "2017-10-12T23:24:05+00:00"
         },
         {
             "name": "craftcms/element-api",
