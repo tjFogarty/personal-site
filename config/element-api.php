@@ -12,7 +12,9 @@ return [
             'transformer' => function(Entry $entry) {
                 return [
                     'title' => $entry->title,
+                    'id' => $entry->id,
                     'url' => $entry->url,
+                    'url' =>  "/{$entry->slug}",
                     'jsonUrl' => UrlHelper::url("posts/{$entry->slug}.json"),
                     'content' => $entry->postContent,
                 ];
