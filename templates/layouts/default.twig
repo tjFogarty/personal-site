@@ -27,5 +27,9 @@
     {% else %}
     <script src="/assets/js/main.js"></script>
     {% endif %}
+    
+    {% block analytics %}
+      {% hook 'iaSendPageView' %}
+    {% endblock %}
   </body>
 </html>
