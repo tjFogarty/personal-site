@@ -43,6 +43,6 @@ return [
     // Production environment settings
     'production' => [
         // Base site URL
-        'siteUrl' => 'tjfogarty.me',
+        'siteUrl' => 'tj.ie',
     ],
 ];
