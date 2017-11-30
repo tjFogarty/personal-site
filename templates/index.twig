@@ -2,4 +2,18 @@
 
 {% block content %}
   <h1 class="text-xl lg:text-2xl">Homepage</h1>
+  
+  {% paginate craft.entries.section('posts').limit(5) as pageInfo, pageEntries %}
+  
+    <ul>
+    {% for entry in pageEntries %}
+      <li>
+        <a href="/{{ entry.slug }}">{{ entry.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
+    
+    {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">Previous Page</a>{% endif %}
+    {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">Next Page</a>{% endif %}
+  
 {% endblock %}
