@@ -3,7 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+    {% if craft.app.config.general.devMode %}
+    <title>TJ Fogarty | DEV</title>
+    <style>
+      html {
+        border: 5px solid #b4d455;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    {% else %}
     <title>TJ Fogarty | Web Developer</title>
+    {% endif %}
     <meta name="description" content="Web Developer from Limerick, Ireland and living in Waterford.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
