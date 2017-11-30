@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b155585f57a5c0242d6c50278379a24",
+    "content-hash": "a5e812fc57d6bd91bf571cf8d97c2e18",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -124,16 +124,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.5.2",
+            "version": "1.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "c639623fa2178b404ed4bab80f0d1263853fa4ae"
+                "reference": "de0c4afd4aeb08171b54b64e63aa61a04b4510ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/c639623fa2178b404ed4bab80f0d1263853fa4ae",
-                "reference": "c639623fa2178b404ed4bab80f0d1263853fa4ae",
+                "url": "https://api.github.com/repos/composer/composer/zipball/de0c4afd4aeb08171b54b64e63aa61a04b4510ee",
+                "reference": "de0c4afd4aeb08171b54b64e63aa61a04b4510ee",
                 "shasum": ""
             },
             "require": {
@@ -197,7 +197,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2017-09-11T14:59:26+00:00"
+            "time": "2017-11-30T17:29:43+00:00"
         },
         {
             "name": "composer/semver",
@@ -1481,6 +1481,64 @@
             "time": "2017-06-30T06:21:01+00:00"
         },
         {
+            "name": "misterbk/mix",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mister-bk/craft-plugin-mix.git",
+                "reference": "716255599c58285fd1edc1eeb9015b837ad7b3be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mister-bk/craft-plugin-mix/zipball/716255599c58285fd1edc1eeb9015b837ad7b3be",
+                "reference": "716255599c58285fd1edc1eeb9015b837ad7b3be",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-beta.1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Mix",
+                "handle": "mix",
+                "schemaVersion": "1.0.0",
+                "documentationUrl": "https://github.com/mister-bk/craft-plugin-mix/blob/master/README.md",
+                "changelogUrl": "https://raw.githubusercontent.com/mister-bk/craft-plugin-mix/master/CHANGELOG.md",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "components": {
+                    "mix": "misterbk\\mix\\services\\MixService"
+                },
+                "class": "misterbk\\mix\\Mix"
+            },
+            "autoload": {
+                "psr-4": {
+                    "misterbk\\mix\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mister bk! GmbH",
+                    "email": "info@mister-bk.de",
+                    "homepage": "https://www.mister-bk.de/"
+                }
+            ],
+            "description": "Helper plugin for Laravel Mix in Craft CMS templates",
+            "keywords": [
+                "Craft",
+                "craft-plugin",
+                "craft3",
+                "craftcms",
+                "laravel-mix",
+                "mix"
+            ],
+            "time": "2017-06-30T09:35:18+00:00"
+        },
+        {
             "name": "mundschenk-at/php-typography",
             "version": "v5.2.2",
             "source": {
@@ -1995,16 +2053,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.6.1",
+            "version": "1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "50d63f2858d87c4738d5b76a7dcbb99fa8cf7c77"
+                "reference": "7a30649c67ee0d19faacfd9fa2cfb6cc032d9b19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/50d63f2858d87c4738d5b76a7dcbb99fa8cf7c77",
-                "reference": "50d63f2858d87c4738d5b76a7dcbb99fa8cf7c77",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/7a30649c67ee0d19faacfd9fa2cfb6cc032d9b19",
+                "reference": "7a30649c67ee0d19faacfd9fa2cfb6cc032d9b19",
                 "shasum": ""
             },
             "require": {
@@ -2040,7 +2098,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2017-06-18T15:11:04+00:00"
+            "time": "2017-11-30T15:34:22+00:00"
         },
         {
             "name": "seld/phar-utils",
@@ -2201,16 +2259,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.0-RC2",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "72b0921e1c59928b61be8b7a7a98ae5a4f2a02e1"
+                "reference": "9468ad3fba3a5e1f0dc12a96e50e84cddb923cf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/72b0921e1c59928b61be8b7a7a98ae5a4f2a02e1",
-                "reference": "72b0921e1c59928b61be8b7a7a98ae5a4f2a02e1",
+                "url": "https://api.github.com/repos/symfony/console/zipball/9468ad3fba3a5e1f0dc12a96e50e84cddb923cf0",
+                "reference": "9468ad3fba3a5e1f0dc12a96e50e84cddb923cf0",
                 "shasum": ""
             },
             "require": {
@@ -2266,11 +2324,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-19T18:41:20+00:00"
+            "time": "2017-11-29T13:28:14+00:00"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v3.4.0-RC2",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -2323,7 +2381,7 @@
         },
         {
             "name": "symfony/debug",
-            "version": "v4.0.0-RC2",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -2379,7 +2437,7 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v3.4.0-RC2",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
@@ -2435,7 +2493,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.4.0-RC2",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -2484,7 +2542,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.4.0-RC2",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -2592,7 +2650,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.0-RC2",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",

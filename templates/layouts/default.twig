@@ -19,12 +19,9 @@
     <meta name="description" content="Web Developer from Limerick, Ireland and living in Waterford.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Place favicon.ico in the root directory -->
-    {% if craft.app.config.general.devMode %}
-    <link rel="stylesheet" href="http://localhost:8080/web/assets/css/app.css">
-    {% else %}
-    <link rel="stylesheet" href="/assets/css/app.css">
-
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    
+    {% if not craft.app.config.general.devMode %}
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110493614-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -38,10 +35,6 @@
   <body>
     {% block content %}{% endblock %}
     
-    {% if craft.app.config.general.devMode %}
-    <script src="http://localhost:8080/web/assets/js/main.js"></script>
-    {% else %}
-    <script src="/assets/js/main.js"></script>
-    {% endif %}
+    <script src="{{ mix('js/main.js') }}"></script>
   </body>
 </html>

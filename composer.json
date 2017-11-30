@@ -27,7 +27,8 @@
     "craftcms/element-api": "^2.5",
     "craftcms/contact-form": "^2.1",
     "superbig/craft3-http2serverpush": "^1.0",
-    "nystudio107/craft3-typogrify": "^1.1"
+    "nystudio107/craft3-typogrify": "^1.1",
+    "misterbk/mix": "^1.3.0"
   },
   "config": {
     "optimize-autoloader": true

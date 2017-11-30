@@ -15,13 +15,10 @@
     "less-loader": "^4.0.5",
     "less-plugin-glob": "^2.0.1",
     "purify-css": "^1.2.5",
-    "purifycss-webpack": "^0.7.0",
-    "vue-loader": "^13.5.0",
-    "vue-template-compiler": "^2.5.9"
+    "purifycss-webpack": "^0.7.0"
   },
   "dependencies": {
-    "axios": "^0.17.1",
-    "tailwindcss": "^0.2.2",
-    "vue": "^2.5.9"
+    "prismjs": "^1.8.4",
+    "tailwindcss": "^0.2.2"
   }
 }
