@@ -13,7 +13,12 @@
     {% endfor %}
     </ul>
     
-    {% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}">Previous Page</a>{% endif %}
-    {% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}">Next Page</a>{% endif %}
+    {% if pageInfo.prevUrl %}
+      <a class="c-btn c-btn-primary" href="{{ pageInfo.prevUrl }}">Previous Page</a>
+    {% endif %}
+    
+    {% if pageInfo.nextUrl %}
+      <a class="c-btn c-btn-primary" href="{{ pageInfo.nextUrl }}">Next Page</a>
+    {% endif %}
   
 {% endblock %}

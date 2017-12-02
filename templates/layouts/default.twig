@@ -20,7 +20,18 @@
     <meta name="description" content="Web Developer from Limerick, Ireland and living in Waterford.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="preload" href="{{ mix('css/app.css') }}" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
+    <link rel="preload" href="{{ mix('css/app.css') }}" as="style" onload="this.onload = null; this.rel = 'stylesheet'; document.body.classList.add('css-loaded');">
+
+    <style>
+      body {
+        opacity: 0;
+        transition: opacity ease 0.4s;
+      }
+      
+      .css-loaded {
+        opacity: 1;
+      }
+    </style>
     
     <script>
       /** css preload polyfill - https://github.com/filamentgroup/loadCSS/blob/v2.0.1/src/cssrelpreload.js */
@@ -36,10 +47,18 @@
     
     <noscript>
       <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+      <style>
+        body {
+          opacity: 1 !important;
+        }
+      </style>
     </noscript>
   </head>
   <body>
-    {% block content %}{% endblock %}
+  
+    <main class="container mx-auto p-6">
+      {% block content %}{% endblock %}
+    </main>
     
     <script src="{{ mix('js/main.js') }}" async></script>
   </body>
