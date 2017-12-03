@@ -1,4 +1,5 @@
 {
-    "/web/assets/js/main.js": "/web/assets/js/main.js",
-    "/web/assets/css/app.css": "/web/assets/css/app.css"
+    "/web/assets/js/chunks/prism.js": "/web/assets/js/chunks/prism.js?id=959eed03ca643f14def3",
+    "/web/assets/js/main.js": "/web/assets/js/main.js?id=9d80f1fcd32f278240c6",
+    "/web/assets/css/app.css": "/web/assets/css/app.css?id=c72d244c8d38b92c59a3"
 }

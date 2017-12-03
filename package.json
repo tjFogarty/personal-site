@@ -18,6 +18,7 @@
     "purifycss-webpack": "^0.7.0"
   },
   "dependencies": {
+    "prismjs": "^1.8.4",
     "tailwindcss": "^0.3.0"
   }
 }
