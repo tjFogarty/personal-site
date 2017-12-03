@@ -5,6 +5,7 @@ mix
   .setPublicPath(__dirname)
   .js('src/js/main.js', 'web/assets/js')
   .less('src/less/app.less', 'web/assets/css')
+  .extract(['highlight.js'])
   .options({
     postCss: [tailwindcss('./tailwind.js')]
   })
