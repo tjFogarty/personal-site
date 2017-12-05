@@ -1,24 +1,18 @@
 {% extends 'layouts/default' %}
 
 {% block content %}
-  <h1 class="text-xl lg:text-2xl">Homepage</h1>
+  <h1 class="text-xl lg:text-4xl">Articles</h1>
   
   {% paginate craft.entries.section('posts').limit(5) as pageInfo, pageEntries %}
   
-    <ul>
+    <ul class="list-reset">
     {% for entry in pageEntries %}
       <li>
-        <a href="/{{ entry.slug }}">{{ entry.title }}</a>
+        {% include 'components/post-preview' with { post: entry } only %}
       </li>
     {% endfor %}
     </ul>
     
-    {% if pageInfo.prevUrl %}
-      <a class="c-btn c-btn-primary" href="{{ pageInfo.prevUrl }}">Previous Page</a>
-    {% endif %}
-    
-    {% if pageInfo.nextUrl %}
-      <a class="c-btn c-btn-primary" href="{{ pageInfo.nextUrl }}">Next Page</a>
-    {% endif %}
+    {% include 'components/pagination' with { pageInfo: pageInfo } only %}
   
 {% endblock %}
