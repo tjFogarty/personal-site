@@ -5,7 +5,7 @@
   
   {% paginate craft.entries.section('posts').limit(5) as pageInfo, pageEntries %}
   
-    <ul class="list-reset">
+    <ul class="l-post-list">
     {% for entry in pageEntries %}
       <li>
         {% include 'components/post-preview' with { post: entry } only %}
