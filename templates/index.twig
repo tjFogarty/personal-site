@@ -3,7 +3,7 @@
 {% block content %}
   <h1 class="text-xl lg:text-4xl">Articles</h1>
   
-  {% paginate craft.entries.section('posts').limit(5) as pageInfo, pageEntries %}
+  {% paginate craft.entries.section('posts').limit(6) as pageInfo, pageEntries %}
   
     <ul class="l-post-list">
     {% for entry in pageEntries %}
