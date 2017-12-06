@@ -3,6 +3,7 @@
 /vendor
 web/assets/js
 web/assets/css
+web/sw.js
 
 # Created by https://www.gitignore.io/api/craftcms
 

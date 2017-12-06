@@ -4,6 +4,7 @@ const mix = require('laravel-mix')
 const tailwindcss = require('tailwindcss')
 const glob = require('glob-all')
 const PurgecssPlugin = require('purgecss-webpack-plugin')
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 
 // Custom PurgeCSS extractor for Tailwind that allows special characters in
 // class names.
@@ -32,6 +33,20 @@ mix
 if (mix.inProduction()) {
   mix.webpackConfig({
     plugins: [
+      new SWPrecacheWebpackPlugin({
+        cacheId: 'tj',
+        filepath: path.join(__dirname, '/web/sw.js'),
+        maximumFileSizeToCacheInBytes: 4194304,
+        minify: false,
+        staticFileGlobs: ['web/assets/**/*.{eot,svg,ttf,woff,woff2,js,html}'],
+        stripPrefix: 'web',
+        runtimeCaching: [
+          {
+            handler: 'cacheFirst',
+            urlPattern: /fonts\/.*$/
+          }
+        ]
+      }),
       new PurgecssPlugin({
         // Specify the locations of any files you want to scan for class names.
         paths: glob.sync([path.join(__dirname, 'templates/**/*.twig')]),
