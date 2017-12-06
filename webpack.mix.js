@@ -34,9 +34,41 @@ if (mix.inProduction()) {
     plugins: [
       new PurgecssPlugin({
         // Specify the locations of any files you want to scan for class names.
-        paths: glob.sync([
-          path.join(__dirname, 'templates/**/*.twig')
-        ]),
+        paths: glob.sync([path.join(__dirname, 'templates/**/*.twig')]),
+        whitelistPatterns: [
+          /hljs/g,
+          /hljs-keyword/g,
+          /hljs-attr/g,
+          /hljs-string/g,
+          /hljs-tag/g,
+          /hljs-title/g,
+          /hljs-params/g,
+          /hljs-comment/g,
+          /hljs-function/g,
+          /hljs-subst/g,
+          /hljs-number/g,
+          /hljs-variable/g,
+          /hljs-template-variable/g,
+          /hljs-regexp/g,
+          /hljs-name/g,
+          /hljs-type/g,
+          /hljs-attribute/g,
+          /hljs-symbol/g,
+          /hljs-bullet/g,
+          /hljs-link/g,
+          /hljs-built_in/g,
+          /hljs-builtin-name/g,
+          /hljs-meta/g,
+          /hljs-title/g,
+          /hljs-section/g,
+          /hljs-addition/g,
+          /hljs-deletion/g,
+          /hljs-selector-class/g,
+          /hljs-selector-id/g,
+          /hljs-emphasis/g,
+          /hljs-strong/g,
+          /hljs-selector-tag/g
+        ],
         extractors: [
           {
             extractor: TailwindExtractor,
