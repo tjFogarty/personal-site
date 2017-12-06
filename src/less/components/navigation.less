@@ -1,0 +1,77 @@
+//======= Nav =======//
+
+.c-nav {
+  @apply .flex .items-center .justify-between .flex-wrap .bg-teal .p-6;
+}
+
+//======= Nav Title =======//
+
+.c-nav__title-container {
+  @apply .flex .items-center .flex-no-shrink .text-white .mr-6;
+}
+
+.c-nav__title {
+  @apply .font-semibold .text-xl .tracking-tight;
+}
+
+//======= Nav Mobile =======//
+
+.c-nav__mobile {
+  @apply .block; 
+}
+
+@screen lg {
+  .c-nav__mobile {
+    @apply .hidden;
+  }
+}
+
+.c-nav__mobile-button {
+  @apply .flex .items-center .px-3 .py-2 .border .rounded .text-teal-lighter .border-teal-light;
+  
+  &:hover {
+    @apply .text-white .border-white;
+  }
+}
+
+.c-nav__mobile-button-icon {
+  @apply .fill-current .h-3 .w-3;
+}
+
+//======= Nav Inner =======//
+
+.c-nav__inner {
+  @apply .w-full .block .flex-grow;
+}
+
+@screen lg {
+  .c-nav__inner {
+    @apply .flex .items-center .w-auto;
+  }
+}
+
+.c-nav__inner-left {
+  @apply .text-sm;
+}
+
+@screen lg {
+  .c-nav__inner-left {
+    @apply .flex-grow;
+  }
+}
+
+//======= Nav Link =======//
+
+.c-nav__link {
+  @apply .block .mt-4 .text-teal-lighter .mr-4;
+  
+  &:hover {
+    @apply .text-white;
+  }
+}
+
+@screen lg {
+  .c-nav__link {
+    @apply .inline-block .mt-0;
+  }
+}
