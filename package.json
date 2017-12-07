@@ -18,7 +18,7 @@
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "less-plugin-glob": "^2.0.1",
-    "purgecss-webpack-plugin": "^0.13.0",
+    "purgecss-webpack-plugin": "^0.14.0",
     "purify-css": "^1.2.5",
     "purifycss-webpack": "^0.7.0",
     "sw-precache-webpack-plugin": "^0.11.4"
