@@ -1,7 +1,7 @@
 {% extends 'layouts/default' %}
 
 {% block content %}
-  <h1 class="text-xl lg:text-2xl">{{ entry.title }}</h1>
-  
+  <h1>{{ entry.title }}</h1>
+
   {{ entry.postContent | typogrify }}
 {% endblock %}

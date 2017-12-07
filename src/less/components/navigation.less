@@ -1,7 +1,7 @@
 //======= Nav =======//
 
 .c-nav {
-  @apply .flex .items-center .justify-between .flex-wrap .bg-teal .p-6;
+  @apply .flex .items-center .justify-between .flex-wrap .bg-primary .p-6;
 }
 
 //======= Nav Title =======//
@@ -11,13 +11,13 @@
 }
 
 .c-nav__title {
-  @apply .font-semibold .text-xl .tracking-tight;
+  @apply .text-xl;
 }
 
 //======= Nav Mobile =======//
 
 .c-nav__mobile {
-  @apply .block; 
+  @apply .block;
 }
 
 @screen lg {
@@ -27,11 +27,7 @@
 }
 
 .c-nav__mobile-button {
-  @apply .flex .items-center .px-3 .py-2 .border .rounded .text-teal-lighter .border-teal-light;
-  
-  &:hover {
-    @apply .text-white .border-white;
-  }
+  @apply .flex .items-center .px-3 .py-2 .border .rounded .text-white .border-white;
 }
 
 .c-nav__mobile-button-icon {
@@ -63,15 +59,28 @@
 //======= Nav Link =======//
 
 .c-nav__link {
-  @apply .block .mt-4 .text-teal-lighter .mr-4;
-  
-  &:hover {
-    @apply .text-white;
+  @apply .block .mt-4 .text-white .mr-4 .no-underline .px-1;
+  margin-top: 2px;
+
+  &:after {
+    content: '';
+    @apply .block .bg-white;
+    transition: width ease 0.2s;
+    width: 0;
+    margin: 0 auto;
+    height: 1px;
+    opacity: 0;
+  }
+
+  &:hover:after {
+    opacity: 1;
+    width: 100%;
   }
 }
 
 @screen lg {
   .c-nav__link {
-    @apply .inline-block .mt-0;
+    @apply .inline-block;
+    margin-top: 3px;
   }
 }

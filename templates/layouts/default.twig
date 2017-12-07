@@ -28,7 +28,7 @@
   <body>
     {% include 'components/navigation' %}
 
-    <main class="container mx-auto p-6">
+    <main class="max-w-xl mx-auto p-6">
       {% block content %}{% endblock %}
     </main>
 
@@ -36,12 +36,12 @@
     <script src="{{ mix('js/vendor.js') }}" defer></script>
     <script src="{{ mix('js/main.js') }}" defer></script>
 
-    {# {% if craft.app.config.general.devMode %} #}
+    {% if not craft.app.config.general.devMode %}
     <script>
       navigator.serviceWorker.register('/sw.js', {
         scope: './'
       });
     </script>
-    {# {% endif %} #}
+    {% endif %}
   </body>
 </html>

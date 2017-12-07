@@ -3,6 +3,6 @@
     <a class="c-post__title-link" href="/{{ post.slug }}">{{ post.title }}</a>
   </h2>
   <p class="c-post__excerpt">
-    {{ post.postContent | striptags | slice(0, 160) | raw }}&hellip;
+    {{ post.postContent | striptags | slice(0, 360) | raw }}&hellip;
   </p>
 </div>
