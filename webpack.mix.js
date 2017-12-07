@@ -26,9 +26,6 @@ mix
   .options({
     postCss: [tailwindcss('./tailwind.js')]
   })
-  .webpackConfig({
-    plugins: [new CleanWebpackPlugin(['web/assets'])]
-  })
   .version()
 
 // Only run PurgeCSS during production builds for faster development builds
@@ -37,6 +34,7 @@ mix
 if (mix.inProduction()) {
   mix.webpackConfig({
     plugins: [
+      new CleanWebpackPlugin(['web/assets']),
       new SWPrecacheWebpackPlugin({
         cacheId: 'tj',
         filepath: path.join(__dirname, '/web/sw.js'),
