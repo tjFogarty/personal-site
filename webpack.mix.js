@@ -5,6 +5,7 @@ const tailwindcss = require('tailwindcss')
 const glob = require('glob-all')
 const PurgecssPlugin = require('purgecss-webpack-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 // Custom PurgeCSS extractor for Tailwind that allows special characters in
 // class names.
@@ -24,6 +25,9 @@ mix
   .extract(['highlight.js'])
   .options({
     postCss: [tailwindcss('./tailwind.js')]
+  })
+  .webpackConfig({
+    plugins: [new CleanWebpackPlugin(['web/assets'])]
   })
   .version()
 
