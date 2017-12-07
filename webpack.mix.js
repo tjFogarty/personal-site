@@ -22,7 +22,7 @@ mix
   .browserSync('https://tj-craft.dev')
   .js('src/js/main.js', 'web/assets/js')
   .less('src/less/app.less', 'web/assets/css')
-  .extract(['highlight.js'])
+  .extract(['highlight.js', 'in-view'])
   .options({
     postCss: [tailwindcss('./tailwind.js')]
   })
