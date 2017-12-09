@@ -98,7 +98,7 @@ mix
   .browserSync('https://tj-craft.dev')
   .js('web/src/js/main.js', 'assets/js')
   .less('web/src/less/app.less', 'assets/css')
-  .extract(['in-view'])
+  .extract(['in-view', 'feather-icons'])
   .options({
     postCss: [tailwindcss('./tailwind.js')]
   })

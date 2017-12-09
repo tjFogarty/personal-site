@@ -1,5 +1,6 @@
 import { ready } from './utils'
 import { TitleEffect } from './title-effect'
+import feather from 'feather-icons'
 
 ready(async () => {
   let toggleNav = document.querySelector('.js-toggle-nav')
@@ -10,6 +11,7 @@ ready(async () => {
   })
 
   TitleEffect.init()
+  feather.replace()
 
   if (document.querySelector('pre')) {
     let hljs = await System.import(
