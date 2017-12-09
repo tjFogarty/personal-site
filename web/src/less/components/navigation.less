@@ -38,11 +38,18 @@
 
 .c-nav__inner {
   @apply .w-full .block .flex-grow;
+  height: 0;
+  overflow: hidden;
+
+  &.is-open {
+    height: auto;
+  }
 }
 
 @screen lg {
   .c-nav__inner {
     @apply .flex .items-center .w-auto;
+    height: auto;
   }
 }
 
