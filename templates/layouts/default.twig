@@ -45,6 +45,13 @@
       {% block content %}{% endblock %}
     </main>
 
+    <div class="c-now-playing">
+      <button type="button" class="c-now-playing__trigger js-lt-trigger">
+        <i data-feather="music" class="c-now-playing__icon"></i>
+      </button>
+      <div class="js-lt-container"></div>
+    </div>
+
     <script src="{{ mix('js/manifest.js') }}" defer></script>
     <script src="{{ mix('js/vendor.js') }}" defer></script>
     <script src="{{ mix('js/main.js') }}" defer></script>
