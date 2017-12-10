@@ -1,17 +1,14 @@
 import { ready } from './utils'
 import { TitleEffect } from './title-effect'
+import { mobileNav } from './mobile-nav'
+import { ListeningTo } from './listening-to'
 import feather from 'feather-icons'
 
 ready(async () => {
-  let toggleNav = document.querySelector('.js-toggle-nav')
-  let navInner = document.querySelector('.c-nav__inner')
-
-  toggleNav.addEventListener('click', () => {
-    navInner.classList.toggle('is-open')
-  })
-
+  mobileNav()
   TitleEffect.init()
   feather.replace()
+  ListeningTo.init()
 
   if (document.querySelector('pre')) {
     let hljs = await System.import(
