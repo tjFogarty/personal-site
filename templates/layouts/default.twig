@@ -49,7 +49,15 @@
       <button type="button" class="c-now-playing__trigger js-lt-trigger">
         <i data-feather="music" class="c-now-playing__icon"></i>
       </button>
-      <div class="js-lt-container"></div>
+      <div class="c-now-playing__info js-lt-info">
+        <div class="c-now-playing__text">
+          <a href="" rel="noopener" target="_blank" class="flex items-center js-lt-url">
+          <span class="text-sm js-lt-album"></span>
+          &nbsp;-&nbsp;
+          <span class="text-sm js-lt-artist"></span>
+          </a>
+        </div>
+      </div>
     </div>
 
     <script src="{{ mix('js/manifest.js') }}" defer></script>
