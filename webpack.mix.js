@@ -45,7 +45,10 @@ if (mix.inProduction()) {
     }),
     new PurgecssPlugin({
       // Specify the locations of any files you want to scan for class names.
-      paths: glob.sync([path.join(__dirname, 'templates/**/*.twig')]),
+      paths: glob.sync([
+        path.join(__dirname, 'templates/**/*.twig'),
+        path.join(__dirname, 'web/assets/**/*.js')
+      ]),
       whitelistPatterns: [
         /hljs/g,
         /hljs-keyword/g,
