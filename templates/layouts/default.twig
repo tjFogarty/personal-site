@@ -67,12 +67,9 @@
     {% if not craft.app.config.general.devMode %}
     <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.getRegistrations()
-          .then(function(registrations) {
-            for (let registration of registrations) {
-              registration.unregister()
-            }
-          })
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js', { scope: './' });
+        });
       }
     </script>
     {% endif %}

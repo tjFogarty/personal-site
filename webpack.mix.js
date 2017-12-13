@@ -31,10 +31,7 @@ if (mix.inProduction()) {
       filepath: path.join(__dirname, '/web/sw.js'),
       maximumFileSizeToCacheInBytes: 4194304,
       minify: false,
-      staticFileGlobs: [
-        'web/assets/**/*.{eot,svg,ttf,woff,woff2,js,html}',
-        'web/fonts/open-sans.woff2'
-      ],
+      staticFileGlobs: ['web/fonts/open-sans.woff2'],
       stripPrefix: 'web',
       runtimeCaching: [
         {
