@@ -1,12 +1,7 @@
 {
   "name": "craftcms/craft",
   "description": "Craft CMS",
-  "keywords": [
-    "craft",
-    "cms",
-    "craftcms",
-    "project"
-  ],
+  "keywords": ["craft", "cms", "craftcms", "project"],
   "license": "MIT",
   "homepage": "https://craftcms.com/",
   "type": "project",
@@ -21,7 +16,7 @@
   "minimum-stability": "beta",
   "require": {
     "php": ">=7.0.0",
-    "craftcms/cms": "^3.0.0-RC1",
+    "craftcms/cms": "^3.0.0-RC2",
     "vlucas/phpdotenv": "^2.4.0",
     "roave/security-advisories": "dev-master",
     "craftcms/element-api": "^2.5",
@@ -38,8 +33,6 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
-    "post-create-project-cmd": [
-      "@php craft setup/welcome"
-    ]
+    "post-create-project-cmd": ["@php craft setup/welcome"]
   }
 }

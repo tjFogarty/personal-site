@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "307d22bc4d992f0b1fa626868dc87be6",
+    "content-hash": "b7bdcf8f345a37b414a5ec77d1cb3f31",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -324,16 +324,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC1",
+            "version": "3.0.0-RC2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "c269bee9d8e7def9470b2e41d0a5b09c08c7f594"
+                "reference": "526218356fc0c0e272ecc113c969eeb11e46e0ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c269bee9d8e7def9470b2e41d0a5b09c08c7f594",
-                "reference": "c269bee9d8e7def9470b2e41d0a5b09c08c7f594",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/526218356fc0c0e272ecc113c969eeb11e46e0ee",
+                "reference": "526218356fc0c0e272ecc113c969eeb11e46e0ee",
                 "shasum": ""
             },
             "require": {
@@ -401,7 +401,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2017-12-05T18:19:22+00:00"
+            "time": "2017-12-12T20:42:34+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -455,20 +455,20 @@
         },
         {
             "name": "craftcms/element-api",
-            "version": "2.5.1",
+            "version": "2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/element-api.git",
-                "reference": "516b9104cef51603831f6cc4d08a02b835b5c594"
+                "reference": "4619d809280fe4a82e6e0859aa51073820065008"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/element-api/zipball/516b9104cef51603831f6cc4d08a02b835b5c594",
-                "reference": "516b9104cef51603831f6cc4d08a02b835b5c594",
+                "url": "https://api.github.com/repos/craftcms/element-api/zipball/4619d809280fe4a82e6e0859aa51073820065008",
+                "reference": "4619d809280fe4a82e6e0859aa51073820065008",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "~3.0.0-beta.31",
+                "craftcms/cms": "^3.0.0-beta.31",
                 "league/fractal": "^0.16.0"
             },
             "type": "craft-plugin",
@@ -501,7 +501,7 @@
                 "json",
                 "yii2"
             ],
-            "time": "2017-11-09T18:11:07+00:00"
+            "time": "2017-12-13T11:16:27+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1742,20 +1742,20 @@
         },
         {
             "name": "nystudio107/craft3-typogrify",
-            "version": "1.1.2",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-typogrify.git",
-                "reference": "b3c3934cf73e6adbc566d6bfba6c5c618d23c192"
+                "reference": "6d01051971462a3f2550d722eff9c80cf26f6660"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-typogrify/zipball/b3c3934cf73e6adbc566d6bfba6c5c618d23c192",
-                "reference": "b3c3934cf73e6adbc566d6bfba6c5c618d23c192",
+                "url": "https://api.github.com/repos/nystudio107/craft3-typogrify/zipball/6d01051971462a3f2550d722eff9c80cf26f6660",
+                "reference": "6d01051971462a3f2550d722eff9c80cf26f6660",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "~3.0.0-beta.23",
+                "craftcms/cms": "^3.0.0-RC1",
                 "michelf/php-smartypants": "^1.8",
                 "mundschenk-at/php-typography": "^5.2"
             },
@@ -1795,7 +1795,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2017-11-15T01:36:56+00:00"
+            "time": "2017-12-08T22:08:06+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -2006,12 +2006,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "497fce9103b12b99e8d166bc466d015f5b07c0d8"
+                "reference": "40b035345ed34a4cc92c842f60a6cc739101542f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/497fce9103b12b99e8d166bc466d015f5b07c0d8",
-                "reference": "497fce9103b12b99e8d166bc466d015f5b07c0d8",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/40b035345ed34a4cc92c842f60a6cc739101542f",
+                "reference": "40b035345ed34a4cc92c842f60a6cc739101542f",
                 "shasum": ""
             },
             "conflict": {
@@ -2044,6 +2044,7 @@
                 "firebase/php-jwt": "<2",
                 "friendsofsymfony/rest-bundle": ">=1.2,<1.2.2",
                 "friendsofsymfony/user-bundle": ">=1.2,<1.3.5",
+                "gree/jose": "<=2.2",
                 "gregwar/rst": "<1.0.3",
                 "guzzlehttp/guzzle": ">=6,<6.2.1|>=4.0.0-rc2,<4.2.4|>=5,<5.3.1",
                 "illuminate/auth": ">=4,<4.0.99|>=4.1,<4.1.26",
@@ -2142,7 +2143,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2017-12-05T17:52:25+00:00"
+            "time": "2017-12-12T00:38:43+00:00"
         },
         {
             "name": "seld/cli-prompt",
