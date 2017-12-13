@@ -67,12 +67,12 @@
     {% if not craft.app.config.general.devMode %}
     <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registration) {
-          registration.update();
-        }).catch(function(error) {
-          // registration failed
-          console.log('Registration failed with ' + error);
-        });
+        navigator.serviceWorker.getRegistrations()
+          .then(function(registrations) {
+            for (let registration of registrations) {
+              registration.unregister()
+            }
+          })
       }
     </script>
     {% endif %}
