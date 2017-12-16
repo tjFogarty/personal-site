@@ -79,18 +79,16 @@
   margin-top: 2px;
 
   &:after {
+    @apply .block .bg-white .opacity-0;
     content: '';
-    @apply .block .bg-white;
-    transition: width ease 0.2s;
     width: 0;
     margin: 0 auto;
     height: 1px;
-    opacity: 0;
+    transition: width ease 0.2s;
   }
 
   &:hover:after {
-    opacity: 1;
-    width: 100%;
+    @apply .opacity-100 .w-full;
   }
 }
 

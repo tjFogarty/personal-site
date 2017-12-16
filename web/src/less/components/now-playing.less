@@ -1,13 +1,11 @@
 .c-now-playing {
-  position: fixed;
+  @apply .fixed .z-10;
   bottom: 50px;
   right: 50px;
-  z-index: 1;
 }
 
 .c-now-playing__trigger {
-  @apply .flex .justify-center .items-center;
-  position: relative;
+  @apply .flex .justify-center .items-center .relative;
   border-radius: 50%;
   background-color: #fff;
   width: 45px;
@@ -19,16 +17,13 @@
   }
 
   &:after {
-    @apply .bg-primary .text-white .text-sm .p-3;
+    @apply .bg-primary .text-white .text-sm .p-3 .absolute .pin-r .pointer-events-none;
     content: var(--current-track);
     border-radius: 2px;
     line-height: 1.4;
-    position: absolute;
     bottom: 100%;
-    right: 0;
     width: 230px;
     opacity: 0;
-    pointer-events: none;
     transform: translateY(-15px);
     transition: opacity ease 0.3s, transform ease 0.3s;
   }
@@ -49,8 +44,7 @@
 }
 
 .c-now-playing__icon {
-  @apply .text-primary;
-  position: relative;
+  @apply .text-primary .relative;
   right: 2px;
   transition: color ease 0.3s;
 }

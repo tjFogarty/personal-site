@@ -24,20 +24,20 @@
     <input type="hidden" name="action" value="contact-form/send">
     <input type="hidden" name="redirect" value="{{ 'contact/thanks'|hash }}">
 
-    <label class="block text-grey-darker font-bold mb-2" for="from-name">Your Name</label>
-    <input class="mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
+    <label for="from-name">Your Name</label>
+    <input id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
     {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
 
-    <label class="block text-grey-darker font-bold mb-2" for="from-email">Your Email</label>
-    <input class="mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+    <label for="from-email">Your Email</label>
+    <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
     {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
 
-    <label class="block text-grey-darker font-bold mb-2" for="subject">Subject</label>
-    <input class="mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="subject" type="text" name="subject" value="{{ message.subject ?? '' }}">
+    <label for="subject">Subject</label>
+    <input id="subject" type="text" name="subject" value="{{ message.subject ?? '' }}">
     {{ message is defined and message ? errorList(message.getErrors('subject')) }}
 
-    <label class="block text-grey-darker font-bold mb-2" for="message">Message</label>
-    <textarea class="mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-grey-darker" rows="10" cols="40" id="message" name="message">{{ message.message ?? '' }}</textarea>
+    <label for="message">Message</label>
+    <textarea rows="10" cols="40" id="message" name="message">{{ message.message ?? '' }}</textarea>
     {{ message is defined and message ? errorList(message.getErrors('message')) }}
 
     <button type="submit" value="Send" class="c-btn c-btn-primary">Send</button>
