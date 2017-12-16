@@ -31,7 +31,7 @@ if (mix.inProduction()) {
       filepath: path.join(__dirname, '/web/sw.js'),
       maximumFileSizeToCacheInBytes: 4194304,
       minify: false,
-      staticFileGlobs: ['web/fonts/open-sans.woff2'],
+      staticFileGlobs: ['web/fonts/open-sans.woff2', 'web/fonts/raleway.woff2'],
       stripPrefix: 'web',
       runtimeCaching: [
         {
@@ -95,7 +95,10 @@ if (mix.inProduction()) {
 
 mix
   .setPublicPath('web')
-  .browserSync('https://tj-craft.dev')
+  .browserSync({
+    proxy: 'https://tj-craft.dev',
+    files: ['./templates/**/*.twig']
+  })
   .js('web/src/js/main.js', 'assets/js')
   .less('web/src/less/app.less', 'assets/css')
   .extract(['in-view', 'feather-icons'])

@@ -1,13 +1,12 @@
 {% extends 'layouts/default' %}
 
 {% block content %}
-  <h1>Articles</h1>
 
   {% paginate craft.entries.section('posts').limit(6) as pageInfo, pageEntries %}
 
     <ul class="l-post-list">
     {% for entry in pageEntries %}
-      <li>
+      <li class="l-post-list__item">
         {% include 'components/post-preview' with { post: entry } only %}
       </li>
     {% endfor %}
