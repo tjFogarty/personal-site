@@ -3,18 +3,6 @@
   bottom: 50px;
   right: 50px;
   z-index: 1;
-
-  &.is-active {
-    .c-now-playing__trigger:after {
-      display: none;
-    }
-
-    .c-now-playing__info {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: all;
-    }
-  }
 }
 
 .c-now-playing__trigger {
@@ -32,7 +20,7 @@
 
   &:after {
     @apply .bg-primary .text-white .text-sm .p-3;
-    content: "See what I'm currently listening to for some reason";
+    content: var(--current-track);
     border-radius: 2px;
     position: absolute;
     bottom: 100%;
@@ -44,7 +32,8 @@
     transition: opacity ease 0.3s, transform ease 0.3s;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     @apply .bg-primary;
 
     &:after {
@@ -63,23 +52,4 @@
   position: relative;
   right: 2px;
   transition: color ease 0.3s;
-}
-
-.c-now-playing__info {
-  @apply .flex .items-center .p-4;
-  background-size: cover;
-  background-position: 50%;
-  position: fixed;
-  right: 50px;
-  bottom: 103px;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(15px);
-  transition: opacity ease 0.3s, transform ease 0.3s;
-}
-
-.c-now-playing__text {
-  @apply .p-2;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(3px);
 }
