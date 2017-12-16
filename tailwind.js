@@ -45,7 +45,9 @@ var defaultConfig = require('tailwindcss/defaultConfig')()
 var colors = {
   transparent: 'transparent',
 
-  primary: '#8F2D56',
+  // primary: '#8F2D56',
+  primary: '#ff3b3f',
+  secondary: '#13A6A0',
 
   // Flat colours
   turquoise: '#1abc9c',

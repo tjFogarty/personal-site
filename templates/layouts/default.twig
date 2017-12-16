@@ -43,7 +43,7 @@
     {% include 'components/navigation' %}
     {% include 'components/icons' %}
 
-    <main class="max-w-xl mx-auto p-6">
+    <main class="l-container">
       {% block content %}{% endblock %}
     </main>
 
@@ -68,5 +68,21 @@
       }
     </script>
     {% endif %}
+
+    <footer class="c-footer">
+      <div class="l-container">
+
+        <div class="c-footer__inner">
+          &copy; TJ Fogarty {{ 'now' | date('Y') }}
+
+          <a class="c-footer__link c-footer__link-icon" href="#" rel="noopener" target="_blank">
+            Source (coming soon)
+            <svg class="c-footer__icon">
+              <use xlink:href="#github"></use>
+            <svg>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
