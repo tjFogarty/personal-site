@@ -21,9 +21,9 @@
 
     {{ mix('css/app.css', true, true) | raw }}
 
-    <link rel="preload" href="{{ mix('js/manifest.js') }}" as="script">
-    <link rel="preload" href="{{ mix('js/vendor.js') }}" as="script">
-    <link rel="preload" href="{{ mix('js/main.js') }}" as="script">
+    <link rel="preload" href="{{ mix('js/manifest.js') }}" as="script" crossorigin>
+    <link rel="preload" href="{{ mix('js/vendor.js') }}" as="script" crossorigin>
+    <link rel="preload" href="{{ mix('js/main.js') }}" as="script" crossorigin>
     <link rel="preload" href="/fonts/open-sans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/raleway.woff2" as="font" type="font/woff2" crossorigin>
 
