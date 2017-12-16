@@ -101,7 +101,7 @@ mix
   })
   .js('web/src/js/main.js', 'assets/js')
   .less('web/src/less/app.less', 'assets/css')
-  .extract(['in-view', 'feather-icons'])
+  .extract(['in-view'])
   .options({
     postCss: [tailwindcss('./tailwind.js')]
   })

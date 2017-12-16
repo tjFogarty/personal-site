@@ -40,6 +40,7 @@
   </head>
   <body>
     {% include 'components/navigation' %}
+    {% include 'components/icons' %}
 
     <main class="max-w-xl mx-auto p-6">
       {% block content %}{% endblock %}
@@ -47,7 +48,9 @@
 
     <div class="c-now-playing">
       <button type="button" class="c-now-playing__trigger js-lt-trigger">
-        <i data-feather="music" class="c-now-playing__icon"></i>
+        <svg class="c-now-playing__icon">
+          <use xlink:href="#music"></use>
+        <svg>
       </button>
     </div>
 
