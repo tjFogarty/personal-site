@@ -215,6 +215,7 @@ module.exports = {
 
   fonts: {
     sans: [
+      'Raleway',
       '-apple-system',
       'BlinkMacSystemFont',
       'Segoe UI',
@@ -228,6 +229,7 @@ module.exports = {
       'sans-serif'
     ],
     serif: [
+      'Playfair Display',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',
@@ -240,6 +242,7 @@ module.exports = {
       'serif'
     ],
     mono: [
+      'Operator Mono',
       'Menlo',
       'Monaco',
       'Consolas',
