@@ -12,8 +12,8 @@
     </li>
   {% endfor %}
   </ul>
+  {% endcache %}
 
   {% include 'components/pagination' with { pageInfo: pageInfo } only %}
-  {% endcache %}
 
 {% endblock %}
