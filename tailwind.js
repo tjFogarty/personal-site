@@ -47,7 +47,7 @@ var colors = {
 
   // primary: '#8F2D56',
   primary: '#ff3b3f',
-  secondary: '#13A6A0',
+  secondary: '#596a73',
 
   // Flat colours
   turquoise: '#1abc9c',
@@ -79,7 +79,7 @@ var colors = {
   'grey-light': '#dae4e9',
   'grey-lighter': '#f3f7f9',
   'grey-lightest': '#fafcfc',
-  white: '#F2F4F3',
+  white: '#F3F3F3',
 
   'red-darkest': '#420806',
   'red-darker': '#6a1b19',
