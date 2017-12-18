@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>{{ siteName }}</title>
+        <link>{{ siteUrl }}</link>
+        <atom:link href="{{ craft.request.url }}" rel="self" type="application/rss+xml" />
+        <description>Web Development</description>
+        <language>en-us</language>
+        <pubDate>{{ now.rss }}</pubDate>
+        <lastBuildDate>{{ now.rss }}</lastBuildDate>
+
+        {% for entry in craft.entries.section('posts').find() %}
+            <item>
+                <title>{{ entry.title }}</title>
+                <link>{{ entry.url }}</link>
+                <pubDate>{{ entry.postDate.rss }}</pubDate>
+                <author>{{ entry.author }}</author>
+                <guid>{{ entry.url }}</guid>
+                <description><![CDATA[
+                    {{ entry.postContent }}
+                ]]></description>
+            </item>
+        {% endfor %}
+    </channel>
+</rss>
