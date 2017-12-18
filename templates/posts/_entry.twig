@@ -1,5 +1,10 @@
 {% extends 'layouts/default' %}
 
+{% set socialTags = [
+  { name: 'og:title', value: entry.title ~ ' by @tj_fogarty' },
+  { name: 'og:url', value: entry.url }
+] %}
+
 {% block content %}
   <h1>{{ entry.title }}</h1>
 
