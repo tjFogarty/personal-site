@@ -5,7 +5,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     {% if craft.app.config.general.devMode %}
+    {% if metaTitle is defined %}
+    <title>DEV | {{ metaTitle }} by TJ Fogarty</title>
+    {% else %}
     <title>TJ Fogarty | DEV</title>
+    {% endif %}
     <style>
       html {
         border: 5px solid #b4d455;
@@ -14,9 +18,13 @@
       }
     </style>
     {% else %}
+    {% if metaTitle is defined %}
+    <title>{{ metaTitle }} by TJ Fogarty</title>
+    {% else %}
     <title>TJ Fogarty | Web Developer</title>
     {% endif %}
     <meta name="description" content="Web Developer from Limerick, Ireland and living in Waterford.">
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{ mix('css/app.css', true, true) | raw }}
