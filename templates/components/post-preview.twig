@@ -1,8 +1,8 @@
 <div class="c-post">
   <h2 class="c-post__title">
-    <a class="c-post__title-link" href="/{{ post.slug }}">{{ post.title }}</a>
+    <a class="c-post__title-link" href="/{{ post.slug }}">{{ post.title | typogrify }}</a>
   </h2>
   <p class="c-post__excerpt">
-    {{ post.postContent | striptags | slice(0, 360) | raw }}&hellip;
+    {{ post.postContent | slice(0, 360) | typogrify }}&hellip;
   </p>
 </div>
