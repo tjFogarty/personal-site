@@ -19,7 +19,9 @@ export const ListeningTo = {
       let { recenttracks } = await fetch(endpoint).then(res => res.json())
       let { artist, name } = recenttracks.track[0]
 
-      this.updateRecentTrackVariable(`Currently listening to: ${name} by ${artist['#text']}`)
+      this.updateRecentTrackVariable(
+        `Currently listening to: ${name} by ${artist['#text']}`
+      )
     } catch (e) {
       this.updateRecentTrackVariable(`Error loading track: ${e}`)
     }
@@ -28,7 +30,7 @@ export const ListeningTo = {
   updateRecentTrackVariable(value) {
     document.documentElement.style.setProperty(
       '--current-track',
-      `'${value}'`
+      `'${value.replace(/'/g, '')}'`
     )
   }
 }
