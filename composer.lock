@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d925f86780d6c2092d61cb95d456d22",
+    "content-hash": "76631fbe02eb9c96c7bf3278404c54b4",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -778,6 +778,65 @@
                 "parser"
             ],
             "time": "2014-09-09T13:34:57+00:00"
+        },
+        {
+            "name": "dolphiq/redirect",
+            "version": "1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dolphiq/craft3-plugin-redirect.git",
+                "reference": "23f60b855f6b83ac321cf1cfbc76c7f72d37f5a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dolphiq/craft3-plugin-redirect/zipball/23f60b855f6b83ac321cf1cfbc76c7f72d37f5a0",
+                "reference": "23f60b855f6b83ac321cf1cfbc76c7f72d37f5a0",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Redirect plugin for Craft 3",
+                "handle": "redirect",
+                "schemaVersion": "1.0.3",
+                "developer": "Dolphiq",
+                "developerUrl": "https://dolphiq.nl/",
+                "description": "Craft redirect plugin provides an easy way to enter and maintain 301 and 302 redirects.",
+                "hasCpSettings": true,
+                "hasCpSection": true,
+                "documentationUrl": "https://github.com/Dolphiq/craft3-plugin-redirect/blob/master/README.md",
+                "changelogUrl": "https://raw.githubusercontent.com/Dolphiq/craft3-plugin-redirect/master/CHANGELOG.md",
+                "class": "dolphiq\\redirect\\RedirectPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "dolphiq\\redirect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dolphiq",
+                    "email": "info@dolphiq.nl",
+                    "homepage": "https://dolphiq.nl/"
+                }
+            ],
+            "description": "Craft redirect plugin provides an easy way to enter and maintain 301 and 302 redirects.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craft3",
+                "craftcms",
+                "redirect",
+                "seo"
+            ],
+            "time": "2017-12-12T19:52:17+00:00"
         },
         {
             "name": "egulias/email-validator",
