@@ -9,6 +9,7 @@ web/sw.js
 
 ### CraftCMS ###
 # Craft Storage (cache) [http://buildwithcraft.com/help/craft-storage-gitignore]
+/config/license.key
 /craft/storage/*
 !/craft/storage/logo/*
 # End of https://www.gitignore.io/api/craftcms
