@@ -19,6 +19,8 @@ class TailwindExtractor {
 
 let webpackConfig = {
   output: {
+    path: path.resolve(__dirname, 'web'),
+    publicPath: '/',
     chunkFilename: 'assets/js/chunks/[name].js'
   }
 }
@@ -94,7 +96,7 @@ if (mix.inProduction()) {
 }
 
 mix
-  .setPublicPath('web')
+  .setPublicPath('web/')
   .browserSync({
     proxy: 'https://tj-craft.dev',
     files: ['./templates/**/*.twig']
