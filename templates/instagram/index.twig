@@ -1,0 +1,21 @@
+{% extends 'layouts/default' %}
+
+{% set socialTags = [
+  { name: 'og:title', value: 'Instagram posts by @tj_fogarty' },
+  { name: 'og:url', value: '/instagram' }
+] %}
+
+{% set metaTitle = 'Instagram Posts' %}
+
+{% block content %}
+  <h1 class="mt-0">Instagram Posts</h1>
+  {% cache %}
+  {% for media in craft.picPuller.media_recent({'user_id' : 1 }) %}
+      {% if media.status == TRUE %}
+      <a href="{{ media.link }}" rel="noopener" target="_blank">
+        <img src="{{ media.thumbnail }}" alt="{{ media.caption_only }}">
+      </a>
+      {% endif %}
+  {% endfor %}
+  {% endcache %}
+{% endblock %}
