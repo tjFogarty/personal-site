@@ -1,0 +1,41 @@
+.c-search {
+  @apply .fixed .flex .items-start .justify-center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  transition: opacity ease 0.3s;
+  will-change: opacity;
+
+  &.is-open {
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+
+.c-search__label,
+.c-search__input {
+  @apply .block;
+}
+
+.c-search__inner {
+  width: 100%;
+  padding: 20px;
+}
+
+@screen md {
+  .c-search__inner {
+    padding: 40px;
+    width: 600px;
+  }
+}
+
+.c-search__results {
+  max-height: 600px;
+  overflow: scroll;
+}

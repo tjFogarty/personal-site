@@ -1,10 +1,12 @@
 import { ready } from './utils'
 import { mobileNav } from './mobile-nav'
 import { ListeningTo } from './listening-to'
+import { Search } from './search'
 
 ready(async () => {
   mobileNav()
   ListeningTo.init()
+  Search.init()
 
   if (document.querySelector('pre')) {
     try {
