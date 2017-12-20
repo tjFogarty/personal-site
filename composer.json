@@ -27,7 +27,8 @@
     "selvinortiz/doxter": "^3.1",
     "nystudio107/craft3-instantanalytics": "^1.0",
     "dolphiq/redirect": "^1.0",
-    "craftcms/mailgun": "^1.2"
+    "craftcms/mailgun": "^1.2",
+    "jmx2/pic-puller": "^3.0"
   },
   "config": {
     "optimize-autoloader": true
