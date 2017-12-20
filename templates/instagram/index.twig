@@ -12,14 +12,14 @@
 
   {% cache %}
   <ul class="c-gallery">
-    {% for media in craft.picPuller.media_recent({'user_id' : 1 }) %}
-        {% if media.status == TRUE %}
+    {% for media in craft.picPuller.media_recent({ 'user_id' : 1 }) %}
+      {% if media.status == TRUE %}
         <li class="c-gallery__item">
           <a href="{{ media.link }}" rel="noopener" target="_blank" class="c-gallery__link">
-            <img src="{{ media.thumbnail }}" alt="{{ media.caption_only }}" class="c-gallery__image" decode="async">
+            <img src="{{ media.thumbnail }}" alt="{{ media.caption_only }}" class="c-gallery__image" decoding="async" width="{{ media.thumbnail_width }}px" height="{{ media.thumbnail_height }}px">
           </a>
         </li>
-        {% endif %}
+      {% endif %}
     {% endfor %}
   </ul>
   {% endcache %}
