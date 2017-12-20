@@ -1,0 +1,29 @@
+//======= Gallery Component =======//
+
+.c-gallery {
+  @apply .list-reset .mb-8;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, 150px);
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+}
+
+.c-gallery__link {
+  @apply .no-underline;
+}
+
+.c-gallery__image {
+  @apply .block;
+  border-radius: 50%;
+}
+
+.c-gallery__item {
+  &:nth-child(2n + 1) .c-gallery__image {
+    border-top-right-radius: 0;
+  }
+
+  &:nth-child(2n) .c-gallery__image {
+    border-bottom-left-radius: 0;
+  }
+}
