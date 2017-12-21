@@ -9,3 +9,9 @@ export function ready(fn) {
     document.addEventListener('DOMContentLoaded', fn)
   }
 }
+
+export const env = () => {
+  return process && process.env && process.env.NODE_ENV
+    ? process.env.NODE_ENV
+    : null
+}
