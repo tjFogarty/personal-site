@@ -9,6 +9,12 @@ export const Search = {
     this.handleTriggerClick = this.handleTriggerClick.bind(this)
     this.performSearch = this.performSearch.bind(this)
 
+    document.addEventListener('keyup', e => {
+      if (e.keyCode === 27) {
+        this.container.classList.remove('is-open')
+      }
+    })
+
     this.trigger.forEach(trigger => {
       trigger.addEventListener('click', this.handleTriggerClick)
     })
@@ -66,7 +72,7 @@ export const Search = {
         'B5ZTA540XE',
         '5760522b641a5ab4334c5a2806c4aa67'
       )
-      this.index = client.initIndex('wp_searchable_posts')
+      this.index = client.initIndex('dev_posts')
     } catch (e) {
       console.log('Error loading search client', e)
     }
@@ -74,12 +80,14 @@ export const Search = {
 
   displayResults(results) {
     let resultHTML = results.map(result => {
-      return `
-        <h3>${result.post_title}</h3>
-      `
+      return `<a href="${
+        result.url
+      }" class="no-underline block mb-6 hover:text-primary">
+          <h4 class="hover:text-primary">${result.title}</h4>
+        </a>`
     })
 
-    this.resultsContainer.innerHTML = resultHTML
+    this.resultsContainer.innerHTML = resultHTML.join('')
   },
 
   displayNoResults() {

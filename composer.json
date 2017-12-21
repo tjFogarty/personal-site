@@ -19,7 +19,6 @@
     "craftcms/cms": "^3.0.0-RC3",
     "vlucas/phpdotenv": "^2.4.0",
     "roave/security-advisories": "dev-master",
-    "craftcms/element-api": "^2.5",
     "craftcms/contact-form": "^2.1",
     "superbig/craft3-http2serverpush": "^1.0",
     "nystudio107/craft3-typogrify": "^1.1",
@@ -28,7 +27,8 @@
     "nystudio107/craft3-instantanalytics": "^1.0",
     "dolphiq/redirect": "^1.0",
     "craftcms/mailgun": "^1.2",
-    "jmx2/pic-puller": "^3.0"
+    "jmx2/pic-puller": "^3.0",
+    "rias/scout": "^0.2.1"
   },
   "config": {
     "optimize-autoloader": true
