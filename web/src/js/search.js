@@ -72,7 +72,7 @@ export const Search = {
         'B5ZTA540XE',
         '5760522b641a5ab4334c5a2806c4aa67'
       )
-      this.index = client.initIndex('dev_posts')
+      this.index = client.initIndex('prod_posts')
     } catch (e) {
       console.log('Error loading search client', e)
     }
