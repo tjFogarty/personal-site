@@ -8,7 +8,13 @@
 {% set metaTitle = entry.title %}
 
 {% block content %}
-  <h1 class="mt-0">{{ entry.title | typogrify }}</h1>
+  <article class="c-post h-entry">
+    <h1 class="mt-0 p-name">{{ entry.title | typogrify }}</h1>
 
-  {{ entry.postContent | typogrify }}
+    <time class="c-post__date dt-published" datetime="{{ entry.postDate.date }}">{{ entry.postDate | date('d M Y') }}</time>
+
+    <div class="e-content">
+      {{ entry.postContent | typogrify }}
+    </div>
+  </article>
 {% endblock %}
