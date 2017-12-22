@@ -22,6 +22,10 @@ export const ListeningTo = {
       this.updateRecentTrackVariable(
         `Currently listening to: ${name} by ${artist['#text']}`
       )
+
+      gtag('event', 'music', {
+        track: `${name} by ${artist['#text']}`
+      })
     } catch (e) {
       this.updateRecentTrackVariable(`Error loading track: ${e}`)
     }

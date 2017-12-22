@@ -18,4 +18,15 @@ ready(async () => {
       console.log('Error loading highlight.js', e)
     }
   }
+
+  // if (document.querySelector('.js-contact-form')) {
+  //   try {
+  //     let ContactForm = await System.import(
+  //       /* webpackChunkName: "contact" */ './contact-form'
+  //     )
+  //     ContactForm.default.init()
+  //   } catch (e) {
+  //     console.log('Error loading contact form', e)
+  //   }
+  // }
 })

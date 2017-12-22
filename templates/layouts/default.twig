@@ -5,24 +5,24 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     {% if craft.app.config.general.devMode %}
-    {% if metaTitle is defined %}
-    <title>DEV | {{ metaTitle }} by TJ Fogarty</title>
+      {% if metaTitle is defined %}
+      <title>DEV | {{ metaTitle }} by TJ Fogarty</title>
+      {% else %}
+      <title>TJ Fogarty | DEV</title>
+      {% endif %}
+      <style>
+        html {
+          border: 5px solid #b4d455;
+          width: 100%;
+          height: 100%;
+        }
+      </style>
     {% else %}
-    <title>TJ Fogarty | DEV</title>
-    {% endif %}
-    <style>
-      html {
-        border: 5px solid #b4d455;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-    {% else %}
-    {% if metaTitle is defined %}
-    <title>{{ metaTitle }} by TJ Fogarty</title>
-    {% else %}
-    <title>TJ Fogarty | Web Developer</title>
-    {% endif %}
+      {% if metaTitle is defined %}
+      <title>{{ metaTitle }} by TJ Fogarty</title>
+      {% else %}
+      <title>TJ Fogarty | Web Developer</title>
+      {% endif %}
     <meta name="description" content="Web Developer from Limerick, Ireland and living in Waterford.">
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,6 +45,23 @@
         <meta property="{{ prop.name}}" content="{{ prop.value }}">
       {% endfor %}
     {% endif %}
+
+    {% if not craft.app.config.general.devMode %}
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110493614-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110493614-1');
+      </script>
+    {% else %}
+      <script>
+        function gtag() {console.log('gtag', arguments)}
+      </script>
+    {% endif %}
+
   </head>
   <body>
     {% include 'components/navigation' %}

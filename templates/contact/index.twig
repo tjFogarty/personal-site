@@ -19,7 +19,7 @@
 
 {% from _self import errorList %}
 
-<form method="post" action="" class="max-w-md mt-4" accept-charset="UTF-8">
+<form method="post" action="" class="max-w-md mt-4 js-contact-form" accept-charset="UTF-8">
     {{ csrfInput() }}
     <input type="hidden" name="action" value="contact-form/send">
     <input type="hidden" name="redirect" value="{{ 'contact/thanks'|hash }}">
