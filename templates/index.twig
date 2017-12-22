@@ -4,7 +4,7 @@
 
   {% paginate craft.entries.section('posts').limit(6) as pageInfo, pageEntries %}
 
-  {# {% cache %} #}
+  {% cache %}
   <ul class="l-post-list">
   {% for entry in pageEntries %}
     <li class="l-post-list__item">
@@ -12,7 +12,7 @@
     </li>
   {% endfor %}
   </ul>
-  {# {% endcache %} #}
+  {% endcache %}
 
   {% include 'components/pagination' with { pageInfo: pageInfo } only %}
 
