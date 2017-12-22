@@ -76,46 +76,7 @@
     </script>
     {% endif %}
 
-    <footer class="c-footer">
-      <div class="l-container">
-        <div class="c-footer__inner">
-          &copy; TJ Fogarty {{ 'now' | date('Y') }}
-
-          <div class="c-footer__icons">
-            <a
-              href="https://twitter.com/tj_fogarty"
-              target="_blank"
-              rel="noopener"
-              class="c-footer__link"
-            >
-              <svg class="c-footer__icon">
-                <use xlink:href="#twitter"></use>
-              <svg>
-            </a>
-
-            <a
-              href="https://github.com/tjFogarty"
-              target="_blank"
-              rel="noopener"
-              class="c-footer__link"
-            >
-              <svg class="c-footer__icon">
-                <use xlink:href="#github"></use>
-              <svg>
-            </a>
-
-            <a
-              href="/feed.rss"
-              class="c-footer__link"
-            >
-              <svg class="c-footer__icon">
-                <use xlink:href="#rss"></use>
-              <svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    {% include 'components/footer' %}
 
     {% include 'components/search' %}
 

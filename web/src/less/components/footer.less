@@ -3,18 +3,13 @@
 }
 
 .c-footer__link {
-  @apply .text-white;
-}
-
-.c-footer__link-icon {
-  @apply .flex .justify-between .items-center;
+  @apply .text-white .block .px-4;
 }
 
 .c-footer__icon {
   @apply .text-white;
   width: 25px;
   height: 25px;
-  margin-left: 10px;
 }
 
 @screen md {
@@ -24,6 +19,23 @@
 }
 
 .c-footer__icons {
-  @apply .relative;
+  @apply .relative .flex;
   top: 6px;
+}
+
+.c-footer__link {
+  @apply .text-white;
+
+  &:after {
+    @apply .block .bg-white .opacity-0;
+    content: '';
+    width: 0;
+    margin: 0 auto;
+    height: 1px;
+    transition: width ease 0.2s;
+  }
+
+  &:hover:after {
+    @apply .opacity-100 .w-full;
+  }
 }
