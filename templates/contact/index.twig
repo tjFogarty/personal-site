@@ -29,7 +29,7 @@
     {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
 
     <label for="from-email">Your Email</label>
-    <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}">
+    <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}" required>
     {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
 
     <label for="subject">Subject</label>
@@ -37,7 +37,7 @@
     {{ message is defined and message ? errorList(message.getErrors('subject')) }}
 
     <label for="message">Message</label>
-    <textarea rows="10" cols="40" id="message" name="message">{{ message.message ?? '' }}</textarea>
+    <textarea rows="10" cols="40" id="message" name="message" required>{{ message.message ?? '' }}</textarea>
     {{ message is defined and message ? errorList(message.getErrors('message')) }}
 
     <button type="submit" value="Send" class="c-btn c-btn-primary">Send</button>
