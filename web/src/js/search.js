@@ -32,7 +32,7 @@ export const Search = {
     try {
       let content = await this.index.search({ query })
 
-      if (content.hits) {
+      if (content.hits && content.hits.length) {
         this.displayResults(content.hits)
       } else {
         this.displayNoResults()
@@ -83,15 +83,33 @@ export const Search = {
   },
 
   displayResults(results) {
-    let resultHTML = results.map(result => {
-      return `<a href="${
-        result.url
-      }" class="no-underline block mb-6 hover:text-primary">
-          <h4 class="hover:text-primary">${result.title}</h4>
-        </a>`
-    })
+    this.emptyResultContainer()
 
-    this.resultsContainer.innerHTML = resultHTML.join('')
+    results.forEach(result => {
+      let resultLink = this.getResultLink(result)
+      this.resultsContainer.appendChild(resultLink)
+    })
+  },
+
+  emptyResultContainer() {
+    while (this.resultsContainer.firstChild) {
+      this.resultsContainer.removeChild(this.resultsContainer.firstChild)
+    }
+  },
+
+  getResultLink(result) {
+    let link = document.createElement('a')
+    let title = document.createElement('h4')
+
+    link.setAttribute('class', 'no-underline block mb-6')
+    link.setAttribute('href', result.url)
+
+    title.setAttribute('class', 'hover:text-primary')
+    title.innerText = result.title
+
+    link.appendChild(title)
+
+    return link
   },
 
   displayNoResults() {
