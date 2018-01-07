@@ -44,7 +44,7 @@ export const Search = {
 
   resetSearch() {
     this.input.value = ''
-    this.resultsContainer.innerHTML = ''
+    this.emptyResultContainer()
   },
 
   async handleTriggerClick(e) {
