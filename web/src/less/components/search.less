@@ -1,20 +1,18 @@
 .c-search {
-  @apply .fixed .flex .items-start .justify-center;
+  @apply .fixed .items-start .justify-center;
+  display: none;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   opacity: 0;
-  pointer-events: none;
   background-color: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
-  transition: opacity ease 0.3s;
-  will-change: opacity;
 
   &.is-open {
-    pointer-events: all;
-    opacity: 1;
+    @apply .flex;
+    animation: fade-in ease 0.3s forwards;
   }
 }
 
@@ -44,4 +42,14 @@
   position: absolute;
   top: 30px;
   right: 50px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
