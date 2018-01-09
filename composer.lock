@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a0314504434f152421f70cb928d8240",
+    "content-hash": "cbf1490f4c933c0f4be986f56621f886",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -426,16 +426,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC4",
+            "version": "3.0.0-RC5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "c8fd183b7eb21d4d4c2584dd687e056a2c58510b"
+                "reference": "d3ee52019f3c772fd2d69017f0e2071308e5be85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c8fd183b7eb21d4d4c2584dd687e056a2c58510b",
-                "reference": "c8fd183b7eb21d4d4c2584dd687e056a2c58510b",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/d3ee52019f3c772fd2d69017f0e2071308e5be85",
+                "reference": "d3ee52019f3c772fd2d69017f0e2071308e5be85",
                 "shasum": ""
             },
             "require": {
@@ -503,7 +503,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-01-02T18:31:00+00:00"
+            "time": "2018-01-09T19:21:35+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -2837,17 +2837,17 @@
             "time": "2016-10-10T12:19:37+00:00"
         },
         {
-            "name": "rias/scout",
-            "version": "0.2.1",
+            "name": "rias/craft-scout",
+            "version": "0.2.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Rias500/craft3-scout.git",
-                "reference": "5f1ea32294f5560ac072e8b96eeb9b26ecb0be7b"
+                "url": "https://github.com/Rias500/craft-scout.git",
+                "reference": "aaec3275e08eed6fbe81c2d282a26e3bb084c305"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rias500/craft3-scout/zipball/5f1ea32294f5560ac072e8b96eeb9b26ecb0be7b",
-                "reference": "5f1ea32294f5560ac072e8b96eeb9b26ecb0be7b",
+                "url": "https://api.github.com/repos/Rias500/craft-scout/zipball/aaec3275e08eed6fbe81c2d282a26e3bb084c305",
+                "reference": "aaec3275e08eed6fbe81c2d282a26e3bb084c305",
                 "shasum": ""
             },
             "require": {
@@ -2891,7 +2891,7 @@
                 "craftcms",
                 "scout"
             ],
-            "time": "2017-12-12T21:08:04+00:00"
+            "time": "2018-01-08T15:51:32+00:00"
         },
         {
             "name": "roave/security-advisories",
