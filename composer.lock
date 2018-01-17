@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbf1490f4c933c0f4be986f56621f886",
+    "content-hash": "f9fd167f8236f0c9664e53a6de762706",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -426,16 +426,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC5",
+            "version": "3.0.0-RC6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "d3ee52019f3c772fd2d69017f0e2071308e5be85"
+                "reference": "320a2ded079ac7a66e0a328bd8f468986e7c3b8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d3ee52019f3c772fd2d69017f0e2071308e5be85",
-                "reference": "d3ee52019f3c772fd2d69017f0e2071308e5be85",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/320a2ded079ac7a66e0a328bd8f468986e7c3b8e",
+                "reference": "320a2ded079ac7a66e0a328bd8f468986e7c3b8e",
                 "shasum": ""
             },
             "require": {
@@ -445,6 +445,7 @@
                 "craftcms/server-check": "~1.1.0",
                 "creocoder/yii2-nested-sets": "~0.9.0",
                 "danielstjules/stringy": "~3.1.0",
+                "elvanto/litemoji": "^1.3.1",
                 "enshrined/svg-sanitize": "~0.8.2",
                 "ext-curl": "*",
                 "ext-dom": "*",
@@ -503,7 +504,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-01-09T19:21:35+00:00"
+            "time": "2018-01-16T23:38:38+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -944,16 +945,16 @@
         },
         {
             "name": "dolphiq/redirect",
-            "version": "1.0.12",
+            "version": "1.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dolphiq/craft3-plugin-redirect.git",
-                "reference": "1ee08e82b2f498ba7cf6991f87252e3373c87468"
+                "reference": "9e2189845a4432c2c384d10c6a3158f83c6ee0c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dolphiq/craft3-plugin-redirect/zipball/1ee08e82b2f498ba7cf6991f87252e3373c87468",
-                "reference": "1ee08e82b2f498ba7cf6991f87252e3373c87468",
+                "url": "https://api.github.com/repos/Dolphiq/craft3-plugin-redirect/zipball/9e2189845a4432c2c384d10c6a3158f83c6ee0c4",
+                "reference": "9e2189845a4432c2c384d10c6a3158f83c6ee0c4",
                 "shasum": ""
             },
             "require": {
@@ -963,10 +964,10 @@
             "extra": {
                 "name": "Redirect plugin for Craft 3",
                 "handle": "redirect",
-                "schemaVersion": "1.0.3",
+                "schemaVersion": "1.0.4",
                 "developer": "Dolphiq",
                 "developerUrl": "https://dolphiq.nl/",
-                "description": "Craft redirect plugin provides an easy way to enter and maintain 301 and 302 redirects.",
+                "description": "Craft redirect plugin provides an easy way to enter and maintain 301 and 302 redirects and 404 error pages.",
                 "hasCpSettings": true,
                 "hasCpSection": true,
                 "documentationUrl": "https://github.com/Dolphiq/craft3-plugin-redirect/blob/master/README.md",
@@ -989,7 +990,7 @@
                     "homepage": "https://dolphiq.nl/"
                 }
             ],
-            "description": "Craft redirect plugin provides an easy way to enter and maintain 301 and 302 redirects.",
+            "description": "Craft redirect plugin provides an easy way to enter and maintain 301 and 302 redirects and 404 error pages.",
             "keywords": [
                 "Craft",
                 "cms",
@@ -999,7 +1000,7 @@
                 "redirect",
                 "seo"
             ],
-            "time": "2018-01-03T11:35:07+00:00"
+            "time": "2018-01-10T16:48:12+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -1057,6 +1058,44 @@
                 "validator"
             ],
             "time": "2017-11-15T23:40:40+00:00"
+        },
+        {
+            "name": "elvanto/litemoji",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elvanto/litemoji.git",
+                "reference": "fc1d2b8b3d174ee9425ac506430377dc3b50cdfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elvanto/litemoji/zipball/fc1d2b8b3d174ee9425ac506430377dc3b50cdfb",
+                "reference": "fc1d2b8b3d174ee9425ac506430377dc3b50cdfb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "milesj/emojibase": "*",
+                "phpunit/phpunit": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LitEmoji\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP library simplifying the conversion of unicode, HTML and shortcode emoji.",
+            "keywords": [
+                "emoji",
+                "php-emoji"
+            ],
+            "time": "2017-10-09T01:54:36+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
@@ -1941,16 +1980,16 @@
         },
         {
             "name": "misterbk/mix",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mister-bk/craft-plugin-mix.git",
-                "reference": "e631f17058891b8f66de97fafab62456f71ff05c"
+                "reference": "0dabc0ff4530015fc6f5e7f18ece862390e5716f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mister-bk/craft-plugin-mix/zipball/e631f17058891b8f66de97fafab62456f71ff05c",
-                "reference": "e631f17058891b8f66de97fafab62456f71ff05c",
+                "url": "https://api.github.com/repos/mister-bk/craft-plugin-mix/zipball/0dabc0ff4530015fc6f5e7f18ece862390e5716f",
+                "reference": "0dabc0ff4530015fc6f5e7f18ece862390e5716f",
                 "shasum": ""
             },
             "require": {
@@ -1995,7 +2034,7 @@
                 "laravel-mix",
                 "mix"
             ],
-            "time": "2017-11-23T09:21:07+00:00"
+            "time": "2018-01-16T23:27:59+00:00"
         },
         {
             "name": "mundschenk-at/php-typography",
@@ -2838,16 +2877,16 @@
         },
         {
             "name": "rias/craft-scout",
-            "version": "0.2.3",
+            "version": "0.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rias500/craft-scout.git",
-                "reference": "aaec3275e08eed6fbe81c2d282a26e3bb084c305"
+                "reference": "17bc12c6915d3e44504f67e7263fae82d9444002"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rias500/craft-scout/zipball/aaec3275e08eed6fbe81c2d282a26e3bb084c305",
-                "reference": "aaec3275e08eed6fbe81c2d282a26e3bb084c305",
+                "url": "https://api.github.com/repos/Rias500/craft-scout/zipball/17bc12c6915d3e44504f67e7263fae82d9444002",
+                "reference": "17bc12c6915d3e44504f67e7263fae82d9444002",
                 "shasum": ""
             },
             "require": {
@@ -2891,7 +2930,7 @@
                 "craftcms",
                 "scout"
             ],
-            "time": "2018-01-08T15:51:32+00:00"
+            "time": "2018-01-15T19:01:25+00:00"
         },
         {
             "name": "roave/security-advisories",
@@ -2899,12 +2938,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "fe89fd2178cabef137b9a76fa91d64925474b956"
+                "reference": "a54d4cf91890993ee599c446e2eb3dba3f9eae32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/fe89fd2178cabef137b9a76fa91d64925474b956",
-                "reference": "fe89fd2178cabef137b9a76fa91d64925474b956",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a54d4cf91890993ee599c446e2eb3dba3f9eae32",
+                "reference": "a54d4cf91890993ee599c446e2eb3dba3f9eae32",
                 "shasum": ""
             },
             "conflict": {
@@ -2987,7 +3026,7 @@
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
+                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
                 "twig/twig": "<1.20",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
@@ -3036,7 +3075,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-01-07T00:56:33+00:00"
+            "time": "2018-01-13T18:31:46+00:00"
         },
         {
             "name": "seld/cli-prompt",
