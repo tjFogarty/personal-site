@@ -23,9 +23,7 @@ export const ListeningTo = {
         `Currently listening to: ${name} by ${artist['#text']}`
       )
 
-      gtag('event', 'music', {
-        track: `${name} by ${artist['#text']}`
-      })
+      galite('send', 'event', 'music', `${name} by ${artist['#text']}`)
     } catch (e) {
       this.updateRecentTrackVariable(`Error loading track: ${e}`)
     }
