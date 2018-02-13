@@ -1,0 +1,31 @@
+{% extends 'layouts/default' %}
+
+{% set socialTags = [
+  { name: 'og:title', value: 'About page by @tj_fogarty' },
+  { name: 'og:url', value: '/about' }
+] %}
+
+{% set metaTitle = 'About' %}
+
+{% block content %}
+<h1 class="mt-0">About</h1>
+
+<img src="https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=250" sizes="(min-width: 600px) 250px, 100vw" srcset="https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=250 250w, https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=300 300w, https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=550 550w" style="max-width: 250px; border-radius: 50%; float: right; shape-outside: circle(50%); margin-left: 15px;" />
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque omnis aliquam voluptatem quia deserunt sint iusto esse, obcaecati ratione neque, suscipit, ex illum! Rerum hic aut doloremque commodi id placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque omnis aliquam voluptatem quia deserunt sint iusto esse, obcaecati ratione neque, suscipit, ex illum! Rerum hic aut doloremque commodi id placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque omnis aliquam voluptatem quia deserunt sint iusto esse, obcaecati ratione neque, suscipit, ex illum! Rerum hic aut doloremque commodi id placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque omnis aliquam voluptatem quia deserunt sint iusto esse, obcaecati ratione neque, suscipit, ex illum! Rerum hic aut doloremque commodi id placeat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque omnis aliquam voluptatem quia deserunt sint iusto esse, obcaecati ratione neque, suscipit, ex illum! Rerum hic aut doloremque commodi id placeat.</p>
+
+{% cache %}
+  <ul class="c-gallery">
+    {% for media in craft.picPuller.media_recent({ 'user_id' : 1 }) %}
+      {% if media.status == TRUE %}
+        <li class="c-gallery__item">
+          <a href="{{ media.link }}" rel="noopener" target="_blank" class="c-gallery__link">
+            <img src="{{ media.thumbnail }}" alt="{{ media.caption_only }}" class="c-gallery__image" decoding="async" width="{{ media.thumbnail_width }}px" height="{{ media.thumbnail_height }}px">
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  {% endcache %}
+
+{% endblock %}
