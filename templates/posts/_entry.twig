@@ -11,6 +11,12 @@
   <article class="c-post h-entry">
     <h1 class="mt-0 p-name">{{ entry.title | typogrify }}</h1>
 
+    <time class="c-post__date dt-published" datetime="{{ entry.postDate.date }}">{{ entry.postDate | date('d M Y') }}</time>
+
+    <div class="e-content">
+      {{ entry.postContent | typogrify }}
+    </div>
+
     {% set cats = entry.categories.all() %}
 
     {% if cats %}
@@ -27,11 +33,5 @@
         {% endfor %}
       </ul>
     {% endif %}
-
-    <time class="c-post__date dt-published" datetime="{{ entry.postDate.date }}">{{ entry.postDate | date('d M Y') }}</time>
-
-    <div class="e-content">
-      {{ entry.postContent | typogrify }}
-    </div>
   </article>
 {% endblock %}
