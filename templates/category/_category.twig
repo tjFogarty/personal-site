@@ -1,0 +1,24 @@
+{% extends 'layouts/default' %}
+
+{% set socialTags = [
+  { name: 'og:title', value: category.title ~ ' Posts by @tj_fogarty' },
+  { name: 'og:url', value: category.url }
+] %}
+
+{% set metaTitle = category.title ~ ' Posts' %}
+
+{% block content %}
+
+<h1>{{ category.title }} Posts</h1>
+{% paginate craft.entries.section('posts').relatedTo(category).limit(6) as pageInfo, pageEntries %}
+
+  <ul class="l-post-list">
+  {% for entry in pageEntries %}
+    <li class="l-post-list__item">
+      {% include 'components/post-preview' with { post: entry } only %}
+    </li>
+  {% endfor %}
+  </ul>
+
+  {% include 'components/pagination' with { pageInfo: pageInfo } only %}
+{% endblock %}
