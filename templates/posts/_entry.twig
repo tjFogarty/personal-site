@@ -11,6 +11,23 @@
   <article class="c-post h-entry">
     <h1 class="mt-0 p-name">{{ entry.title | typogrify }}</h1>
 
+    {% set cats = entry.categories.all() %}
+
+    {% if cats %}
+      <small>Categories:</small>
+      <ul class="list-reset inline-flex">
+        {% for category in cats %}
+        <li class="mr-3">
+          <a href="{{ category.url }}">
+            <small>
+              {{ category.title }}
+            </small>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
     <time class="c-post__date dt-published" datetime="{{ entry.postDate.date }}">{{ entry.postDate | date('d M Y') }}</time>
 
     <div class="e-content">
