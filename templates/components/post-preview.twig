@@ -6,4 +6,21 @@
   <p class="c-post__excerpt">
     {{ post.postContent | striptags | slice(0, 360) | raw }}&hellip;
   </p>
+
+  {% set cats = post.categories.all() %}
+
+  {% if cats %}
+    <small>Categories:</small>
+    <ul class="list-reset inline-flex">
+      {% for category in cats %}
+      <li class="mr-3">
+        <a href="{{ category.url }}">
+          <small>
+            {{ category.title }}
+          </small>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </div>

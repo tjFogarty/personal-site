@@ -1,0 +1,19 @@
+{% extends 'layouts/default' %}
+
+{% set socialTags = [
+  { name: 'og:title', value: 'Categories' }
+] %}
+
+{% set metaTitle = 'Categories' %}
+
+{% block content %}
+<h1>Categories</h1>
+
+<ul class="list-reset md:flex">
+  {% for category in craft.categories.group('category').all() %}
+    <li>
+      <a class="bg-primary mb-3 md:mr-3 px-3 py-3 text-white" href="{{ category.url }}">{{ category.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}
