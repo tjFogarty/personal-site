@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fb90966baa4804434d7913b0868ebcb4",
+    "content-hash": "5b49c56ce9dee5b6bc87188345230d32",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -426,16 +426,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC10.1",
+            "version": "3.0.0-RC11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "3c24705f0ae2ac22c1702aefd87debaa9e373731"
+                "reference": "37924d5262fb334aa7d4e5e638b99bf5d48f761f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/3c24705f0ae2ac22c1702aefd87debaa9e373731",
-                "reference": "3c24705f0ae2ac22c1702aefd87debaa9e373731",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/37924d5262fb334aa7d4e5e638b99bf5d48f761f",
+                "reference": "37924d5262fb334aa7d4e5e638b99bf5d48f761f",
                 "shasum": ""
             },
             "require": {
@@ -463,7 +463,7 @@
                 "pixelandtonic/imagine": "~0.7.1.2",
                 "seld/cli-prompt": "~1.0.3",
                 "twig/twig": "~2.4.4",
-                "yiisoft/yii2": "~2.0.13.0",
+                "yiisoft/yii2": "~2.0.14.0",
                 "yiisoft/yii2-debug": "~2.0.10",
                 "yiisoft/yii2-queue": "~2.0.1",
                 "yiisoft/yii2-swiftmailer": "~2.1.0",
@@ -504,7 +504,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-02-14T14:33:08+00:00"
+            "time": "2018-02-20T20:39:15+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -1453,16 +1453,16 @@
         },
         {
             "name": "jmx2/pic-puller",
-            "version": "3.0.4",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmx2inc/picpuller-for-craft3.git",
-                "reference": "7614d703a2985932508b6d21fb5b022c30b71f0e"
+                "reference": "bd676e9d3326852fcd8bf0b701a717f9eb28abee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmx2inc/picpuller-for-craft3/zipball/7614d703a2985932508b6d21fb5b022c30b71f0e",
-                "reference": "7614d703a2985932508b6d21fb5b022c30b71f0e",
+                "url": "https://api.github.com/repos/jmx2inc/picpuller-for-craft3/zipball/bd676e9d3326852fcd8bf0b701a717f9eb28abee",
+                "reference": "bd676e9d3326852fcd8bf0b701a717f9eb28abee",
                 "shasum": ""
             },
             "require": {
@@ -1498,7 +1498,7 @@
                 "craftcms",
                 "pic puller"
             ],
-            "time": "2017-12-15T18:15:08+00:00"
+            "time": "2018-02-19T18:58:05+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2940,12 +2940,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "5ebdd35b291cf9be4a425022872cb3aaf03192df"
+                "reference": "b5def2d9e0121c82083f552a90f7b499531a20fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5ebdd35b291cf9be4a425022872cb3aaf03192df",
-                "reference": "5ebdd35b291cf9be4a425022872cb3aaf03192df",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/b5def2d9e0121c82083f552a90f7b499531a20fb",
+                "reference": "b5def2d9e0121c82083f552a90f7b499531a20fb",
                 "shasum": ""
             },
             "conflict": {
@@ -2995,10 +2995,12 @@
                 "onelogin/php-saml": "<2.10.4",
                 "oro/crm": ">=1.7,<1.7.4",
                 "oro/platform": ">=1.7,<1.7.4",
-                "padraic/file_get_contents": "<1.1.2",
+                "padraic/humbug_get_contents": "<1.1.2",
                 "phpmailer/phpmailer": ">=5,<5.2.24",
                 "phpunit/phpunit": ">=4.8.19,<4.8.28|>=5.0.10,<5.6.3",
                 "phpxmlrpc/extras": "<0.6.1",
+                "propel/propel": ">=2.0.0-alpha1,<=2.0.0-alpha7",
+                "propel/propel1": ">=1,<=1.7.1",
                 "pusher/pusher-php-server": "<2.2.1",
                 "sabre/dav": ">=1.6,<1.6.99|>=1.7,<1.7.11|>=1.8,<1.8.9",
                 "shopware/shopware": "<5.3.7",
@@ -3037,9 +3039,9 @@
                 "typo3/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4",
                 "willdurand/js-translation-bundle": "<2.1.1",
                 "yiisoft/yii": ">=1.1.14,<1.1.15",
-                "yiisoft/yii2": "<2.0.5",
+                "yiisoft/yii2": "<2.0.14",
                 "yiisoft/yii2-bootstrap": "<2.0.4",
-                "yiisoft/yii2-dev": "<2.0.4",
+                "yiisoft/yii2-dev": "<2.0.14",
                 "yiisoft/yii2-gii": "<2.0.4",
                 "yiisoft/yii2-jui": "<2.0.4",
                 "zendframework/zend-cache": ">=2.4,<2.4.8|>=2.5,<2.5.3",
@@ -3079,7 +3081,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-02-13T10:17:11+00:00"
+            "time": "2018-02-20T15:56:25+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -4301,16 +4303,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.13.1",
+            "version": "2.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf"
+                "reference": "1c9cf916b1394681c7d043e79e1522c33e5bc6c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf",
-                "reference": "7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/1c9cf916b1394681c7d043e79e1522c33e5bc6c1",
+                "reference": "1c9cf916b1394681c7d043e79e1522c33e5bc6c1",
                 "shasum": ""
             },
             "require": {
@@ -4397,20 +4399,20 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-11-14T11:08:21+00:00"
+            "time": "2018-02-18T22:52:12+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
-            "version": "2.0.7",
+            "version": "2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "02a54d868343ed11d02f0f0f8cbbecb590e0cb3f"
+                "reference": "3f49c47924bb9fa5363c3fc7b073d954168cf438"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/02a54d868343ed11d02f0f0f8cbbecb590e0cb3f",
-                "reference": "02a54d868343ed11d02f0f0f8cbbecb590e0cb3f",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/3f49c47924bb9fa5363c3fc7b073d954168cf438",
+                "reference": "3f49c47924bb9fa5363c3fc7b073d954168cf438",
                 "shasum": ""
             },
             "require": {
@@ -4425,7 +4427,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "yii\\bootstrap\\": ""
+                    "yii\\bootstrap\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4434,8 +4436,22 @@
             ],
             "authors": [
                 {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                },
+                {
+                    "name": "Alexander Makarov",
+                    "email": "sam@rmcreative.ru",
+                    "homepage": "http://rmcreative.ru/"
+                },
+                {
+                    "name": "Antonio Ramirez",
+                    "email": "amigo.cobos@gmail.com"
+                },
+                {
                     "name": "Qiang Xue",
-                    "email": "qiang.xue@gmail.com"
+                    "email": "qiang.xue@gmail.com",
+                    "homepage": "http://www.yiiframework.com/"
                 }
             ],
             "description": "The Twitter Bootstrap extension for the Yii framework",
@@ -4443,7 +4459,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2017-10-09T19:48:22+00:00"
+            "time": "2018-02-16T10:41:52+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
