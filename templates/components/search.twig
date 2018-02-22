@@ -1,13 +1,15 @@
-<div class="c-search js-search-container">
-  <a href="#" class="js-search c-search__close">
-    <svg class="c-nav__icon">
-      <use xlink:href="#close"></use>
-    <svg>
-  </a>
-  <div class="c-search__inner">
-    <label class="c-search__label" for="s">Search:</label>
-    <input type="search" class="c-search__input js-search-input" id="s">
-    <img src="/images/algolia.svg" class="c-search__credit">
-    <div class="js-search-results c-search__results"></div>
+<div class="c-search js-search-container" role="dialog" aria-labelledby="searchTitle" tabindex="-1" id="search-dialog">
+  <div role="document">
+    <a href="#" class="js-search c-search__close" aria-label="Close Search">
+      <svg class="c-nav__icon">
+        <use xlink:href="#close"></use>
+      <svg>
+    </a>
+    <div class="c-search__inner">
+      <label class="c-search__label" for="s" id="searchTitle">Search:</label>
+      <input type="search" class="c-search__input js-search-input" id="s">
+      <img src="/images/algolia.svg" class="c-search__credit">
+      <div class="js-search-results c-search__results"></div>
+    </div>
   </div>
 </div>

@@ -1,10 +1,13 @@
 import { env } from './utils'
+import createFocusTrap from 'focus-trap'
 
 export const Search = {
   trigger: document.querySelectorAll('.js-search'),
   input: document.querySelector('.js-search-input'),
   container: document.querySelector('.js-search-container'),
   resultsContainer: document.querySelector('.js-search-results'),
+  focusTrap: createFocusTrap('#search-dialog'),
+  body: document.body,
   index: null,
 
   init() {
@@ -14,6 +17,7 @@ export const Search = {
     document.addEventListener('keyup', e => {
       if (e.keyCode === 27) {
         this.container.classList.remove('is-open')
+        this.resetSearch()
       }
     })
 
@@ -44,6 +48,8 @@ export const Search = {
 
   resetSearch() {
     this.input.value = ''
+    this.body.style.overflow = ''
+    this.focusTrap.deactivate()
     this.emptyResultContainer()
   },
 
@@ -53,6 +59,8 @@ export const Search = {
 
     if (this.container.classList.contains('is-open')) {
       this.input.focus()
+      this.focusTrap.activate()
+      this.body.style.overflow = 'hidden'
     } else {
       this.resetSearch()
     }
