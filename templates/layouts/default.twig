@@ -46,10 +46,6 @@
         <meta property="{{ prop.name}}" content="{{ prop.value }}">
       {% endfor %}
     {% endif %}
-    {% if not craft.app.config.general.devMode %}
-      {% hook 'iaSendPageView' %}
-    {% endif %}
-
   </head>
   <body>
     {% include 'components/navigation' %}
