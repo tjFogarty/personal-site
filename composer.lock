@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3eed552d6311b4a14171b9ec0f7037ac",
+    "content-hash": "ed85f28a5d667c768a8a93305f8db3f8",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -426,16 +426,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC11",
+            "version": "3.0.0-RC12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "37924d5262fb334aa7d4e5e638b99bf5d48f761f"
+                "reference": "a6b33ecbdda3f9e38087bc94c49424c4b48bc2c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/37924d5262fb334aa7d4e5e638b99bf5d48f761f",
-                "reference": "37924d5262fb334aa7d4e5e638b99bf5d48f761f",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/a6b33ecbdda3f9e38087bc94c49424c4b48bc2c0",
+                "reference": "a6b33ecbdda3f9e38087bc94c49424c4b48bc2c0",
                 "shasum": ""
             },
             "require": {
@@ -504,7 +504,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-02-20T20:39:15+00:00"
+            "time": "2018-02-22T21:34:48+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -945,20 +945,20 @@
         },
         {
             "name": "dolphiq/redirect",
-            "version": "1.0.14",
+            "version": "1.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dolphiq/craft3-plugin-redirect.git",
-                "reference": "520939db4d0c0bcdc8174a7a0c03a45458bbebd8"
+                "reference": "ad1ff62fc682b551015368c7fda2438c503a933c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dolphiq/craft3-plugin-redirect/zipball/520939db4d0c0bcdc8174a7a0c03a45458bbebd8",
-                "reference": "520939db4d0c0bcdc8174a7a0c03a45458bbebd8",
+                "url": "https://api.github.com/repos/Dolphiq/craft3-plugin-redirect/zipball/ad1ff62fc682b551015368c7fda2438c503a933c",
+                "reference": "ad1ff62fc682b551015368c7fda2438c503a933c",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC7.1"
+                "craftcms/cms": "^3.0.0-RC11"
             },
             "type": "craft-plugin",
             "extra": {
@@ -1000,7 +1000,7 @@
                 "redirect",
                 "seo"
             ],
-            "time": "2018-01-28T23:08:07+00:00"
+            "time": "2018-02-21T20:34:01+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -3047,17 +3047,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "b5def2d9e0121c82083f552a90f7b499531a20fb"
+                "reference": "940eb3dbebd9bb2d82c94ecc896df8b19b9bd867"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/b5def2d9e0121c82083f552a90f7b499531a20fb",
-                "reference": "b5def2d9e0121c82083f552a90f7b499531a20fb",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/940eb3dbebd9bb2d82c94ecc896df8b19b9bd867",
+                "reference": "940eb3dbebd9bb2d82c94ecc896df8b19b9bd867",
                 "shasum": ""
             },
             "conflict": {
+                "3f/pygmentize": "<1.2",
                 "adodb/adodb-php": "<5.20.6",
                 "amphp/artax": "<1.0.6|>=2,<2.0.6",
+                "asymmetricrypt/asymmetricrypt": ">=0,<9.9.99",
                 "aws/aws-sdk-php": ">=3,<3.2.1",
                 "bugsnag/bugsnag-laravel": ">=2,<2.0.2",
                 "cakephp/cakephp": ">=1.3,<1.3.18|>=2,<2.4.99|>=2.5,<2.5.99|>=2.6,<2.6.12|>=2.7,<2.7.6|>=3,<3.0.15|>=3.1,<3.1.4",
@@ -3103,6 +3105,7 @@
                 "oro/crm": ">=1.7,<1.7.4",
                 "oro/platform": ">=1.7,<1.7.4",
                 "padraic/humbug_get_contents": "<1.1.2",
+                "pagarme/pagarme-php": ">=0,<9.9.99",
                 "phpmailer/phpmailer": ">=5,<5.2.24",
                 "phpunit/phpunit": ">=4.8.19,<4.8.28|>=5.0.10,<5.6.3",
                 "phpxmlrpc/extras": "<0.6.1",
@@ -3120,6 +3123,7 @@
                 "simplesamlphp/simplesamlphp-module-infocard": "<1.0.1",
                 "socalnick/scn-social-auth": "<1.15.2",
                 "squizlabs/php_codesniffer": ">=1,<2.8.1",
+                "stormpath/sdk": ">=0,<9.9.99",
                 "swiftmailer/swiftmailer": ">=4,<5.4.5",
                 "symfony/dependency-injection": ">=2,<2.0.17",
                 "symfony/form": ">=2.3,<2.3.35|>=2.4,<2.6.12|>=2.7,<2.7.38|>=2.8,<2.8.31|>=3,<3.2.14|>=3.3,<3.3.13",
@@ -3140,6 +3144,7 @@
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
                 "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
+                "titon/framework": ">=0,<9.9.99",
                 "twig/twig": "<1.20",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
@@ -3188,7 +3193,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-02-20T15:56:25+00:00"
+            "time": "2018-02-21T14:50:18+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -4236,24 +4241,25 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v5.6.0",
+            "version": "v5.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "f420b6ce373b75ab9129103ab1cd34add520955f"
+                "reference": "1a588bfc5b1ca0444c69d5a4c56f588b7401f771"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/f420b6ce373b75ab9129103ab1cd34add520955f",
-                "reference": "f420b6ce373b75ab9129103ab1cd34add520955f",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/1a588bfc5b1ca0444c69d5a4c56f588b7401f771",
+                "reference": "1a588bfc5b1ca0444c69d5a4c56f588b7401f771",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.3",
-                "symfony/var-dumper": "~4.0"
+                "symfony/var-dumper": ">=3.1.10"
             },
             "require-dev": {
                 "mockery/mockery": "~1.0",
+                "nesbot/carbon": "~1.20",
                 "phpunit/phpunit": "~7.0"
             },
             "type": "library",
@@ -4281,7 +4287,7 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2018-02-09T02:52:13+00:00"
+            "time": "2018-02-22T21:01:23+00:00"
         },
         {
             "name": "twig/twig",
