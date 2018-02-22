@@ -1,21 +1,5 @@
-// https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API
-
-let hidden, visibilityChange;
-
-if (typeof document.hidden !== 'undefined') { // Opera 12.10 and Firefox 18 and later support
-  hidden = 'hidden'
-  visibilityChange = 'visibilitychange'
-} else if (typeof document.msHidden !== 'undefined') {
-  hidden = 'msHidden'
-  visibilityChange = 'msvisibilitychange'
-} else if (typeof document.webkitHidden !== 'undefined') {
-  hidden = 'webkitHidden'
-  visibilityChange = 'webkitvisibilitychange'
-}
-
 export const PageVisibility = {
   asleepEmoji: '💤',
-  awakeEmoji: '😄',
   originalTitle: document.title,
 
   init() {
@@ -23,16 +7,16 @@ export const PageVisibility = {
 
     this.handleVisibilityChange = this.handleVisibilityChange.bind(this)
 
-    document.addEventListener(visibilityChange, this.handleVisibilityChange, false)
+    document.addEventListener('visibilitychange', this.handleVisibilityChange, false)
   },
 
   handleVisibilityChange() {
-    let emoji = this.awakeEmoji
+    let title = this.originalTitle
 
-    if (document[hidden]) {
-      emoji = this.asleepEmoji
+    if (document.hidden) {
+      title = `${this.asleepEmoji} ${title}`
     }
 
-    document.title = `${emoji} ${this.originalTitle}`
+    document.title = title
   }
 }
