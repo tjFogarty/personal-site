@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5b49c56ce9dee5b6bc87188345230d32",
+    "content-hash": "3eed552d6311b4a14171b9ec0f7037ac",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1452,6 +1452,55 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
+            "name": "jaybizzle/crawler-detect",
+            "version": "v1.2.59",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JayBizzle/Crawler-Detect.git",
+                "reference": "8b371ed0fc16a3b13ebd5f00fd4a3ffb5420262e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/8b371ed0fc16a3b13ebd5f00fd4a3ffb5420262e",
+                "reference": "8b371ed0fc16a3b13ebd5f00fd4a3ffb5420262e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.8.*",
+                "satooshi/php-coveralls": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaybizzle\\CrawlerDetect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Beech",
+                    "email": "m@rkbee.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
+            "homepage": "https://github.com/JayBizzle/Crawler-Detect/",
+            "keywords": [
+                "crawler",
+                "crawler detect",
+                "crawler detector",
+                "crawlerdetect",
+                "php crawler detect"
+            ],
+            "time": "2018-02-22T19:04:46+00:00"
+        },
+        {
             "name": "jmx2/pic-puller",
             "version": "3.0.5",
             "source": {
@@ -2099,6 +2148,64 @@
             ],
             "description": "A PHP library for improving your web typography",
             "time": "2018-02-04T19:22:19+00:00"
+        },
+        {
+            "name": "nystudio107/craft-instantanalytics",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-instantanalytics.git",
+                "reference": "d3f6aac669230f4a768155eaaf2003933d8e5e19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/d3f6aac669230f4a768155eaaf2003933d8e5e19",
+                "reference": "d3f6aac669230f4a768155eaaf2003933d8e5e19",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1",
+                "jaybizzle/crawler-detect": "^1.2.37",
+                "theiconic/php-ga-measurement-protocol": "^2.5.1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Instant Analytics",
+                "handle": "instant-analytics",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-instantanalytics/master/CHANGELOG.md",
+                "components": {
+                    "ia": "nystudio107\\instantanalytics\\services\\IA",
+                    "commerce": "nystudio107\\instantanalytics\\services\\Commerce"
+                },
+                "class": "nystudio107\\instantanalytics\\InstantAnalytics"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\instantanalytics\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Instant Analytics brings full Google Analytics support to your Twig templates and automatic Craft Commerce integration with Google Enhanced Ecommerce",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "instant analytics"
+            ],
+            "time": "2018-02-02T00:14:53+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -4085,6 +4192,47 @@
                 "dump"
             ],
             "time": "2018-01-29T09:06:29+00:00"
+        },
+        {
+            "name": "theiconic/php-ga-measurement-protocol",
+            "version": "v2.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/theiconic/php-ga-measurement-protocol.git",
+                "reference": "26c09a43a25235da85131c0fa060ec1fe2b2f16f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/theiconic/php-ga-measurement-protocol/zipball/26c09a43a25235da85131c0fa060ec1fe2b2f16f",
+                "reference": "26c09a43a25235da85131c0fa060ec1fe2b2f16f",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.7.*",
+                "satooshi/php-coveralls": "1.0.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TheIconic\\Tracking\\GoogleAnalytics\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "THE ICONIC ENGINEERING TEAM",
+                    "email": "engineering@theiconic.com.au"
+                }
+            ],
+            "description": "Send data to Google Analytics from the server using PHP. This library fully implements GA measurement protocol.",
+            "time": "2017-06-30T02:41:52+00:00"
         },
         {
             "name": "tightenco/collect",
