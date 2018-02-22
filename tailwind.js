@@ -46,7 +46,8 @@ var colors = {
   transparent: 'transparent',
 
   // primary: '#8F2D56',
-  primary: '#ff3b3f',
+  // primary: '#ff3b3f',
+  primary: '#fb4934',
   secondary: '#596a73',
 
   // Flat colours
