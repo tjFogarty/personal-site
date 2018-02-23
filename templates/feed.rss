@@ -9,7 +9,7 @@
         <pubDate>{{ now | rss }}</pubDate>
         <lastBuildDate>{{ now | rss }}</lastBuildDate>
 
-        {% for entry in craft.entries.section('posts').all() %}
+        {% for entry in craft.entries.section('posts').orderBy('postDate desc').all() %}
             <item>
                 <title>{{ entry.title }}</title>
                 <link>{{ entry.url }}</link>
