@@ -10,7 +10,7 @@
 {% block content %}
 
 <h1>{{ category.title }} Posts</h1>
-{% paginate craft.entries.section('posts').relatedTo(category).limit(6) as pageInfo, pageEntries %}
+{% paginate craft.entries.section('posts').orderBy('postDate desc').relatedTo(category).limit(6) as pageInfo, pageEntries %}
 
   <ul class="l-post-list">
   {% for entry in pageEntries %}

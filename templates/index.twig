@@ -2,7 +2,7 @@
 
 {% block content %}
 
-  {% paginate craft.entries.section('posts').limit(6) as pageInfo, pageEntries %}
+  {% paginate craft.entries.section('posts').orderBy('postDate desc').limit(6) as pageInfo, pageEntries %}
 
   {% cache %}
   <ul class="l-post-list">
