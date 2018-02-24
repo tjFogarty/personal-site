@@ -6,17 +6,10 @@
 
     {% if craft.app.config.general.devMode %}
       {% if metaTitle is defined %}
-      <title>DEV | {{ metaTitle }} by TJ Fogarty</title>
+      <title>️⚠️ DEV | {{ metaTitle }} by TJ Fogarty</title>
       {% else %}
-      <title>TJ Fogarty | DEV</title>
+      <title>⚠️ TJ Fogarty | DEV</title>
       {% endif %}
-      <style>
-        html {
-          border: 5px solid #b4d455;
-          width: 100%;
-          height: 100%;
-        }
-      </style>
     {% else %}
       {% if metaTitle is defined %}
       <title>{{ metaTitle }} by TJ Fogarty</title>
@@ -48,8 +41,9 @@
     {% endif %}
   </head>
   <body>
-    {% include 'components/navigation' %}
-    {% include 'components/icons' %}
+    {% include 'components/_dev-warning' %}
+    {% include 'components/_navigation' %}
+    {% include 'components/_icons' %}
 
     <main class="l-container">
       {% block content %}{% endblock %}
@@ -77,9 +71,9 @@
     </script>
     {% endif %}
 
-    {% include 'components/footer' %}
+    {% include 'components/_footer' %}
 
-    {% include 'components/search' %}
+    {% include 'components/_search' %}
 
   </body>
 </html>

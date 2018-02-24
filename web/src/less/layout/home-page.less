@@ -1,0 +1,12 @@
+@screen md {
+  .l-home-page {
+    display: flex;
+  }
+
+  @supports(display: grid) {
+    .l-home-page {
+      display: grid;
+      grid-template-columns: 30% 70%;
+    }
+  }
+}

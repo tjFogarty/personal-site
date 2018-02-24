@@ -10,15 +10,13 @@
 {% block content %}
 
 <h1>{{ category.title }} Posts</h1>
-{% paginate craft.entries.section('posts').relatedTo(category).limit(6) as pageInfo, pageEntries %}
+{% paginate craft.entries.section('posts').relatedTo(category).limit(null) as pageInfo, pageEntries %}
 
   <ul class="l-post-list">
   {% for entry in pageEntries %}
     <li class="l-post-list__item">
-      {% include 'components/post-preview' with { post: entry } only %}
+      {% include 'posts/_preview' with { post: entry } only %}
     </li>
   {% endfor %}
   </ul>
-
-  {% include 'components/pagination' with { pageInfo: pageInfo } only %}
 {% endblock %}

@@ -2,18 +2,14 @@
 
 {% block content %}
 
-  {% paginate craft.entries.section('posts').limit(6) as pageInfo, pageEntries %}
+  <div class="l-home-page">
+    <div>
+      <h1>TJ Fogarty</h1>
+    </div>
 
-  {% cache %}
-  <ul class="l-post-list">
-  {% for entry in pageEntries %}
-    <li class="l-post-list__item">
-      {% include 'components/post-preview' with { post: entry } only %}
-    </li>
-  {% endfor %}
-  </ul>
-  {% endcache %}
-
-  {% include 'components/pagination' with { pageInfo: pageInfo } only %}
+    <div>
+      {% include 'posts/_latest' %}
+    </div>
+  </div>
 
 {% endblock %}

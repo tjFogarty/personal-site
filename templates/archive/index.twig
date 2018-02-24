@@ -1,0 +1,16 @@
+{% extends 'layouts/default' %}
+
+{% block content %}
+  <h1>Archive</h1>
+  {% set allPosts = craft.entries.section('posts').orderBy('postDate desc').limit(null).all() %}
+  {% for year, entriesInYear in allPosts | group('postDate | date("Y")') %}
+  <h2 class="mt-0">{{ year }}</h2>
+  <ul class="l-post-list">
+    {% for entry in entriesInYear %}
+    <li class="l-post-list__item">
+      {% include 'posts/_preview' with { post: entry } only %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+{% endblock %}

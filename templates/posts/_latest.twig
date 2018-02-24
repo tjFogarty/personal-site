@@ -1,0 +1,11 @@
+<h2>Latest Posts</h2>
+{% set latestPosts = craft.entries.section('posts').orderBy('postDate desc').limit(4).all() %}
+{% for entry in latestPosts %}
+<ul class="l-post-list">
+  <li class="l-post-list__item">
+    {% include 'posts/_preview' with { post: entry } only %}
+  </li>
+{% endfor %}
+</ul>
+
+<a href="/archive">View Archive</a>
