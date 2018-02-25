@@ -8,7 +8,9 @@
     </div>
 
     <div>
+      {% cache %}
       {% include 'posts/_latest' %}
+      {% endcache %}
     </div>
   </div>
 

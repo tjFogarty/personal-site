@@ -1,6 +1,10 @@
+{% set lastSegment = craft.app.request.segments | last %}
+
 <nav class="c-nav" role="navigation">
   <div class="c-nav__title-container">
-    <a href="/" class="c-nav__title">TJ Fogarty</a>
+    <a href="/">
+      <span class="c-nav__logo" aria-label="Home"></span>
+    </a>
   </div>
   <div class="c-nav__mobile">
     <button class="c-nav__mobile-button js-toggle-nav">
@@ -8,24 +12,16 @@
     </button>
   </div>
   <div class="c-nav__inner">
-    <div class="c-nav__inner-left">
-      <a href="/" class="c-nav__link">
-        Home
-      </a>
-      <a href="/contact" class="c-nav__link">
-        Contact
-      </a>
-      <a href="/about" class="c-nav__link">
-        About
-      </a>
-    </div>
-
-    <div>
-      <a href="#" class="c-nav__link js-search" aria-label="Search">
-        <svg class="c-nav__icon">
-          <use xlink:href="#search"></use>
-        <svg>
-      </a>
-    </div>
+    <a href="/about" class="c-nav__link {% if lastSegment == 'about' %} is-active {% endif %}">
+      About
+    </a>
+    <a href="/contact" class="c-nav__link {% if lastSegment == 'contact' %} is-active {% endif %}">
+      Contact
+    </a>
+    <a href="#" class="c-nav__link js-search" aria-label="Search">
+      <svg class="c-nav__icon">
+        <use xlink:href="#search"></use>
+      <svg>
+    </a>
   </div>
 </nav>
