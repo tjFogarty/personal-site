@@ -49,14 +49,6 @@
       {% block content %}{% endblock %}
     </main>
 
-    <div class="c-now-playing">
-      <button aria-label="See what I'm currently listening to" type="button" class="c-now-playing__trigger js-lt-trigger">
-        <svg class="c-now-playing__icon">
-          <use xlink:href="#music"></use>
-        <svg>
-      </button>
-    </div>
-
     <script src="{{ mix('assets/js/manifest.js') | replace({'//' : '/' }) }}" defer></script>
     <script src="{{ mix('assets/js/vendor.js') | replace({'//' : '/' }) }}" defer></script>
     <script src="{{ mix('assets/js/main.js') | replace({'//' : '/' }) }}" defer></script>

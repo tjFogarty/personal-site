@@ -43,6 +43,33 @@
   </ul>
 </div>
 
+<h2>
+  Recently played tracks
+  <svg class="c-now-playing__icon">
+    <use xlink:href="#music"></use>
+  <svg>
+</h2>
+
+{% cache for 1 hour %}
+{% set jsonResponse = fetchJson({
+  'url': 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=cowpuncher&api_key=dc2e7242feba68442dda3281bdd202f0&format=json&limit=5'
+}) %}
+
+{% set recentlyPlayed = jsonResponse['recenttracks'] %}
+
+<ul>
+  {% for item in recentlyPlayed['track'] %}
+    <li>
+      <p>
+        {{ item['name'] }}
+        by
+        {{ item['artist']['#text'] }}
+      </p>
+    </li>
+  {% endfor %}
+</ul>
+{% endcache %}
+
 
 <h2 id="instagram">Instagram</h2>
 
