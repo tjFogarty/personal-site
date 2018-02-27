@@ -1,47 +1,49 @@
 {% extends 'layouts/default' %}
 
 {% block content %}
-<h1 class="mt-0">Contact</h1>
+<div class="l-container">
+    <h1 class="mt-0">Contact</h1>
 
-<p>Feel free to drop me a message via the form below, and I'll get back to you as soon as I can. <br> Alternatively, you can <a href="https://twitter.com/tj_fogarty" rel="noopener" target="_blank">find me on Twitter</a>.</p>
+    <p>Feel free to drop me a message via the form below, and I'll get back to you as soon as I can. <br> Alternatively, you can <a href="https://twitter.com/tj_fogarty" rel="noopener" target="_blank">find me on Twitter</a>.</p>
 
-{% macro errorList(errors) %}
-    {% if errors %}
-        <ul class="errors list-reset">
-            {% for error in errors %}
-                <li>
-                    <p class="text-red">
-                        {{ error }}
-                    </p>
-                </li>
-            {% endfor %}
-        </ul>
-    {% endif %}
-{% endmacro %}
+    {% macro errorList(errors) %}
+        {% if errors %}
+            <ul class="errors list-reset">
+                {% for error in errors %}
+                    <li>
+                        <p class="text-red">
+                            {{ error }}
+                        </p>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endmacro %}
 
-{% from _self import errorList %}
+    {% from _self import errorList %}
 
-<form method="post" action="" class="max-w-md mt-4 js-contact-form" accept-charset="UTF-8">
-    {{ csrfInput() }}
-    <input type="hidden" name="action" value="contact-form/send">
-    <input type="hidden" name="redirect" value="{{ 'contact/thanks'|hash }}">
+    <form method="post" action="" class="max-w-md mt-4 js-contact-form" accept-charset="UTF-8">
+        {{ csrfInput() }}
+        <input type="hidden" name="action" value="contact-form/send">
+        <input type="hidden" name="redirect" value="{{ 'contact/thanks'|hash }}">
 
-    <label for="from-name">Your Name</label>
-    <input id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
-    {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+        <label for="from-name">Your Name</label>
+        <input id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
+        {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
 
-    <label for="from-email">Your Email</label>
-    <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}" required>
-    {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+        <label for="from-email">Your Email</label>
+        <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}" required>
+        {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
 
-    <label for="subject">Subject</label>
-    <input id="subject" type="text" name="subject" value="{{ message.subject ?? '' }}">
-    {{ message is defined and message ? errorList(message.getErrors('subject')) }}
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" name="subject" value="{{ message.subject ?? '' }}">
+        {{ message is defined and message ? errorList(message.getErrors('subject')) }}
 
-    <label for="message">Message</label>
-    <textarea rows="10" cols="40" id="message" name="message" required>{{ message.message ?? '' }}</textarea>
-    {{ message is defined and message ? errorList(message.getErrors('message')) }}
+        <label for="message">Message</label>
+        <textarea rows="10" cols="40" id="message" name="message" required>{{ message.message ?? '' }}</textarea>
+        {{ message is defined and message ? errorList(message.getErrors('message')) }}
 
-    <button type="submit" value="Send" class="c-btn c-btn-primary">Send</button>
-</form>
+        <button type="submit" value="Send" class="c-btn c-btn-primary">Send</button>
+    </form>
+</div>
 {% endblock %}

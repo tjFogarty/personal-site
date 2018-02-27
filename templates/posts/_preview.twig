@@ -1,20 +1,19 @@
 <div class="c-post c-post--preview">
-  <h3 class="c-post__title c-post__title--preview">
-    <a class="c-post__title-link" href="/{{ post.slug }}">{{ post.title | typogrify }}</a>
-  </h3>
-  <time class="c-post__date" datetime="{{ post.postDate.date }}">{{ post.postDate | date('d M Y') }}</time>
-  <p class="c-post__excerpt">
-    {{ post.postContent | striptags | slice(0, 360) | raw }}&hellip;
-  </p>
+  <div class="c-post-preview__heading">
+    {% if showPostDate %}
+    <time class="c-post__date" datetime="{{ post.postDate.date }}">{{ post.postDate | date('d M') }}</time>
+    {% endif %}
 
-  {% set cats = post.categories.all() %}
+    <h3 class="c-post__title c-post__title--preview">
+      <a class="c-post__title-link" href="/{{ post.slug }}">{{ post.title | typogrify }}</a>
+    </h3>
+    {% set cats = post.categories.all() %}
 
-  {% if cats %}
-    <small>Categories:</small>
-    <ul class="list-reset inline-flex">
+    {% if cats %}
+    <ul class="list-reset inline-flex ml-6">
       {% for category in cats %}
       <li class="mr-3">
-        <a href="{{ category.url }}">
+        <a href="{{ category.url }}" class="text-black">
           <small>
             {{ category.title }}
           </small>
@@ -22,5 +21,6 @@
       </li>
       {% endfor %}
     </ul>
-  {% endif %}
+    {% endif %}
+  </div>
 </div>

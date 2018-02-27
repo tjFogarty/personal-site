@@ -8,7 +8,7 @@
 {% set metaTitle = category.title ~ ' Posts' %}
 
 {% block content %}
-
+<div class="l-container">
   {% cache %}
   <h1>{{ category.title }} Posts</h1>
   {% paginate craft.entries.section('posts').relatedTo(category).limit(null) as pageInfo, pageEntries %}
@@ -21,5 +21,5 @@
     {% endfor %}
     </ul>
   {% endcache %}
-
+</div>
 {% endblock %}

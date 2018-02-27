@@ -2,6 +2,13 @@
 
 .c-nav {
   @apply .flex .items-center .justify-between .flex-wrap .bg-white .p-4;
+
+  &.is-fixed {
+    @apply .absolute .pin-t .pin-l;
+    z-index: 3;
+    background: transparent;
+    width: 100%;
+  }
 }
 
 @screen md {
@@ -127,6 +134,10 @@
 
 .c-nav__link {
   @apply .block .mt-6 .text-primary .mr-4 .no-underline;
+
+  .is-fixed & {
+    @apply .text-white;
+  }
 
   &:after {
     @apply .block .bg-primary .opacity-0;

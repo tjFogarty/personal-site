@@ -11,7 +11,7 @@
 }
 
 .c-post__title--preview {
-  margin-top: 0;
+  @apply .m-0;
 }
 
 .c-post__title-link {
@@ -19,5 +19,15 @@
 
   &:hover {
     @apply .text-secondary;
+  }
+}
+
+@screen md {
+  .c-post-preview__heading {
+    @apply .flex .items-center;
+
+    .c-post__date {
+      @apply .mr-2;
+    }
   }
 }

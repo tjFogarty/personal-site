@@ -8,6 +8,7 @@
 {% set metaTitle = entry.title %}
 
 {% block content %}
+<div class="l-container">
   <article class="c-post h-entry">
     <h1 class="mt-0 p-name">{{ entry.title | typogrify }}</h1>
 
@@ -34,21 +35,5 @@
       </ul>
     {% endif %}
   </article>
-
-  {# <div id="disqus_thread"></div>
-  <script>
-  var disqus_config = function () {
-    this.page.url = '{{ entry.url }}';
-    this.page.identifier = '{{ entry.id }}';
-  };
-
-  (function() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://tj-ie.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> #}
+</div>
 {% endblock %}

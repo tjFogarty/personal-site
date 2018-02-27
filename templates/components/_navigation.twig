@@ -1,6 +1,6 @@
 {% set lastSegment = craft.app.request.segments | last %}
 
-<nav class="c-nav" role="navigation">
+<nav class="c-nav {% if lastSegment == '' %} is-fixed {% endif %}" role="navigation">
   <div class="c-nav__title-container">
     <a href="/">
       <span class="c-nav__logo" aria-label="Home"></span>

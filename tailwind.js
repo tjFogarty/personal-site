@@ -20,21 +20,6 @@ module.exports = {
 
   fonts: {
     sans: [
-      'Raleway',
-      '-apple-system',
-      'BlinkMacSystemFont',
-      'Segoe UI',
-      'Roboto',
-      'Oxygen',
-      'Ubuntu',
-      'Cantarell',
-      'Fira Sans',
-      'Droid Sans',
-      'Helvetica Neue',
-      'sans-serif'
-    ],
-    sans2: [
-      'Open Sans',
       '-apple-system',
       'BlinkMacSystemFont',
       'Segoe UI',
