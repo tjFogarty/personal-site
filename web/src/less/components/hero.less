@@ -1,19 +1,29 @@
 .c-hero {
+  @apply .text-white .flex .items-center;
   position: relative;
-  height: 20vh;
+  height: 45vh;
   overflow: hidden;
-  color: var(--c-white);
+}
+
+.c-hero__title {
+  @apply .text-white;
 }
 
 @screen md {
   .c-hero {
     height: 35vh;
+    min-height: 50vh;
+  }
+
+  .c-hero__title {
+    @apply .text-5xl;
   }
 }
 
 .c-hero__content {
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 .c-hero__image {

@@ -16,7 +16,7 @@
     <ul class="l-post-list">
     {% for entry in pageEntries %}
       <li class="l-post-list__item">
-        {% include 'posts/_preview' with { post: entry } only %}
+        {% include 'posts/_preview' with { post: entry, showPostDate: false } only %}
       </li>
     {% endfor %}
     </ul>

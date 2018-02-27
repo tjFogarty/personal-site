@@ -18,7 +18,7 @@ export const env = () => {
 
 export function showDeveloperMessage() {
   console.log(
-    '%c Hello there, looking for the source? https://github.com/tjFogarty/personal-site',
-    'background: #f3f3f3; color: #ff3b3f'
+    '%c Howdy, looking for the source? https://github.com/tjFogarty/personal-site',
+    'color: #222'
   )
 }
