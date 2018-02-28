@@ -21,7 +21,7 @@
   "minimum-stability": "beta",
   "require": {
     "php": ">=7.0.0",
-    "craftcms/cms": "^3.0.0-RC12",
+    "craftcms/cms": "^3.0.0-RC13",
     "vlucas/phpdotenv": "^2.4.0",
     "roave/security-advisories": "dev-master",
     "craftcms/contact-form": "^2.1",
@@ -33,7 +33,6 @@
     "craftcms/mailgun": "^1.2",
     "jmx2/pic-puller": "^3.0",
     "rias/craft-scout": "^0.2.3",
-    "nystudio107/craft-instantanalytics": "^1.0",
     "dolphiq/jsonclient": "^1.0"
   },
   "config": {
