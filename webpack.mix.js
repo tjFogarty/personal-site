@@ -33,7 +33,7 @@ if (mix.inProduction()) {
       filepath: path.join(__dirname, '/web/sw.js'),
       maximumFileSizeToCacheInBytes: 4194304,
       minify: false,
-      staticFileGlobs: ['web/assets/js/manifest.js', 'web/assets/js/vendor.js', 'web/assets/js/main.js', 'web/assets/js/chunks/search.js', 'web/assets/js/chunks/hljs.js'],
+      staticFileGlobs: ['web/assets/js/main.js', 'web/assets/js/chunks/search.js', 'web/assets/js/chunks/hljs.js'],
       stripPrefix: 'web'
     }),
     new PurgecssPlugin({
