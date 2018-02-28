@@ -33,6 +33,18 @@
         <meta property="{{ prop.name}}" content="{{ prop.value }}">
       {% endfor %}
     {% endif %}
+
+    {% if not craft.app.config.general.devMode %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110493614-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110493614-1');
+    </script>
+    {% endif %}
+
   </head>
   <body>
     {% include 'components/_dev-warning' %}
