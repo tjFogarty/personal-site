@@ -1,12 +1,17 @@
 @screen md {
-  .l-home-page {
+  .l-homepage {
     display: flex;
+    margin-bottom: 40px;
+    > div {
+      flex-basis: 50%;
+    }
   }
 
   @supports(display: grid) {
-    .l-home-page {
+    .l-homepage {
       display: grid;
-      grid-template-columns: 30% 70%;
+      grid-gap: 20px;
+      grid-template-columns: 50% 50%;
     }
   }
 }

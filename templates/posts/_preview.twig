@@ -7,20 +7,5 @@
     <h3 class="c-post__title c-post__title--preview">
       <a class="c-post__title-link" href="/{{ post.slug }}">{{ post.title | typogrify }}</a>
     </h3>
-    {% set cats = post.categories.all() %}
-
-    {% if cats %}
-    <ul class="list-reset inline-flex ml-6">
-      {% for category in cats %}
-      <li class="mr-3">
-        <a href="{{ category.url }}" class="text-black">
-          <small>
-            {{ category.title }}
-          </small>
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-    {% endif %}
   </div>
 </div>

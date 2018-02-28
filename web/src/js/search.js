@@ -47,10 +47,16 @@ export const Search = {
   },
 
   resetSearch() {
-    this.input.value = ''
     this.body.style.overflow = ''
+    this.input.value = ''
     this.focusTrap.deactivate()
     this.emptyResultContainer()
+  },
+
+  showSearch() {
+    this.body.style.overflow = 'hidden'
+    this.input.focus()
+    this.focusTrap.activate()
   },
 
   async handleTriggerClick(e) {
@@ -58,9 +64,7 @@ export const Search = {
     this.container.classList.toggle('is-open')
 
     if (this.container.classList.contains('is-open')) {
-      this.input.focus()
-      this.focusTrap.activate()
-      this.body.style.overflow = 'hidden'
+      this.showSearch()
     } else {
       this.resetSearch()
     }

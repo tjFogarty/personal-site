@@ -1,0 +1,22 @@
+@screen md {
+  .l-about {
+    display: flex;
+    margin-bottom: 40px;
+    > div:first-child {
+      flex-basis: 70%;
+    }
+
+    > div:last-child {
+      flex-basis: 30%;
+      padding-left: 30px;
+    }
+  }
+
+  @supports(display: grid) {
+    .l-about {
+      display: grid;
+      grid-gap: 50px;
+      grid-template-columns: 70% 30%;
+    }
+  }
+}
