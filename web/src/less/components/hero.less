@@ -11,7 +11,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-45deg, rgba(252,210,0,1) 0%, rgba(255,59,63,1) 100%);
+    background: linear-gradient(
+      -45deg,
+      rgba(252, 210, 0, 1) 0%,
+      rgba(255, 59, 63, 1) 100%
+    );
   }
 }
 
@@ -45,5 +49,12 @@
   height: 100%;
   object-fit: cover;
   object-position: top;
-  mix-blend-mode: soft-light;
+  opacity: 0.3;
+}
+
+@supports (mix-blend-mode: soft-light) {
+  .c-hero__image {
+    mix-blend-mode: soft-light;
+    opacity: 1;
+  }
 }
