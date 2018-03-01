@@ -23,7 +23,7 @@
 
     {{ mix('/assets/css/app.css', true, true) | raw }}
 
-    <link rel="preload" href="{{ mix('/assets/js/main.js') | replace({'//' : '/' }) }}" as="script" crossorigin>
+    <link rel="preload" href="/assets/js/main.js" as="script" crossorigin>
 
     <meta name="twitter:site" content="@tj_fogarty">
     <meta property="og:site_name" content="TJ Fogarty">
@@ -55,13 +55,13 @@
       {% block content %}{% endblock %}
     </main>
 
-    <script src="{{ mix('assets/js/main.js') | replace({'//' : '/' }) }}" defer></script>
+    <script src="/assets/js/main.js" defer></script>
 
-    {% if not craft.app.config.general.devMode %}
+    {% if craft.app.config.general.devMode %}
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-          navigator.serviceWorker.register('/sw.js', { scope: './' });
+          navigator.serviceWorker.register('/sw.js');
         });
       }
     </script>

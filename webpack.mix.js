@@ -6,6 +6,7 @@ const glob = require('glob-all')
 const PurgecssPlugin = require('purgecss-webpack-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
+const mixManifest = require('./web/mix-manifest.json')
 
 // Custom PurgeCSS extractor for Tailwind that allows special characters in
 // class names.
@@ -33,7 +34,8 @@ if (mix.inProduction()) {
       filepath: path.join(__dirname, '/web/sw.js'),
       maximumFileSizeToCacheInBytes: 4194304,
       minify: false,
-      staticFileGlobs: ['web/assets/js/main.js', 'web/assets/js/chunks/search.js', 'web/assets/js/chunks/hljs.js'],
+      staticFileGlobs: ['web/images/**/*.jpg'],
+      mergeStaticsConfig: true,
       stripPrefix: 'web'
     }),
     new PurgecssPlugin({
