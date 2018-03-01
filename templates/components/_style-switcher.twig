@@ -1,0 +1,21 @@
+{% set themes = [
+  {
+    'primary': '#7B296E',
+    'hero-secondary': '#AFA73A'
+  },
+  {
+    'primary': '#02847F',
+    'hero-secondary': '#D99104'
+  },
+  {
+    'primary': '#75003E',
+    'hero-secondary': '#8B8F00'
+  },
+  {
+    'primary': '#8F0000',
+    'hero-secondary': '#005656'
+  }
+] %}
+
+{% set theme = random(themes) %}
+style="--c-primary: {{ theme['primary'] }}; --c-hero-secondary: {{ theme['hero-secondary'] }};"
