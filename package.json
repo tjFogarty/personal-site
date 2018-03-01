@@ -30,6 +30,7 @@
   "dependencies": {
     "algoliasearch": "^3.24.8",
     "animejs": "^2.2.0",
+    "basicscroll": "^2.0.0",
     "focus-trap": "^2.4.3",
     "highlight.js": "^9.12.0",
     "tailwindcss": "^0.4.0"
