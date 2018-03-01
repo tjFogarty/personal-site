@@ -24,8 +24,30 @@
   @apply .bg-primary .block;
   width: 35px;
   height: 35px;
-  -webkit-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 14% 14%, 75% 25%, 86% 85%, 21% 75%, 25% 100%, 100% 100%, 100% 0%);
-  clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 14% 14%, 75% 25%, 86% 85%, 21% 75%, 25% 100%, 100% 100%, 100% 0%);
+  -webkit-clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    25% 100%,
+    14% 14%,
+    75% 25%,
+    86% 85%,
+    21% 75%,
+    25% 100%,
+    100% 100%,
+    100% 0%
+  );
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    25% 100%,
+    14% 14%,
+    75% 25%,
+    86% 85%,
+    21% 75%,
+    25% 100%,
+    100% 100%,
+    100% 0%
+  );
   transition: clip-path ease 0.3s;
 
   .is-fixed & {
@@ -37,8 +59,30 @@
   display: block;
 
   &:hover .c-nav__logo {
-    -webkit-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    -webkit-clip-path: polygon(
+      0% 0%,
+      0% 100%,
+      25% 100%,
+      25% 25%,
+      75% 25%,
+      75% 75%,
+      25% 75%,
+      25% 100%,
+      100% 100%,
+      100% 0%
+    );
+    clip-path: polygon(
+      0% 0%,
+      0% 100%,
+      25% 100%,
+      25% 25%,
+      75% 25%,
+      75% 75%,
+      25% 75%,
+      25% 100%,
+      100% 100%,
+      100% 0%
+    );
   }
 }
 
@@ -80,23 +124,14 @@
     @apply .text-white;
   }
 
-  &:after {
-    @apply .block .bg-primary .opacity-0;
-    content: '';
-    width: 0;
-    margin: 0 auto;
-    height: 1px;
-    transition: width ease 0.2s;
-  }
-
   .is-fixed & {
     &:after {
       @apply .bg-white;
     }
   }
 
-  &:hover:after,
-  &.is-active:after {
-    @apply .opacity-100 .w-full;
+  &:hover,
+  &.is-active {
+    text-decoration: underline;
   }
 }
