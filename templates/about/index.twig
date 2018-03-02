@@ -11,39 +11,11 @@
 <div class="l-container">
   <div class="l-about">
     <div>
-      <h1 class="mt-0">About</h1>
+      <h1 class="mt-0">{{ entry.title }}</h1>
 
       <div class="clearfix">
-        <img src="https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=250" sizes="(min-width: 600px) 165px, 100vw" srcset="https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=250 250w, https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=300 300w, https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=550 550w" class="rounded-full md:ml-2 md:float-right" style="display: block; margin: 5px auto; max-width: 165px; shape-outside: circle(50%);" decoding="async" width="165px" height="165px" />
-
-        <p>I'm TJ, a web developer from Limerick, Ireland 🇮🇪 and living in Waterford. I mostly hang around the front-end development side of things, but I know enough to be dangerous with the likes of PHP and Node as well.</p>
-
-        <p>I enjoy working with JavaScript (React and Vue), Node, PHP (Craft CMS, WordPress, Laravel, ExpressionEngine), and CSS (Sass, Less, good 'ol vanilla CSS). Spending all these years working with such fun technologies reminds me that just because you can do it, definitely means you should.</p>
-
-        <p>I've had <a href="https://css-tricks.com/timber-and-twig-reignited-my-love-for-wordpress/" target="_blank" rel="noopener">an article published on CSS-Tricks</a>, <a href="https://codepen.io/spark/63" target="_blank" rel="noopener">had work featured on CodePen Spark</a>, and <a href="https://tympanus.net/codrops/collective/collective-390/" target="_blank" rel="noopener">an article featured in a Codrops Collective</a>.</p>
-
-        <p>Previously, I've worked for ResourceKraft as a Designer/Developer, Maverick as the Lead Developer, and Emagine as a Web Developer and then Technical Lead. At the moment I'm a UI Developer at StitcherAds where I'm developing a component library and design system.</p>
-
-        <p>You can find me at the links below:</p>
-        <ul class="list-reset">
-          <li>
-            <a href="https://twitter.com/tj_fogarty" target="_blank" rel="noopener">
-              Twitter
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/tjFogarty" target="_blank" rel="noopener">
-              GitHub
-            </a>
-          </li>
-
-          <li>
-            <a href="https://codepen.io/tjFogarty/" target="_blank" rel="noopener">
-              CodePen
-            </a>
-          </li>
-        </ul>
+        <img src="https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=250" sizes="(min-width: 600px) 165px, 100vw" srcset="https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=250 250w, https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=300 300w, https://gravatar.com/avatar/1148b889a6bb77a67f86f3976bceb9bb?s=550 550w" class="rounded-full mx-auto md:mr-6 md:ml-0 md:float-left" style="display: block; max-width: 165px; shape-outside: circle(50%);" decoding="async" width="165px" height="165px" />
+        {{ entry.postContent }}
       </div>
     </div>
 

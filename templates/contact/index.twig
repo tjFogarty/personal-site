@@ -2,9 +2,9 @@
 
 {% block content %}
 <div class="l-container">
-    <h1 class="mt-0">Contact</h1>
+    <h1 class="mt-0">{{ entry.title }}</h1>
 
-    <p>Feel free to drop me a message via the form below, and I'll get back to you as soon as I can. <br> Alternatively, you can <a href="https://twitter.com/tj_fogarty" rel="noopener" target="_blank">find me on Twitter</a>.</p>
+    {{ entry.postContent }}
 
     {% macro errorList(errors) %}
         {% if errors %}
