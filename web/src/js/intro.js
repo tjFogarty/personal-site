@@ -8,7 +8,7 @@ export const Intro = {
       const instance = create({
         elem: this.hero,
         from: '0',
-        to: '100%',
+        to: '300px',
         props: {
           '--hero-position-y': {
             from: '0%',
