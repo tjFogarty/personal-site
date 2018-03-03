@@ -1,25 +1,55 @@
-{% set themes = [
-  {
-    'primary': '#ff3b3f',
-    'hero-secondary': '#fcd200'
-  },
-  {
-    'primary': '#7B296E',
-    'hero-secondary': '#AFA73A'
-  },
-  {
-    'primary': '#02847F',
-    'hero-secondary': '#D99104'
-  },
-  {
-    'primary': '#75003E',
-    'hero-secondary': '#8B8F00'
-  },
-  {
-    'primary': '#8F0000',
-    'hero-secondary': '#005656'
-  }
-] %}
+{% set themeNames = ['halfLife', 'massEffect', 'snakeEater', 'dayOfDefeat', 'teeling', 'bioshock', 'halo3', 'red', 'orange', 'eleganza', 'beach', 'midnight'] %}
 
-{% set theme = random(themes) %}
-style="--c-primary: {{ theme['primary'] }}; --c-hero-secondary: {{ theme['hero-secondary'] }};"
+{% set themes = {
+  halfLife: {
+    primary: '#fb7e14',
+    secondary: '#292929'
+  },
+  massEffect: {
+    primary: '#b51f06',
+    secondary: '#00205a'
+  },
+  snakeEater: {
+    primary: '#1f5212',
+    secondary: '#79750c'
+  },
+  dayOfDefeat: {
+    primary: '#7b3230',
+    secondary: '#897a64'
+  },
+  teeling: {
+    primary: '#373b3e',
+    secondary: '#c2ac63'
+  },
+  bioshock: {
+    primary: '#197b8f',
+    secondary: '#292b28'
+  },
+  halo3: {
+    primary: '#414548',
+    secondary: '#e39b1f'
+  },
+  red: {
+    primary: '#950740',
+    secondary: '#6f2232'
+  },
+  orange: {
+    primary: '#f13c20',
+    secondary: '#d79922'
+  },
+  eleganza: {
+    primary: '#ac3b61',
+    secondary: '#123c69'
+  },
+  beach: {
+    primary: '#116466',
+    secondary: '#d9b08c'
+  },
+  midnight: {
+    primary: '#46344e',
+    secondary: '#9b786f'
+  }
+} %}
+
+{% set theme = random(themeNames) %}
+style="--c-primary: {{ themes[theme].primary }}; --c-secondary: {{ themes[theme].secondary }};" data-theme-name="{{ theme }}"
