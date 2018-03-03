@@ -34,8 +34,7 @@ if (mix.inProduction()) {
       filepath: path.join(__dirname, '/web/sw.js'),
       maximumFileSizeToCacheInBytes: 4194304,
       minify: false,
-      staticFileGlobs: ['web/images/**/*.jpg'],
-      mergeStaticsConfig: true,
+      staticFileGlobs: ['web/assets/js/**/*.js'],
       stripPrefix: 'web'
     }),
     new PurgecssPlugin({
