@@ -14,6 +14,10 @@
 
     <h1 itemprop="name headline">{{ entry.title | typogrify }}</h1>
 
+    <div class="visuallyhidden">
+      <p itemprop="author">{{ entry.author.firstName }} {{ entry.author.lastName }}</p>
+      <p itemprop="publisher">{{ entry.author.firstName }} {{ entry.author.lastName }}</p>
+    </div>
 
     {{ entry.postContent | typogrify }}
 
