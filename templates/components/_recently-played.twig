@@ -11,12 +11,15 @@
   {% for item in recentlyPlayed['track'] %}
     <li>
       <p>
-        {{ item['name'] }}
-        by
-        {{ item['artist']['#text'] }}
+        <a href="{{ item['url'] }}" target="_blank" rel="noopener">
+          {{ item['name'] }}
+          by
+          {{ item['artist']['#text'] }}
+        </a>
+        <small class="block">{{ item['date']['#text'] }}</small>
       </p>
     </li>
   {% endfor %}
 </ul>
 {% endcache %}
-<p>Data provided by the <a href="https://www.last.fm/api" target="_blank" rel="noopener">Last.fm API</a></p>
+<p><small>Data provided by the <a href="https://www.last.fm/api" target="_blank" rel="noopener">Last.fm API</a></small></p>
