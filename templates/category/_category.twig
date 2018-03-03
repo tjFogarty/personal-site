@@ -10,16 +10,22 @@
 {% block content %}
 <div class="l-container">
   {% cache %}
+  {% set allPosts = craft.entries.section('posts').relatedTo(category).orderBy('postDate desc').limit(null).all() %}
+  
   <h1>{{ category.title }} Posts</h1>
-  {% paginate craft.entries.section('posts').relatedTo(category).limit(null) as pageInfo, pageEntries %}
 
+  {% for year, entriesInYear in allPosts | group('postDate | date("Y")') %}
+  <div class="c-sticky-list">
+    <h2 class="c-sticky-list__title">{{ year }}</h2>
     <ul class="l-post-list">
-    {% for entry in pageEntries %}
+      {% for entry in entriesInYear %}
       <li class="l-post-list__item">
-        {% include 'posts/_preview' with { post: entry, showPostDate: false } only %}
+        {% include 'posts/_preview' with { post: entry, showPostDate: true } only %}
       </li>
-    {% endfor %}
+      {% endfor %}
     </ul>
+  </div>
+  {% endfor %}
   {% endcache %}
 </div>
 {% endblock %}

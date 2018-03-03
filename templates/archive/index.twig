@@ -3,6 +3,15 @@
 {% block content %}
 <div class="l-container">
   <h1>Archive</h1>
+  
+  <p>
+    I post about things such as 
+    {% for category in craft.categories.group('category').all() %}
+    {% if loop.last %} and {% endif %}
+    <a href="{{ category.url }}">{{ category.title }}</a>{% if not loop.last %},{% else %}.{% endif %}
+    {% endfor %}
+  </p>
+
   {% set allPosts = craft.entries.section('posts').orderBy('postDate desc').limit(null).all() %}
   {% for year, entriesInYear in allPosts | group('postDate | date("Y")') %}
   <div class="c-sticky-list">
