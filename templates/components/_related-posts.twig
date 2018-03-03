@@ -1,0 +1,11 @@
+{% set relatedPosts = craft.entries.section('posts').relatedTo(categories).orderBy('RAND()').limit(2).id('not ' ~ ignoreId).all() %}
+
+{% if relatedPosts %}
+<h4>Related Posts</h4>
+
+{% for post in relatedPosts %}
+<p>
+	<a href="{{ post.url }}">{{ post.title }}</a>
+</p>
+{% endfor %}
+{% endif %}
