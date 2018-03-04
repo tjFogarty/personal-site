@@ -1,0 +1,38 @@
+.c-share {
+	@apply .my-2 .flex .items-center;
+}
+
+@screen md {
+  .c-share-container {
+    @apply .flex .items-start .justify-between;
+
+    > div:first-child {
+      flex-grow: 1;
+    }
+  }
+
+  .c-share {
+    @apply .mt-0 .justify-end;
+    flex-grow: 1;
+    max-width: 120px;
+  }
+}
+
+.c-share__title {
+  @apply .m-0;
+}
+
+.c-share__link,
+.c-share__icon {
+  width: 23px;
+  height: 23px;
+}
+
+.c-share__link {
+  @apply .ml-3 .block;
+  transition: color ease 0.3s;
+
+  &:hover {
+    @apply .text-secondary;
+  }
+}

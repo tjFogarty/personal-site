@@ -21,25 +21,32 @@
     </div>
 
     {{ entry.postContent | typogrify }}
+    
+    <div class="c-share-container">
+      {% set cats = entry.categories.all() %}
 
-    {% set cats = entry.categories.all() %}
+      {% if cats %}
+      <div>
+        <small>Categories:</small>
+        <ul class="list-reset inline-flex mb-6 md:mb-2">
+          {% for category in cats %}
+          <li class="mr-3">
+            <a href="{{ category.url }}">
+              <small>
+                {{ category.title }}
+              </small>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
 
-    {% if cats %}
-      <small>Categories:</small>
-      <ul class="list-reset inline-flex mb-6 md:mb-2">
-        {% for category in cats %}
-        <li class="mr-3">
-          <a href="{{ category.url }}">
-            <small>
-              {{ category.title }}
-            </small>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
+        {% include 'components/_related-posts' with { categories: cats, ignoreId: entry.id } %}
+      </div>
+      {% endif %}
+      
+      {% include 'components/_share' %}
+    </div>
 
-      {% include 'components/_related-posts' with { categories: cats, ignoreId: entry.id } %}
-    {% endif %}
   </article>
 </div>
 {% endblock %}
