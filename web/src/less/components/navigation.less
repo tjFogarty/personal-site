@@ -2,12 +2,19 @@
 
 .c-nav {
   @apply .flex .items-center .justify-between .flex-wrap .bg-white .p-4;
+  flex-direction: column;
 
   &.is-fixed {
     @apply .absolute .pin-t .pin-l;
     z-index: 3;
     background: transparent;
     width: 100%;
+  }
+}
+
+@screen sm {
+  .c-nav {
+    flex-direction: row;
   }
 }
 
@@ -95,12 +102,15 @@
 //======= Nav Inner =======//
 
 .c-nav__inner {
-  @apply .flex .flex-grow .items-center .w-auto;
+  @apply .flex .flex-grow .items-center .mt-4;
+  width: 100%;
   justify-content: space-between;
 }
 
 @screen sm {
   .c-nav__inner {
+    width: auto;
+    margin-top: 0;
     flex-grow: initial;
     justify-content: initial;
   }
@@ -118,7 +128,7 @@
 //======= Nav Link =======//
 
 .c-nav__link {
-  @apply .block .text-primary .mr-4 .no-underline;
+  @apply .block .text-primary .no-underline;
 
   .is-fixed & {
     @apply .text-white;
@@ -133,5 +143,11 @@
   &:hover,
   &.is-active {
     text-decoration: underline;
+  }
+}
+
+@screen sm {
+  .c-nav__link {
+    @apply .mr-4;
   }
 }
