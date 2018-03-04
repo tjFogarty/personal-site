@@ -1,6 +1,7 @@
 {% extends 'layouts/default' %}
 
 {% block content %}
+  {% set heroImage = entry.heroImage.one() %}
   <div class="c-hero">
     <div class="c-hero__content">
       <div class="l-container">
@@ -8,23 +9,22 @@
       </div>
     </div>
     <img
-      sizes="(max-width: 1600px) 100vw, 1600px"
+      sizes="100vw"
       srcset="
-      /images/tramore_chdyld_c_scale,w_200.jpg 200w,
-      /images/tramore_chdyld_c_scale,w_423.jpg 423w,
-      /images/tramore_chdyld_c_scale,w_594.jpg 594w,
-      /images/tramore_chdyld_c_scale,w_738.jpg 738w,
-      /images/tramore_chdyld_c_scale,w_874.jpg 874w,
-      /images/tramore_chdyld_c_scale,w_991.jpg 991w,
-      /images/tramore_chdyld_c_scale,w_1102.jpg 1102w,
-      /images/tramore_chdyld_c_scale,w_1212.jpg 1212w,
-      /images/tramore_chdyld_c_scale,w_1315.jpg 1315w,
-      /images/tramore_chdyld_c_scale,w_1408.jpg 1408w,
-      /images/tramore_chdyld_c_scale,w_1508.jpg 1508w,
-      /images/tramore_chdyld_c_scale,w_1575.jpg 1575w,
-      /images/tramore_chdyld_c_scale,w_1600.jpg 1600w"
-      src="/images/tramore_chdyld_c_scale,w_1600.jpg"
-      alt="Tramore Beach, County Waterford"
+      {{ heroImage.getUrl({ quality: 20, width: 200 }) }} 200w,
+      {{ heroImage.getUrl({ quality: 20, width: 423 }) }} 423w,
+      {{ heroImage.getUrl({ quality: 20, width: 594 }) }} 594w,
+      {{ heroImage.getUrl({ quality: 20, width: 738 }) }} 738w,
+      {{ heroImage.getUrl({ quality: 20, width: 874 }) }} 874w,
+      {{ heroImage.getUrl({ quality: 20, width: 991 }) }} 991w,
+      {{ heroImage.getUrl({ quality: 20, width: 1102 }) }} 1102w,
+      {{ heroImage.getUrl({ quality: 20, width: 1212 }) }} 1212w,
+      {{ heroImage.getUrl({ quality: 20, width: 1315 }) }} 1315w,
+      {{ heroImage.getUrl({ quality: 20, width: 1408 }) }} 1408w,
+      {{ heroImage.getUrl({ quality: 20, width: 1575 }) }} 1575w,
+      {{ heroImage.getUrl({ quality: 20, width: 1600 }) }} 1600w"
+      src="{{ heroImage.getUrl({ quality: 20, width: 1000 }) }}"
+      alt="{{ heroImage.title }}"
       decoding="async"
       class="c-hero__image">
   </div>

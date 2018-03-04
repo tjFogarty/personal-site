@@ -4,6 +4,7 @@
 web/assets/js
 web/assets/css
 web/sw.js
+web/uploads
 
 # Created by https://www.gitignore.io/api/craftcms
 
