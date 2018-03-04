@@ -9,9 +9,11 @@
 
 {% block content %}
 <div class="l-container">
-  <h1>{{ entry.title }}</h1>
+  <div class="c-post mb-4">
+    <h1>{{ entry.title }}</h1>
 
-  {{ entry.postContent }}
+    {{ entry.postContent }}
+  </div>
 
   <ul class="c-projects">
   {% for block in entry.projectList.all() %}
