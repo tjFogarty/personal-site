@@ -3,7 +3,7 @@
 <ul class="l-post-list">
 {% for entry in latestPosts %}
   <li class="l-post-list__item">
-    {% include 'posts/_preview' with { post: entry, showPostDate: false } only %}
+    {% include 'posts/_preview' with { post: entry, showPostDate: true } only %}
   </li>
 {% endfor %}
 </ul>

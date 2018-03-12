@@ -31,13 +31,13 @@
 
   <div class="l-container l-homepage">
     <div>
-      {{ entry.postContent }}
-    </div>
-
-    <div>
       {% cache %}
       {% include 'posts/_latest' %}
       {% endcache %}
+    </div>
+
+    <div>
+      {{ entry.postContent }}
     </div>
   </div>
 
