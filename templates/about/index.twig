@@ -17,7 +17,7 @@
         {% set admin = craft.users.groupBy('admin').one() %}
         {% set adminPhoto = admin.getPhoto() %}
         <img src="{{ adminPhoto.getUrl({ width: 250 }) }}" sizes="165px" srcset="{{ adminPhoto.getUrl({ width: 250 }) }} 250w, {{ adminPhoto.getUrl({ width: 300 }) }} 300w, {{ adminPhoto.getUrl({ width: 550 }) }} 550w" class="rounded-full mx-auto md:mr-6 md:ml-0 md:float-left" style="display: block; max-width: 165px; image-rendering: -webkit-optimize-contrast; shape-outside: circle(50%);" decoding="async" width="165px" height="165px" alt="Profile image of TJ Fogarty" />
-        {{ entry.postContent }}
+        {{ entry.postContent | typogrify }}
       </div>
     </div>
 

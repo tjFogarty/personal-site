@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c2d45b29fd3b2bb461b7e821fce461f",
+    "content-hash": "0aef9a31a115f805ce9578044223c27b",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1196,19 +1196,20 @@
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "6678d59be48c4be64eaca6ce70bea48a09488cc2"
+                "reference": "92e9c27ba0e74b8b028b111d1b6f956a15c01fc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/6678d59be48c4be64eaca6ce70bea48a09488cc2",
-                "reference": "6678d59be48c4be64eaca6ce70bea48a09488cc2",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/92e9c27ba0e74b8b028b111d1b6f956a15c01fc1",
+                "reference": "92e9c27ba0e74b8b028b111d1b6f956a15c01fc1",
                 "shasum": ""
             },
             "require": {
+                "ext-mbstring": "*",
                 "php": ">=5.3.0"
             },
             "require-dev": {
@@ -1237,7 +1238,7 @@
                 "markdown",
                 "parser"
             ],
-            "time": "2018-02-28T11:41:37+00:00"
+            "time": "2018-03-08T01:11:30+00:00"
         },
         {
             "name": "erusev/parsedown-extra",
@@ -1513,16 +1514,16 @@
         },
         {
             "name": "jmx2/pic-puller",
-            "version": "3.0.5",
+            "version": "3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmx2inc/picpuller-for-craft3.git",
-                "reference": "bd676e9d3326852fcd8bf0b701a717f9eb28abee"
+                "reference": "1b343d7b819d2a89712e9f4a4a2c095576b1d270"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmx2inc/picpuller-for-craft3/zipball/bd676e9d3326852fcd8bf0b701a717f9eb28abee",
-                "reference": "bd676e9d3326852fcd8bf0b701a717f9eb28abee",
+                "url": "https://api.github.com/repos/jmx2inc/picpuller-for-craft3/zipball/1b343d7b819d2a89712e9f4a4a2c095576b1d270",
+                "reference": "1b343d7b819d2a89712e9f4a4a2c095576b1d270",
                 "shasum": ""
             },
             "require": {
@@ -1532,7 +1533,7 @@
             "extra": {
                 "name": "Pic Puller",
                 "handle": "pic-puller",
-                "changelogUrl": "https://github.com/johnfmorton/picpuller-for-craft3/blob/master/CHANGELOG.md",
+                "changelogUrl": "https://github.com/jmx2inc/picpuller-for-craft3/blob/master/CHANGELOG.md",
                 "class": "jmx2\\picpuller\\PicPuller"
             },
             "autoload": {
@@ -1558,7 +1559,7 @@
                 "craftcms",
                 "pic puller"
             ],
-            "time": "2018-02-19T18:58:05+00:00"
+            "time": "2018-03-07T18:50:05+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2162,16 +2163,16 @@
         },
         {
             "name": "nystudio107/craft-typogrify",
-            "version": "1.1.7",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-typogrify.git",
-                "reference": "e86a58415bf2d2f6ac7b78933a596b35bf9410d0"
+                "reference": "ebc4ea55050d88021d72c78eaae31a6448243e34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/e86a58415bf2d2f6ac7b78933a596b35bf9410d0",
-                "reference": "e86a58415bf2d2f6ac7b78933a596b35bf9410d0",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/ebc4ea55050d88021d72c78eaae31a6448243e34",
+                "reference": "ebc4ea55050d88021d72c78eaae31a6448243e34",
                 "shasum": ""
             },
             "require": {
@@ -2186,7 +2187,7 @@
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": false,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-typogrify/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-typogrify/v1/CHANGELOG.md",
                 "components": {
                     "typogrify": "nystudio107\\typogrify\\services\\TypogrifyService"
                 },
@@ -2215,7 +2216,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2018-02-02T05:46:03+00:00"
+            "time": "2018-03-12T14:39:09+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3000,12 +3001,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "efecacb8182814c1476c7b38c1053ef78823e127"
+                "reference": "664836e89c7ecad3dbaabc1572ea752c0d532d80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/efecacb8182814c1476c7b38c1053ef78823e127",
-                "reference": "efecacb8182814c1476c7b38c1053ef78823e127",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/664836e89c7ecad3dbaabc1572ea752c0d532d80",
+                "reference": "664836e89c7ecad3dbaabc1572ea752c0d532d80",
                 "shasum": ""
             },
             "conflict": {
@@ -3098,7 +3099,7 @@
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
+                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
                 "titon/framework": ">=0,<9.9.99",
                 "twig/twig": "<1.20",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
@@ -3148,7 +3149,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-03-06T15:15:10+00:00"
+            "time": "2018-03-07T15:45:44+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -4155,16 +4156,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v5.6.9",
+            "version": "v5.6.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "7d2d62485a50b1426afc2b41b8e9ddb4b7a5d770"
+                "reference": "df66d4a8b4734ffc34808acf7e6671711a3cebd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/7d2d62485a50b1426afc2b41b8e9ddb4b7a5d770",
-                "reference": "7d2d62485a50b1426afc2b41b8e9ddb4b7a5d770",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/df66d4a8b4734ffc34808acf7e6671711a3cebd4",
+                "reference": "df66d4a8b4734ffc34808acf7e6671711a3cebd4",
                 "shasum": ""
             },
             "require": {
@@ -4201,7 +4202,7 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2018-03-06T22:57:32+00:00"
+            "time": "2018-03-09T18:24:45+00:00"
         },
         {
             "name": "twig/twig",
@@ -4371,16 +4372,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.14.1",
+            "version": "2.0.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "d99969394c66dc3606134af092b8ec561ea5d7c6"
+                "reference": "ef74f3783e964cea477f06e6d6ce209df1f37881"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/d99969394c66dc3606134af092b8ec561ea5d7c6",
-                "reference": "d99969394c66dc3606134af092b8ec561ea5d7c6",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ef74f3783e964cea477f06e6d6ce209df1f37881",
+                "reference": "ef74f3783e964cea477f06e6d6ce209df1f37881",
                 "shasum": ""
             },
             "require": {
@@ -4467,7 +4468,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2018-02-24T20:23:06+00:00"
+            "time": "2018-03-13T14:15:01+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",

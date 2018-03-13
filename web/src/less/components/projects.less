@@ -1,5 +1,9 @@
 .c-projects {
 	@apply .list-reset .my-3;
+
+  ul {
+    @apply .list-reset;
+  }
 }
 
 .c-projects__item {
@@ -12,6 +16,7 @@
 
 .c-projects__item-image {
   @apply .mt-3 .ml-auto .mr-auto .block;
+  image-rendering: -webkit-optimize-contrast;
   max-width: 100%;
 }
 
@@ -26,5 +31,10 @@
     grid-template-columns: 50% 50%;
     grid-gap: 15px;
     align-items: center;
+
+    &.is-flipped {
+      flex-direction: row-reverse;
+      direction: rtl;
+    }
   }
 }

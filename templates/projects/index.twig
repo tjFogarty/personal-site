@@ -12,20 +12,32 @@
   <div class="mb-8">
     <h1>{{ entry.title }}</h1>
 
-    {{ entry.postContent }}
+    {{ entry.postContent | typogrify }}
   </div>
 
   <ul class="c-projects">
   {% for block in entry.projectList.all() %}
-    <li class="c-projects__item">
+    <li class="c-projects__item {% if loop.index %2 == 0 %} is-flipped {% endif %}">
       <div class="c-projects__item-text">
         <h2 class="c-projects__item-title">{{ block.projectTitle }}</h2>
-        {{ block.description }}
+        {{ block.description | typogrify }}
       </div>
       
       {% set projectImage = block.image.one() %}
       {% if projectImage %}
-      <img src="{{ projectImage.getUrl({ width: 460, height: 270, mode: 'crop', position: 'top-left', format: 'jpg' }) }}" alt="{{ projectImage.title }}" class="c-projects__item-image" decoding="async">
+      <img
+        src="{{ projectImage.getUrl({ width: 460, height: 270, mode: 'crop', position: 'top-left', format: 'jpg' }) }}"
+        srcset="
+          {{ projectImage.getUrl({ width: 460, height: 270, mode: 'crop', position: 'top-left', format: 'jpg' }) }} 460w,
+          {{ projectImage.getUrl({ width: 560, height: 370, mode: 'crop', position: 'top-left', format: 'jpg' }) }} 560w,
+          {{ projectImage.getUrl({ width: 660, height: 470, mode: 'crop', position: 'top-left', format: 'jpg' }) }} 660w
+          {{ projectImage.getUrl({ width: 760, height: 570, mode: 'crop', position: 'top-left', format: 'jpg' }) }} 760w
+        "
+        sizes="(min-width: 766px) 460w, 100vw"
+        alt="{{ projectImage.title }}" 
+        class="c-projects__item-image" 
+        decoding="async"
+      >
       {% endif %}
     </li>
   {% endfor %}
