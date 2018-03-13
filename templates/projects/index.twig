@@ -20,7 +20,7 @@
     <li class="c-projects__item {% if loop.index %2 == 0 %} is-flipped {% endif %}">
       <div class="c-projects__item-text">
         <h2 class="c-projects__item-title">{{ block.projectTitle }}</h2>
-        {{ block.description | typogrify }}
+        {{ block.description }}
       </div>
       
       {% set projectImage = block.image.one() %}
