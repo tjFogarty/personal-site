@@ -33,7 +33,8 @@
     "craftcms/mailgun": "^1.2",
     "jmx2/pic-puller": "^3.0",
     "rias/craft-scout": "^0.2.3",
-    "dolphiq/jsonclient": "^1.0"
+    "dolphiq/jsonclient": "^1.0",
+    "nystudio107/craft-seomatic": "^3.0.0-beta.2"
   },
   "config": {
     "optimize-autoloader": true

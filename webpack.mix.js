@@ -6,7 +6,6 @@ const glob = require('glob-all')
 const PurgecssPlugin = require('purgecss-webpack-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
-const mixManifest = require('./web/mix-manifest.json')
 
 // Custom PurgeCSS extractor for Tailwind that allows special characters in
 // class names.

@@ -3,36 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    {% if craft.app.config.general.devMode %}
-      {% if metaTitle is defined %}
-      <title>️⚠️ DEV | {{ metaTitle }} by TJ Fogarty</title>
-      {% else %}
-      <title>⚠️ TJ Fogarty | DEV</title>
-      {% endif %}
-    {% else %}
-      {% if metaTitle is defined %}
-      <title>{{ metaTitle }} by TJ Fogarty</title>
-      {% else %}
-      <title>TJ Fogarty | Web Developer</title>
-      {% endif %}
-    <meta name="description" content="Web Developer from Limerick, Ireland and living in Waterford.">
-    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="GVfTcYpZR7Iujvbox7Vft-ghdIbHmZmVwoRADA880Jc" />
 
     {{ mix('/assets/css/app.css', true, true) | raw }}
 
     <link rel="preload" href="/assets/js/main.js" as="script" crossorigin>
-
-    <meta name="twitter:site" content="@tj_fogarty">
-    <meta property="og:site_name" content="TJ Fogarty">
-
-    {% if socialTags is defined %}
-      {% for prop in socialTags %}
-        <meta property="{{ prop.name}}" content="{{ prop.value }}">
-      {% endfor %}
-    {% endif %}
 
     {% if not craft.app.config.general.devMode %}
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110493614-1"></script>
