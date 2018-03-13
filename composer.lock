@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3036b6945363c0e407d385bafc7d0b9a",
+    "content-hash": "1bd244fbf3e79abc679e453985339cb3",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -426,16 +426,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC14",
+            "version": "3.0.0-RC15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "fb4faffb435e41756750144c0ed3724d2f52a86f"
+                "reference": "2c92030aa91e5ed655dd7896f7739737d8b8ea29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/fb4faffb435e41756750144c0ed3724d2f52a86f",
-                "reference": "fb4faffb435e41756750144c0ed3724d2f52a86f",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/2c92030aa91e5ed655dd7896f7739737d8b8ea29",
+                "reference": "2c92030aa91e5ed655dd7896f7739737d8b8ea29",
                 "shasum": ""
             },
             "require": {
@@ -463,7 +463,7 @@
                 "pixelandtonic/imagine": "~0.7.1.2",
                 "seld/cli-prompt": "~1.0.3",
                 "twig/twig": "~2.4.4",
-                "yiisoft/yii2": "~2.0.14.0",
+                "yiisoft/yii2": "~2.0.14.2",
                 "yiisoft/yii2-debug": "~2.0.10",
                 "yiisoft/yii2-queue": "~2.0.1",
                 "yiisoft/yii2-swiftmailer": "~2.1.0",
@@ -504,7 +504,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-03-06T19:06:32+00:00"
+            "time": "2018-03-13T20:20:40+00:00"
         },
         {
             "name": "craftcms/contact-form",

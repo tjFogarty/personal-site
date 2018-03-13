@@ -30,7 +30,7 @@ return [
     // Dev environment settings
     'dev' => [
         // Base site URL
-        'siteUrl' => 'http://tj-craft.dev',
+        'siteUrl' => 'https://tj-craft.dev',
 
         // Dev Mode (see https://craftcms.com/support/dev-mode)
         'devMode' => true,
