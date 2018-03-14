@@ -1,12 +1,7 @@
 {
   "name": "craftcms/craft",
   "description": "Craft CMS",
-  "keywords": [
-    "craft",
-    "cms",
-    "craftcms",
-    "project"
-  ],
+  "keywords": ["craft", "cms", "craftcms", "project"],
   "license": "MIT",
   "homepage": "https://craftcms.com/",
   "type": "project",
@@ -33,7 +28,6 @@
     "craftcms/mailgun": "^1.2",
     "jmx2/pic-puller": "^3.0",
     "rias/craft-scout": "^0.2.3",
-    "dolphiq/jsonclient": "^1.0",
     "nystudio107/craft-seomatic": "^3.0.0-beta.2"
   },
   "config": {
@@ -43,8 +37,6 @@
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
-    "post-create-project-cmd": [
-      "@php craft setup/welcome"
-    ]
+    "post-create-project-cmd": ["@php craft setup/welcome"]
   }
 }
