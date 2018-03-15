@@ -97,12 +97,9 @@ mix
   })
   .js('web/src/js/main.js', 'assets/js')
   .less('web/src/less/app.less', 'assets/css')
+  .extract(['ga-lite', 'basicscroll', 'focus-trap'])
   .options({
     postCss: [tailwindcss('./tailwind.js')]
   })
   .webpackConfig(webpackConfig)
   .version()
-
-// Only run PurgeCSS during production builds for faster development builds
-// and so you still have the full set of utilities available during
-// development.

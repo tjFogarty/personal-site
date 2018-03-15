@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8436feeeae07188ebb57ce1d2987663e",
+    "content-hash": "c680ae656b89cde523e954752b86c89d",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1489,16 +1489,16 @@
         },
         {
             "name": "jmx2/pic-puller",
-            "version": "3.0.6",
+            "version": "3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmx2inc/picpuller-for-craft3.git",
-                "reference": "1b343d7b819d2a89712e9f4a4a2c095576b1d270"
+                "reference": "720c45320d8cf340052e152686319727804dbb19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmx2inc/picpuller-for-craft3/zipball/1b343d7b819d2a89712e9f4a4a2c095576b1d270",
-                "reference": "1b343d7b819d2a89712e9f4a4a2c095576b1d270",
+                "url": "https://api.github.com/repos/jmx2inc/picpuller-for-craft3/zipball/720c45320d8cf340052e152686319727804dbb19",
+                "reference": "720c45320d8cf340052e152686319727804dbb19",
                 "shasum": ""
             },
             "require": {
@@ -1534,7 +1534,7 @@
                 "craftcms",
                 "pic puller"
             ],
-            "time": "2018-03-07T18:50:05+00:00"
+            "time": "2018-03-15T19:11:54+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2138,16 +2138,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0-beta.4",
+            "version": "3.0.0-beta.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "01e7f8d492e7e2d764aa270ab4ee78ae6d3f0cd6"
+                "reference": "2a9dc2ec99a8afb54ef9c87dd5f54627c4f350ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/01e7f8d492e7e2d764aa270ab4ee78ae6d3f0cd6",
-                "reference": "01e7f8d492e7e2d764aa270ab4ee78ae6d3f0cd6",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/2a9dc2ec99a8afb54ef9c87dd5f54627c4f350ed",
+                "reference": "2a9dc2ec99a8afb54ef9c87dd5f54627c4f350ed",
                 "shasum": ""
             },
             "require": {
@@ -2202,7 +2202,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-03-15T02:53:24+00:00"
+            "time": "2018-03-15T17:29:28+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -3095,18 +3095,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "664836e89c7ecad3dbaabc1572ea752c0d532d80"
+                "reference": "1b2f1f59ff8fc933e4d61ee45214ff3228e20c75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/664836e89c7ecad3dbaabc1572ea752c0d532d80",
-                "reference": "664836e89c7ecad3dbaabc1572ea752c0d532d80",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/1b2f1f59ff8fc933e4d61ee45214ff3228e20c75",
+                "reference": "1b2f1f59ff8fc933e4d61ee45214ff3228e20c75",
                 "shasum": ""
             },
             "conflict": {
                 "3f/pygmentize": "<1.2",
                 "adodb/adodb-php": "<5.20.6",
                 "amphp/artax": "<1.0.6|>=2,<2.0.6",
+                "amphp/http": "<1.0.1",
                 "asymmetricrypt/asymmetricrypt": ">=0,<9.9.99",
                 "aws/aws-sdk-php": ">=3,<3.2.1",
                 "bugsnag/bugsnag-laravel": ">=2,<2.0.2",
@@ -3193,7 +3194,7 @@
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
+                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
                 "titon/framework": ">=0,<9.9.99",
                 "twig/twig": "<1.20",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
@@ -3243,7 +3244,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-03-07T15:45:44+00:00"
+            "time": "2018-03-15T17:53:05+00:00"
         },
         {
             "name": "seld/cli-prompt",

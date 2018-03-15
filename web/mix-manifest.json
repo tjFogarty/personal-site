@@ -1,6 +1,8 @@
 {
     "/assets/js/chunks/hljs.js": "/assets/js/chunks/hljs.js?id=e440168cccf5a7a09e63",
-    "/assets/js/chunks/search.js": "/assets/js/chunks/search.js?id=a79a6c083646bf2c4fa4",
-    "/assets/js/main.js": "/assets/js/main.js?id=f615b1b9e44a580c9fa7",
-    "/assets/css/app.css": "/assets/css/app.css?id=539d96fed997b45a3238"
+    "/assets/js/chunks/search.js": "/assets/js/chunks/search.js?id=4d12294af3ee8bef21d0",
+    "/assets/js/main.js": "/assets/js/main.js?id=0d2ad00a1c9784c19f7d",
+    "/assets/css/app.css": "/assets/css/app.css?id=539d96fed997b45a3238",
+    "/assets/js/vendor.js": "/assets/js/vendor.js?id=6ba9551df0fc7f78f5f2",
+    "/assets/js/manifest.js": "/assets/js/manifest.js?id=39bfa0381a0b5255a016"
 }
