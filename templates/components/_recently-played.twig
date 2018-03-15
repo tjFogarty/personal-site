@@ -3,18 +3,18 @@
 {% cache for 20 minutes %}
 
 {% set client = {
-    base_uri: 'https://ws.audioscrobbler.com',
-    timeout: 10
+  base_uri: 'https://ws.audioscrobbler.com',
+  timeout: 10
 } %}
 
 {% set options = {
-    form_params: {
-      method: 'user.getrecenttracks',
-      user: 'cowpuncher',
-      api_key: 'dc2e7242feba68442dda3281bdd202f0',
-      format: 'json',
-      limit: '5'
-    }
+  form_params: {
+    method: 'user.getrecenttracks',
+    user: 'cowpuncher',
+    api_key: 'dc2e7242feba68442dda3281bdd202f0',
+    format: 'json',
+    limit: '5'
+  }
 } %}
 
 {% set jsonResponse = fetch(client, 'GET', '2.0', options) %}
