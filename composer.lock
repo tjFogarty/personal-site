@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1bd244fbf3e79abc679e453985339cb3",
+    "content-hash": "8436feeeae07188ebb57ce1d2987663e",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1038,125 +1038,6 @@
             "time": "2014-09-09T13:34:57+00:00"
         },
         {
-            "name": "dolphiq/jsonclient",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Dolphiq/craft3-jsonclient.git",
-                "reference": "a972710a21711dece9401b22f106c4ad0fa784e3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Dolphiq/craft3-jsonclient/zipball/a972710a21711dece9401b22f106c4ad0fa784e3",
-                "reference": "a972710a21711dece9401b22f106c4ad0fa784e3",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "~3.0.0-beta.1"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Json Client",
-                "handle": "jsonclient",
-                "schemaVersion": "1.0.0",
-                "developer": "Dolphiq",
-                "developerUrl": "https://dolphiq.nl/",
-                "description": "Simple Json client plugin for Craft3 CMS. The plugin provides a simple Twig extension which allows you to fetch a Json url and return it to your Twig template.",
-                "hasCpSettings": false,
-                "hasCpSection": false,
-                "documentationUrl": "https://github.com/Dolphiq/craft3-jsonclient/blob/master/README.md",
-                "changelogUrl": "https://github.com/Dolphiq/craft3-jsonclient/blob/master/CHANGELOG.md",
-                "class": "dolphiq\\jsonclient\\JsonClientPlugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "dolphiq\\jsonclient\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Johan Zandstra",
-                    "email": "info@dolphiq.nl",
-                    "homepage": "https://dolphiq.nl/"
-                }
-            ],
-            "description": "Simple Json client plugin for Craft3 CMS. The plugin provides a simple Twig extension which allows you to fetch a Json url and return it to your Twig template.",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craft3",
-                "craftcms",
-                "json",
-                "jsonclient",
-                "twig"
-            ],
-            "time": "2017-12-15T09:48:16+00:00"
-        },
-        {
-            "name": "dolphiq/redirect",
-            "version": "1.0.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Dolphiq/craft3-plugin-redirect.git",
-                "reference": "ad1ff62fc682b551015368c7fda2438c503a933c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Dolphiq/craft3-plugin-redirect/zipball/ad1ff62fc682b551015368c7fda2438c503a933c",
-                "reference": "ad1ff62fc682b551015368c7fda2438c503a933c",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0-RC11"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Redirect plugin for Craft 3",
-                "handle": "redirect",
-                "schemaVersion": "1.0.4",
-                "developer": "Dolphiq",
-                "developerUrl": "https://dolphiq.nl/",
-                "description": "Craft redirect plugin provides an easy way to enter and maintain 301 and 302 redirects and 404 error pages.",
-                "hasCpSettings": true,
-                "hasCpSection": true,
-                "documentationUrl": "https://github.com/Dolphiq/craft3-plugin-redirect/blob/master/README.md",
-                "changelogUrl": "https://raw.githubusercontent.com/Dolphiq/craft3-plugin-redirect/master/CHANGELOG.md",
-                "class": "dolphiq\\redirect\\RedirectPlugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "dolphiq\\redirect\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dolphiq",
-                    "email": "info@dolphiq.nl",
-                    "homepage": "https://dolphiq.nl/"
-                }
-            ],
-            "description": "Craft redirect plugin provides an easy way to enter and maintain 301 and 302 redirects and 404 error pages.",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craft3",
-                "craftcms",
-                "redirect",
-                "seo"
-            ],
-            "time": "2018-02-21T20:34:01+00:00"
-        },
-        {
             "name": "egulias/email-validator",
             "version": "2.1.3",
             "source": {
@@ -2136,16 +2017,16 @@
         },
         {
             "name": "misterbk/mix",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mister-bk/craft-plugin-mix.git",
-                "reference": "857acb666cb71b8ed6517cdf1b4e009ff1718e46"
+                "reference": "0e134e1f9b5461e3030e948f576511417c5523cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mister-bk/craft-plugin-mix/zipball/857acb666cb71b8ed6517cdf1b4e009ff1718e46",
-                "reference": "857acb666cb71b8ed6517cdf1b4e009ff1718e46",
+                "url": "https://api.github.com/repos/mister-bk/craft-plugin-mix/zipball/0e134e1f9b5461e3030e948f576511417c5523cc",
+                "reference": "0e134e1f9b5461e3030e948f576511417c5523cc",
                 "shasum": ""
             },
             "require": {
@@ -2191,7 +2072,7 @@
                 "laravel-mix",
                 "mix"
             ],
-            "time": "2018-01-22T22:07:40+00:00"
+            "time": "2018-03-14T20:46:30+00:00"
         },
         {
             "name": "mundschenk-at/php-typography",
@@ -2257,16 +2138,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0-beta.2",
+            "version": "3.0.0-beta.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "ce9caec287c05bb47a78cc43e8844a631d121837"
+                "reference": "01e7f8d492e7e2d764aa270ab4ee78ae6d3f0cd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/ce9caec287c05bb47a78cc43e8844a631d121837",
-                "reference": "ce9caec287c05bb47a78cc43e8844a631d121837",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/01e7f8d492e7e2d764aa270ab4ee78ae6d3f0cd6",
+                "reference": "01e7f8d492e7e2d764aa270ab4ee78ae6d3f0cd6",
                 "shasum": ""
             },
             "require": {
@@ -2321,7 +2202,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-03-13T18:57:10+00:00"
+            "time": "2018-03-15T02:53:24+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
