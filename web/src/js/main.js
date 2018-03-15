@@ -4,7 +4,7 @@ import { PageVisibility } from './page-visibility'
 import { Intro } from './intro'
 import galite from 'ga-lite'
 
-if (env === 'production') {
+if (env() === 'production') {
   galite('create', 'UA-110493614-1', 'auto')
   galite('send', 'pageview')
 }
