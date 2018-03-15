@@ -1,7 +1,13 @@
-import { ready, showDeveloperMessage } from './utils'
+import { ready, showDeveloperMessage, env } from './utils'
 import { Search } from './search'
 import { PageVisibility } from './page-visibility'
 import { Intro } from './intro'
+import galite from 'ga-lite'
+
+if (env === 'production') {
+  galite('create', 'UA-110493614-1', 'auto')
+  galite('send', 'pageview')
+}
 
 ready(async () => {
   Search.init()
