@@ -1,11 +1,24 @@
 <h3 class="mt-6 md:mt-3">Recently played tracks</h3>
 
-{% cache for 1 hour %}
-{% set jsonResponse = fetchJson({
-  'url': 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=cowpuncher&api_key=dc2e7242feba68442dda3281bdd202f0&format=json&limit=5'
-}) %}
+{% cache for 20 minutes %}
 
-{% set recentlyPlayed = jsonResponse['recenttracks'] %}
+{% set client = {
+    base_uri: 'https://ws.audioscrobbler.com',
+    timeout: 10
+} %}
+
+{% set options = {
+    form_params: {
+      method: 'user.getrecenttracks',
+      user: 'cowpuncher',
+      api_key: 'dc2e7242feba68442dda3281bdd202f0',
+      format: 'json',
+      limit: '5'
+    }
+} %}
+
+{% set jsonResponse = fetch(client, 'GET', '2.0', options) %}
+{% set recentlyPlayed = jsonResponse.body['recenttracks'] %}
 
 <ul class="list-reset">
   {% for item in recentlyPlayed['track'] %}

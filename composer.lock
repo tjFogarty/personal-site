@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c680ae656b89cde523e954752b86c89d",
+    "content-hash": "284b6738bb6869cab72b0688a1afbec5",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1816,6 +1816,59 @@
                 "single sign on"
             ],
             "time": "2017-04-25T14:43:14+00:00"
+        },
+        {
+            "name": "lukeyouell/craft-fetch",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lukeyouell/craft-fetch.git",
+                "reference": "f01a05c9b1dcdfb3ef0bfced75a70d73e433b1a3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lukeyouell/craft-fetch/zipball/f01a05c9b1dcdfb3ef0bfced75a70d73e433b1a3",
+                "reference": "f01a05c9b1dcdfb3ef0bfced75a70d73e433b1a3",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC11"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Fetch",
+                "handle": "fetch",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/lukeyouell/craft-fetch/v1/CHANGELOG.md",
+                "class": "lukeyouell\\fetch\\Fetch"
+            },
+            "autoload": {
+                "psr-4": {
+                    "lukeyouell\\fetch\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luke Youell",
+                    "homepage": "https://github.com/lukeyouell"
+                }
+            ],
+            "description": "Utilise the Guzzle HTTP client from within your Craft templates.",
+            "keywords": [
+                "Craft",
+                "Guzzle",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "fetch"
+            ],
+            "time": "2018-02-26T12:42:43+00:00"
         },
         {
             "name": "mailgun/mailgun-php",
