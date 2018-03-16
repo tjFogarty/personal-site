@@ -43,6 +43,7 @@ if (mix.inProduction()) {
         path.join(__dirname, 'web/assets/**/*.js')
       ]),
       whitelistPatterns: [
+        /is-loaded/g,
         /hljs-?/g,
         /hljs-keyword/g,
         /hljs-attr/g,
