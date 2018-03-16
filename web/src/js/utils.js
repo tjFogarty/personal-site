@@ -1,4 +1,4 @@
-export function ready(fn) {
+export function ready (fn) {
   if (
     document.attachEvent
       ? document.readyState === 'complete'
@@ -16,7 +16,7 @@ export const env = () => {
     : null
 }
 
-export function showDeveloperMessage() {
+export function showDeveloperMessage () {
   console.log(
     '%c Howdy, looking for the source? https://github.com/tjFogarty/personal-site',
     'color: #222'

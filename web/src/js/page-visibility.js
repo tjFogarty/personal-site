@@ -2,7 +2,7 @@ export const PageVisibility = {
   asleepEmoji: '💤',
   originalTitle: document.title,
 
-  init() {
+  init () {
     if (typeof document.hidden === 'undefined') return
 
     this.handleVisibilityChange = this.handleVisibilityChange.bind(this)
@@ -10,7 +10,7 @@ export const PageVisibility = {
     document.addEventListener('visibilitychange', this.handleVisibilityChange, false)
   },
 
-  handleVisibilityChange() {
+  handleVisibilityChange () {
     let title = this.originalTitle
 
     if (document.hidden) {

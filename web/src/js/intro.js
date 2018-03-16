@@ -17,7 +17,20 @@ export const Intro = {
         }
       })
 
+      this.registerWorklet()
+
       instance.start()
+    }
+  },
+
+  async registerWorklet() {
+    if ('paintWorklet' in window.CSS) {
+      await window.CSS.paintWorklet.addModule('/paint/separator.js')
+      this.hero.setAttribute(
+        'style',
+        '--separator-shape:curve-right; --separator-size: 35px;'
+      )
+      this.hero.classList.add('is-loaded')
     }
   }
 }

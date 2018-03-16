@@ -10,7 +10,7 @@ export const Search = {
   body: document.body,
   index: null,
 
-  init() {
+  init () {
     this.handleTriggerClick = this.handleTriggerClick.bind(this)
     this.performSearch = this.performSearch.bind(this)
 
@@ -28,7 +28,7 @@ export const Search = {
     this.input.addEventListener('keyup', this.performSearch)
   },
 
-  async performSearch(event) {
+  async performSearch (event) {
     if (!this.index) return
 
     let query = event.target.value
@@ -46,20 +46,20 @@ export const Search = {
     }
   },
 
-  resetSearch() {
+  resetSearch () {
     this.body.style.overflow = ''
     this.input.value = ''
     this.focusTrap.deactivate()
     this.emptyResultContainer()
   },
 
-  showSearch() {
+  showSearch () {
     this.body.style.overflow = 'hidden'
     this.input.focus()
     this.focusTrap.activate()
   },
 
-  async handleTriggerClick(e) {
+  async handleTriggerClick (e) {
     e.preventDefault()
     this.container.classList.toggle('is-open')
 
@@ -76,7 +76,7 @@ export const Search = {
     }
   },
 
-  async loadSearchClient() {
+  async loadSearchClient () {
     try {
       let algoliasearch = await System.import(
         /* webpackChunkName: "search" */ 'algoliasearch/lite'
@@ -94,7 +94,7 @@ export const Search = {
     }
   },
 
-  displayResults(results) {
+  displayResults (results) {
     this.emptyResultContainer()
 
     results.forEach(result => {
@@ -103,13 +103,13 @@ export const Search = {
     })
   },
 
-  emptyResultContainer() {
+  emptyResultContainer () {
     while (this.resultsContainer.firstChild) {
       this.resultsContainer.removeChild(this.resultsContainer.firstChild)
     }
   },
 
-  getResultLink(result) {
+  getResultLink (result) {
     let link = document.createElement('a')
     let title = document.createElement('h4')
 
@@ -124,7 +124,7 @@ export const Search = {
     return link
   },
 
-  displayNoResults() {
+  displayNoResults () {
     this.resultsContainer.innerHTML = `<h3>No results found</h3>`
   }
 }
