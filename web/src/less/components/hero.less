@@ -10,9 +10,10 @@
   border-image-width: var(--separator-size);
   border-image-outset: var(--separator-size);
   --separator-shape: curve-left;
-  --separator-size: 20px;
+  --separator-size: 1px;
   --separator-shadow: 1;
   --separator-shadow-color: var(--c-primary);
+  transition: all ease 0.5s;
 
   &.is-loaded {
     border-image-source: paint(separator);
