@@ -1,13 +1,23 @@
+.l-homepage {
+  padding-top: 4rem;
+
+  > div {
+    margin-bottom: 2rem;
+  }
+}
+
 @screen md {
   .l-homepage {
     display: flex;
     margin-bottom: 40px;
+    padding-top: 2rem;
     > div {
       flex-basis: 50%;
+      margin-bottom: 0;
     }
   }
 
-  @supports(display: grid) {
+  @supports (display: grid) {
     .l-homepage {
       display: grid;
       grid-gap: 20px;
