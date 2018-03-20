@@ -1,5 +1,5 @@
 .c-footer {
-  @apply .bg-black .text-white;
+  @apply .bg-black .text-white .text-center;
 }
 
 .c-footer__link {
@@ -13,14 +13,8 @@
   transition: color ease 0.3s;
 }
 
-@screen sm {
-  .c-footer__inner {
-    @apply .flex .justify-between .items-center;
-  }
-}
-
 .c-footer__icons {
-  @apply .relative .flex;
+  @apply .relative .flex .justify-center .mt-3;
   top: 6px;
 }
 
@@ -31,5 +25,19 @@
     .c-footer__icon {
       @apply .text-primary;
     }
+  }
+}
+
+@screen sm {
+  .c-footer {
+    @apply .text-left;
+  }
+
+  .c-footer__inner {
+    @apply .flex .justify-between .items-center;
+  }
+
+  .c-footer__icons {
+    @apply .mt-0;
   }
 }
