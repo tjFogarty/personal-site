@@ -27,7 +27,7 @@
     "craftcms/mailgun": "^1.2",
     "jmx2/pic-puller": "^3.0",
     "rias/craft-scout": "^0.2.3",
-    "nystudio107/craft-seomatic": "^3.0.0-beta.6",
+    "nystudio107/craft-seomatic": "^3.0.0-beta.11",
     "lukeyouell/craft-fetch": "^1.1"
   },
   "config": {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "284b6738bb6869cab72b0688a1afbec5",
+    "content-hash": "42d0251fb5e6cbbcd6377ffd25146f1c",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -1489,16 +1489,16 @@
         },
         {
             "name": "jmx2/pic-puller",
-            "version": "3.0.7",
+            "version": "3.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmx2inc/picpuller-for-craft3.git",
-                "reference": "720c45320d8cf340052e152686319727804dbb19"
+                "reference": "25583d77fa096141b497138549d8ef00322db87a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmx2inc/picpuller-for-craft3/zipball/720c45320d8cf340052e152686319727804dbb19",
-                "reference": "720c45320d8cf340052e152686319727804dbb19",
+                "url": "https://api.github.com/repos/jmx2inc/picpuller-for-craft3/zipball/25583d77fa096141b497138549d8ef00322db87a",
+                "reference": "25583d77fa096141b497138549d8ef00322db87a",
                 "shasum": ""
             },
             "require": {
@@ -1534,7 +1534,7 @@
                 "craftcms",
                 "pic puller"
             ],
-            "time": "2018-03-15T19:11:54+00:00"
+            "time": "2018-03-15T22:09:00+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2191,16 +2191,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0-beta.6",
+            "version": "3.0.0-beta.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "2a9dc2ec99a8afb54ef9c87dd5f54627c4f350ed"
+                "reference": "5a9b631f78e205e24642afe7393b1656fd98a962"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/2a9dc2ec99a8afb54ef9c87dd5f54627c4f350ed",
-                "reference": "2a9dc2ec99a8afb54ef9c87dd5f54627c4f350ed",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/5a9b631f78e205e24642afe7393b1656fd98a962",
+                "reference": "5a9b631f78e205e24642afe7393b1656fd98a962",
                 "shasum": ""
             },
             "require": {
@@ -2255,7 +2255,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-03-15T17:29:28+00:00"
+            "time": "2018-03-19T20:28:11+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -4352,16 +4352,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v5.6.11",
+            "version": "v5.6.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "df66d4a8b4734ffc34808acf7e6671711a3cebd4"
+                "reference": "ead901501cb8f99cec315dbd2daa320858fb646c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/df66d4a8b4734ffc34808acf7e6671711a3cebd4",
-                "reference": "df66d4a8b4734ffc34808acf7e6671711a3cebd4",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/ead901501cb8f99cec315dbd2daa320858fb646c",
+                "reference": "ead901501cb8f99cec315dbd2daa320858fb646c",
                 "shasum": ""
             },
             "require": {
@@ -4398,20 +4398,20 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2018-03-09T18:24:45+00:00"
+            "time": "2018-03-16T15:20:14+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v2.4.6",
+            "version": "v2.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "d2117ec118c1ff3d28ccddca8212d82787a4809f"
+                "reference": "69aacd44dbbaa3199d5afb68605c996d577896fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/d2117ec118c1ff3d28ccddca8212d82787a4809f",
-                "reference": "d2117ec118c1ff3d28ccddca8212d82787a4809f",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/69aacd44dbbaa3199d5afb68605c996d577896fc",
+                "reference": "69aacd44dbbaa3199d5afb68605c996d577896fc",
                 "shasum": ""
             },
             "require": {
@@ -4420,8 +4420,8 @@
             },
             "require-dev": {
                 "psr/container": "^1.0",
-                "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~3.3@dev"
+                "symfony/debug": "^2.7",
+                "symfony/phpunit-bridge": "^3.3"
             },
             "type": "library",
             "extra": {
@@ -4464,7 +4464,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2018-03-03T16:23:01+00:00"
+            "time": "2018-03-20T04:31:17+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
