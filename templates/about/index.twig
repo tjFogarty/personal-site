@@ -1,12 +1,5 @@
 {% extends 'layouts/default' %}
 
-{% set socialTags = [
-  { name: 'og:title', value: 'About page by @tj_fogarty' },
-  { name: 'og:url', value: '/about' }
-] %}
-
-{% set metaTitle = 'About' %}
-
 {% block content %}
 <div class="l-container">
   <div class="l-about">
@@ -14,7 +7,7 @@
       <h1 class="mt-0">{{ entry.title }}</h1>
 
       <div class="clearfix">
-        {% set admin = craft.users.groupBy('admin').one() %}
+        {% set admin = craft.users.admin('1').one() %}
         {% set adminPhoto = admin.getPhoto() %}
         <img src="{{ adminPhoto.getUrl({ width: 250 }) }}" sizes="165px" srcset="{{ adminPhoto.getUrl({ width: 250 }) }} 250w, {{ adminPhoto.getUrl({ width: 300 }) }} 300w, {{ adminPhoto.getUrl({ width: 550 }) }} 550w" class="rounded-full mx-auto md:mr-6 md:ml-0 md:float-left" style="display: block; max-width: 165px; image-rendering: -webkit-optimize-contrast; shape-outside: circle(50%);" decoding="async" width="165px" height="165px" alt="Profile image of TJ Fogarty" />
         {{ entry.postContent | typogrify }}
