@@ -1,43 +1,41 @@
 {
-  "name": "craftcms/craft",
-  "description": "Craft CMS",
-  "keywords": ["craft", "cms", "craftcms", "project"],
-  "license": "MIT",
-  "homepage": "https://craftcms.com/",
-  "type": "project",
-  "support": {
-    "email": "support@craftcms.com",
-    "issues": "https://github.com/craftcms/cms/issues",
-    "forum": "https://craftcms.stackexchange.com/",
-    "source": "https://github.com/craftcms/cms",
-    "docs": "https://craftcms.com/docs",
-    "rss": "https://craftcms.com/changelog.rss"
-  },
-  "minimum-stability": "beta",
-  "require": {
-    "php": ">=7.0.0",
-    "craftcms/cms": "^3.0.0-RC15",
-    "vlucas/phpdotenv": "^2.4.0",
-    "roave/security-advisories": "dev-master",
-    "craftcms/contact-form": "^2.1",
-    "superbig/craft3-http2serverpush": "^1.0",
-    "nystudio107/craft-typogrify": "^1.1",
-    "misterbk/mix": "^1.4.0",
-    "selvinortiz/doxter": "^3.1",
-    "craftcms/mailgun": "^1.2",
-    "jmx2/pic-puller": "^3.0",
-    "rias/craft-scout": "^0.2.3",
-    "nystudio107/craft-seomatic": "^3.0.0-beta.11",
-    "lukeyouell/craft-fetch": "^1.1",
-    "solspace/craft3-freeform": "^2.0@beta"
-  },
-  "config": {
-    "optimize-autoloader": true
-  },
-  "scripts": {
-    "post-root-package-install": [
-      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-    ],
-    "post-create-project-cmd": ["@php craft setup/welcome"]
-  }
+	"name": "craftcms/craft",
+	"description": "Craft CMS",
+	"keywords": ["craft", "cms", "craftcms", "project"],
+	"license": "MIT",
+	"homepage": "https://craftcms.com/",
+	"type": "project",
+	"support": {
+		"email": "support@craftcms.com",
+		"issues": "https://github.com/craftcms/cms/issues",
+		"forum": "https://craftcms.stackexchange.com/",
+		"source": "https://github.com/craftcms/cms",
+		"docs": "https://craftcms.com/docs",
+		"rss": "https://craftcms.com/changelog.rss"
+	},
+	"minimum-stability": "beta",
+	"require": {
+		"php": ">=7.0.0",
+		"craftcms/cms": "^3.0.0-RC16",
+		"vlucas/phpdotenv": "^2.4.0",
+		"roave/security-advisories": "dev-master",
+		"superbig/craft3-http2serverpush": "^1.0",
+		"nystudio107/craft-typogrify": "^1.1",
+		"misterbk/mix": "^1.4.0",
+		"selvinortiz/doxter": "^3.1",
+		"jmx2/pic-puller": "^3.0",
+		"rias/craft-scout": "^0.3.0",
+		"nystudio107/craft-seomatic": "^3.0.0-beta.11",
+		"lukeyouell/craft-fetch": "^1.1",
+		"solspace/craft3-freeform": "^2.0@beta"
+	},
+	"config": {
+		"optimize-autoloader": true
+	},
+	"scripts": {
+		"post-root-package-install": [
+			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+		],
+		"post-create-project-cmd": ["@php craft setup/welcome"]
+	}
 }
