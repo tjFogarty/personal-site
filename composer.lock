@@ -2041,16 +2041,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0-beta.14",
+            "version": "3.0.0-beta.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "61d158bca8f0189577c0313d9ac1ef291a4952da"
+                "reference": "0b1af7c4a3695e39db1682279f87e8016031d730"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/61d158bca8f0189577c0313d9ac1ef291a4952da",
-                "reference": "61d158bca8f0189577c0313d9ac1ef291a4952da",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/0b1af7c4a3695e39db1682279f87e8016031d730",
+                "reference": "0b1af7c4a3695e39db1682279f87e8016031d730",
                 "shasum": ""
             },
             "require": {
@@ -2105,7 +2105,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-03-24T05:24:27+00:00"
+            "time": "2018-03-24T22:58:26+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
