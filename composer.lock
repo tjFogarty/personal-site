@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "dbc5573324ad25a75bf0cd9e8b71c93c",
+    "content-hash": "e71aaba1c097f6dd14ff0d1000aa4bf6",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -374,16 +374,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC16",
+            "version": "3.0.0-RC17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "eab4d613c717d23869f28fceebf6d60d186d0544"
+                "reference": "bcce9c47fe2449128253d89cb390162deb7c80c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/eab4d613c717d23869f28fceebf6d60d186d0544",
-                "reference": "eab4d613c717d23869f28fceebf6d60d186d0544",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/bcce9c47fe2449128253d89cb390162deb7c80c2",
+                "reference": "bcce9c47fe2449128253d89cb390162deb7c80c2",
                 "shasum": ""
             },
             "require": {
@@ -452,7 +452,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-03-23T19:13:04+00:00"
+            "time": "2018-03-28T18:16:57+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1095,16 +1095,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.3.0",
+            "version": "6.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
+                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f4db5a78a5ea468d4831de7f0bf9d9415e348699",
-                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/68d0ea14d5a3f42a20e87632a5f84931e2709c90",
+                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90",
                 "shasum": ""
             },
             "require": {
@@ -1114,7 +1114,7 @@
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "^4.0 || ^5.0",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4",
                 "psr/log": "^1.0"
             },
             "suggest": {
@@ -1123,7 +1123,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.2-dev"
+                    "dev-master": "6.3-dev"
                 }
             },
             "autoload": {
@@ -1156,7 +1156,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2017-06-22T18:50:49+00:00"
+            "time": "2018-03-26T16:33:04+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1925,6 +1925,84 @@
             "time": "2018-03-14T20:46:30+00:00"
         },
         {
+            "name": "monolog/monolog",
+            "version": "1.23.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
+                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
+                "php-amqplib/php-amqplib": "~2.4",
+                "php-console/php-console": "^3.1.3",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "sentry/sentry": "^0.13",
+                "swiftmailer/swiftmailer": "^5.3|^6.0"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
+                "sentry/sentry": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2017-06-19T01:22:40+00:00"
+        },
+        {
             "name": "mundschenk-at/php-typography",
             "version": "v6.1.3",
             "source": {
@@ -2041,16 +2119,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0-beta.15",
+            "version": "3.0.0-beta.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "0b1af7c4a3695e39db1682279f87e8016031d730"
+                "reference": "d555d037d31986537bd18112f67597528dc86b3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/0b1af7c4a3695e39db1682279f87e8016031d730",
-                "reference": "0b1af7c4a3695e39db1682279f87e8016031d730",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d555d037d31986537bd18112f67597528dc86b3a",
+                "reference": "d555d037d31986537bd18112f67597528dc86b3a",
                 "shasum": ""
             },
             "require": {
@@ -2105,7 +2183,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-03-24T22:58:26+00:00"
+            "time": "2018-03-28T18:54:20+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -2891,17 +2969,20 @@
         },
         {
             "name": "solspace/craft3-commons",
-            "version": "1.0.5",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft3-commons.git",
-                "reference": "551a751b40eb81abee8fbaf8d770155917dbe9fb"
+                "reference": "67c2c7dc83ed55a27835a84e532eecfdbc1ae6d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft3-commons/zipball/551a751b40eb81abee8fbaf8d770155917dbe9fb",
-                "reference": "551a751b40eb81abee8fbaf8d770155917dbe9fb",
+                "url": "https://api.github.com/repos/solspace/craft3-commons/zipball/67c2c7dc83ed55a27835a84e532eecfdbc1ae6d2",
+                "reference": "67c2c7dc83ed55a27835a84e532eecfdbc1ae6d2",
                 "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "^1.23.0"
             },
             "type": "library",
             "autoload": {
@@ -2913,21 +2994,21 @@
             "license": [
                 "MIT"
             ],
-            "description": "Common object library for Solspace projects",
-            "time": "2018-03-05T11:37:52+00:00"
+            "description": "Solspace Commons Library for Craft CMS 3 plugins",
+            "time": "2018-03-27T13:11:40+00:00"
         },
         {
             "name": "solspace/craft3-freeform",
-            "version": "2.0.0-beta.12",
+            "version": "2.0.0-beta.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft3-freeform.git",
-                "reference": "e8b3e7e68d68e7d4ea225748d18a7a94fd88026a"
+                "reference": "f492779eab8e96abcd214779e33d9f221906273d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/e8b3e7e68d68e7d4ea225748d18a7a94fd88026a",
-                "reference": "e8b3e7e68d68e7d4ea225748d18a7a94fd88026a",
+                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/f492779eab8e96abcd214779e33d9f221906273d",
+                "reference": "f492779eab8e96abcd214779e33d9f221906273d",
                 "shasum": ""
             },
             "require": {
@@ -2935,7 +3016,7 @@
                 "hashids/hashids": "^1.0",
                 "nesbot/carbon": "^1.22.1",
                 "pixel418/markdownify": "2.1.11",
-                "solspace/craft3-commons": "^1.0.2",
+                "solspace/craft3-commons": "^1.0.9",
                 "symfony/filesystem": "^3.3",
                 "symfony/finder": "^3.3",
                 "symfony/property-access": "^3.3"
@@ -2969,7 +3050,7 @@
                 }
             ],
             "description": "The most intuitive and powerful form builder for Craft.",
-            "time": "2018-03-21T17:57:26+00:00"
+            "time": "2018-03-27T20:26:06+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
@@ -3950,16 +4031,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v5.6.12",
+            "version": "v5.6.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "ead901501cb8f99cec315dbd2daa320858fb646c"
+                "reference": "bf73478a3ff21192fa59cdd36ef6d8778aa2fe4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/ead901501cb8f99cec315dbd2daa320858fb646c",
-                "reference": "ead901501cb8f99cec315dbd2daa320858fb646c",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/bf73478a3ff21192fa59cdd36ef6d8778aa2fe4e",
+                "reference": "bf73478a3ff21192fa59cdd36ef6d8778aa2fe4e",
                 "shasum": ""
             },
             "require": {
@@ -3996,7 +4077,7 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2018-03-16T15:20:14+00:00"
+            "time": "2018-03-26T18:56:08+00:00"
         },
         {
             "name": "twig/twig",
