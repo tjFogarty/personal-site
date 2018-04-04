@@ -2,7 +2,7 @@
 
 {% set socialTags = [
   { name: 'og:title', value: 'Thanks' },
-  { name: 'og:url', value: craft.request.url }
+  { name: 'og:url', value: craft.app.request.absoluteUrl }
 ] %}
 
 {% set metaTitle = 'Thanks' %}

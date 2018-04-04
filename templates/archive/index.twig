@@ -1,7 +1,7 @@
 {% extends 'layouts/default' %}
 
 {% set socialTags = [
-  { name: 'og:url', value: craft.request.url }
+  { name: 'og:url', value: craft.app.request.absoluteUrl }
 ] %}
 
 {% set metaTitle = 'Archive' %}
