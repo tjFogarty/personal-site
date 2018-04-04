@@ -1,5 +1,12 @@
 {% extends 'layouts/default' %}
 
+{% set socialTags = [
+  { name: 'og:title', value: 'Thanks' },
+  { name: 'og:url', value: craft.request.url }
+] %}
+
+{% set metaTitle = 'Thanks' %}
+
 {% block content %}
 <div class="l-container">
   <h1 class="mt-0">Contact</h1>

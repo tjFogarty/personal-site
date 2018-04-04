@@ -5,6 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    {% include 'components/_meta' %}
+
     {{ mix('/assets/css/app.css', true, true) | raw }}
 
     <link rel="preload" href="/assets/js/manifest.js" as="script" crossorigin>

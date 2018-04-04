@@ -1,12 +1,5 @@
 {% extends 'layouts/default' %}
 
-{% set socialTags = [
-  { name: 'og:title', value: 'Projects by @tj_fogarty' },
-  { name: 'og:url', value: '/projects' }
-] %}
-
-{% set metaTitle = 'Projects' %}
-
 {% block content %}
 <div class="l-container">
   <div class="mb-8">
@@ -22,7 +15,7 @@
         <h2 class="c-projects__item-title">{{ block.projectTitle }}</h2>
         {{ block.description }}
       </div>
-      
+
       {% set projectImage = block.image.one() %}
       {% if projectImage %}
       <img
@@ -34,8 +27,8 @@
           {{ projectImage.getUrl({ width: 760, height: 570, mode: 'crop', position: 'top-left', format: 'jpg' }) }} 760w
         "
         sizes="(min-width: 766px) 460w, 100vw"
-        alt="{{ projectImage.title }}" 
-        class="c-projects__item-image" 
+        alt="{{ projectImage.title }}"
+        class="c-projects__item-image"
         decoding="async"
       >
       {% endif %}

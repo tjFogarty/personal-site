@@ -1,0 +1,42 @@
+{% if entry is defined %}
+  {% set socialTags = [
+    { name: 'og:title', value: entry.title ~ ' by @tj_fogarty' },
+    { name: 'og:url', value: entry.url }
+  ] %}
+
+  {% set metaTitle = entry.title %}
+  {% set metaDescription = entry.description %}
+{% endif %}
+
+{% if craft.app.config.general.devMode %}
+
+  {% if metaTitle is defined %}
+    <title>️⚠️ DEV | {{ metaTitle }} | TJ Fogarty</title>
+  {% else %}
+    <title>⚠️ TJ Fogarty | DEV</title>
+  {% endif %}
+
+{% else %}
+
+  {% if metaTitle is defined %}
+    <title>{{ metaTitle }} | TJ Fogarty | Web Developer</title>
+  {% else %}
+    <title>TJ Fogarty | Web Developer</title>
+  {% endif %}
+
+{% endif %}
+
+{% if metaDescription is defined and metaDescription != '' %}
+  <meta name="description" content="{{ metaDescription }}">
+{% else %}
+  <meta name="description" content="Web Developer from Limerick, Ireland and living in Waterford.">
+{% endif %}
+
+<meta name="twitter:site" content="@tj_fogarty">
+<meta property="og:site_name" content="TJ Fogarty">
+
+{% if socialTags is defined %}
+  {% for prop in socialTags %}
+    <meta property="{{ prop.name}}" content="{{ prop.value }}">
+  {% endfor %}
+{% endif %}

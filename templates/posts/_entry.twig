@@ -1,7 +1,5 @@
 {% extends 'layouts/default' %}
 
-{% set metaTitle = entry.title %}
-
 {% block content %}
 <div class="l-container">
   <article class="c-post" itemscope itemtype="http://schema.org/Article">
@@ -16,7 +14,7 @@
     </div>
 
     {{ entry.postContent | typogrify }}
-    
+
     <div class="c-share-container">
       {% set cats = entry.categories.all() %}
 
@@ -38,7 +36,7 @@
         {% include 'components/_related-posts' with { categories: cats, ignoreId: entry.id } %}
       </div>
       {% endif %}
-      
+
       {% include 'components/_share' %}
     </div>
 

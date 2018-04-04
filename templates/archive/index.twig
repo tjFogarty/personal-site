@@ -1,11 +1,17 @@
 {% extends 'layouts/default' %}
 
+{% set socialTags = [
+  { name: 'og:url', value: craft.request.url }
+] %}
+
+{% set metaTitle = 'Archive' %}
+
 {% block content %}
 <div class="l-container">
   <h1>Archive</h1>
-  
+
   <p>
-    I post about things such as 
+    I post about things such as
     {% for category in craft.categories.group('category').all() %}
     {% if loop.last %} and {% endif %}
     <a href="{{ category.url }}">{{ category.title }}</a>{% if not loop.last %},{% else %}.{% endif %}
