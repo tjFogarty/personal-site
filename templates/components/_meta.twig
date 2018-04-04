@@ -28,12 +28,14 @@
 
 {% if metaDescription is defined and metaDescription != '' %}
   <meta name="description" content="{{ metaDescription }}">
+  <meta property="og:description" content="{{ metaDescription }}">
 {% else %}
   <meta name="description" content="Web Developer from Limerick, Ireland and living in Waterford.">
+  <meta property="og:description" content="Web Developer from Limerick, Ireland and living in Waterford.">
 {% endif %}
 
 <meta name="twitter:site" content="@tj_fogarty">
-<meta property="og:site_name" content="TJ Fogarty">
+<meta property="og:site_name" content="TJ Fogarty | Web Developer">
 
 {% if socialTags is defined %}
   {% for prop in socialTags %}
