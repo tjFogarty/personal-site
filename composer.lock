@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "46957fae6b39d9cc15745fde1c15be6a",
+    "content-hash": "536a2aa98a984ed0c177d480ebb06bc8",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -374,16 +374,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC17.1",
+            "version": "3.0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "c638b66f752656ac56706a514d0e945319bd70ba"
+                "reference": "a37a8d0e50a6b8d27c6627bb3c7ae4d1812dad1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c638b66f752656ac56706a514d0e945319bd70ba",
-                "reference": "c638b66f752656ac56706a514d0e945319bd70ba",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/a37a8d0e50a6b8d27c6627bb3c7ae4d1812dad1c",
+                "reference": "a37a8d0e50a6b8d27c6627bb3c7ae4d1812dad1c",
                 "shasum": ""
             },
             "require": {
@@ -452,7 +452,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-03-29T22:24:07+00:00"
+            "time": "2018-04-04T18:29:33+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1333,16 +1333,16 @@
         },
         {
             "name": "jmx2/pic-puller",
-            "version": "3.0.8",
+            "version": "3.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmx2inc/picpuller-for-craft3.git",
-                "reference": "25583d77fa096141b497138549d8ef00322db87a"
+                "reference": "e8ea75de401f3a78446e98812c800772ed684b36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmx2inc/picpuller-for-craft3/zipball/25583d77fa096141b497138549d8ef00322db87a",
-                "reference": "25583d77fa096141b497138549d8ef00322db87a",
+                "url": "https://api.github.com/repos/jmx2inc/picpuller-for-craft3/zipball/e8ea75de401f3a78446e98812c800772ed684b36",
+                "reference": "e8ea75de401f3a78446e98812c800772ed684b36",
                 "shasum": ""
             },
             "require": {
@@ -1378,7 +1378,7 @@
                 "craftcms",
                 "pic puller"
             ],
-            "time": "2018-03-15T22:09:00+00:00"
+            "time": "2018-04-03T17:34:58+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2244,16 +2244,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.11",
+            "version": "v2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "5da4d3c796c275c55f057af5a643ae297d96b4d8"
+                "reference": "258c89a6b97de7dfaf5b8c7607d0478e236b04fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/5da4d3c796c275c55f057af5a643ae297d96b4d8",
-                "reference": "5da4d3c796c275c55f057af5a643ae297d96b4d8",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/258c89a6b97de7dfaf5b8c7607d0478e236b04fb",
+                "reference": "258c89a6b97de7dfaf5b8c7607d0478e236b04fb",
                 "shasum": ""
             },
             "require": {
@@ -2288,7 +2288,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2017-09-27T21:40:39+00:00"
+            "time": "2018-04-04T21:24:14+00:00"
         },
         {
             "name": "php-science/textrank",
@@ -3000,16 +3000,16 @@
         },
         {
             "name": "solspace/craft3-freeform",
-            "version": "2.0.0-beta.13",
+            "version": "2.0.0-beta.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft3-freeform.git",
-                "reference": "f492779eab8e96abcd214779e33d9f221906273d"
+                "reference": "664e9a5af347b0ce2ce3cd5a6dbcecd344052af9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/f492779eab8e96abcd214779e33d9f221906273d",
-                "reference": "f492779eab8e96abcd214779e33d9f221906273d",
+                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/664e9a5af347b0ce2ce3cd5a6dbcecd344052af9",
+                "reference": "664e9a5af347b0ce2ce3cd5a6dbcecd344052af9",
                 "shasum": ""
             },
             "require": {
@@ -3051,7 +3051,7 @@
                 }
             ],
             "description": "The most intuitive and powerful form builder for Craft.",
-            "time": "2018-03-27T20:26:06+00:00"
+            "time": "2018-04-04T21:05:09+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
