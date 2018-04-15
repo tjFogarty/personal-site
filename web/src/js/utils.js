@@ -23,14 +23,17 @@ export function showDeveloperMessage() {
   )
 }
 
+// https://developer.mozilla.org/en-US/docs/Web/API/Navigator/doNotTrack
 export function hasDoNotTrackEnabled() {
-  // if it's not supported, leave it off
-  if (!('doNotTrack' in navigator)) return true
+  let doNotTrack = navigator.doNotTrack
 
-  let { doNotTrack } = navigator
+  // some browsers have this in the window object
+  if ('doNotTrack' in window) {
+    doNotTrack = window.doNotTrack
+  }
 
   // if it isn't specified, let's not assume
   if (doNotTrack === 'unspecified') return true
 
-  return doNotTrack || doNotTrack === '1'
+  return doNotTrack === '1'
 }
