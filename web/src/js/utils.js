@@ -24,11 +24,13 @@ export function showDeveloperMessage() {
 }
 
 export function hasDoNotTrackEnabled() {
-  if (!('doNotTrack' in navigator)) return false
+  // if it's not supported, leave it off
+  if (!('doNotTrack' in navigator)) return true
 
   let { doNotTrack } = navigator
 
-  if (doNotTrack === 'unspecified') return false
+  // if it isn't specified, let's not assume
+  if (doNotTrack === 'unspecified') return true
 
   return doNotTrack || doNotTrack === '1'
 }
