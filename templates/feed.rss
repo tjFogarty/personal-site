@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>{{ siteName }}</title>
         <link>{{ siteUrl }}</link>
-        <atom:link href="{{ siteUrl }}{{ craft.app.request.getPathInfo(true) }}" rel="self" type="application/rss+xml" />
+        <atom:link href="{{ craft.app.request.absoluteUrl }}" rel="self" type="application/rss+xml" />
         <description>Web Development</description>
         <language>en-us</language>
         <pubDate>{{ now | rss }}</pubDate>
