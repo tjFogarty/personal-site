@@ -26,5 +26,9 @@ export function showDeveloperMessage() {
 export function hasDoNotTrackEnabled() {
   if (!('doNotTrack' in navigator)) return false
 
-  return navigator.doNotTrack || navigator.doNotTrack === '1'
+  let { doNotTrack } = navigator
+
+  if (doNotTrack === 'unspecified') return false
+
+  return doNotTrack || doNotTrack === '1'
 }
