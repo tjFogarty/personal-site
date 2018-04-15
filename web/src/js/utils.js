@@ -22,3 +22,9 @@ export function showDeveloperMessage() {
     'color: #ac3b61'
   )
 }
+
+export function hasDoNotTrackEnabled() {
+  if (!('doNotTrack' in navigator)) return false
+
+  return navigator.doNotTrack || navigator.doNotTrack === '1'
+}
