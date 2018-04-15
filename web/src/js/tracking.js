@@ -3,9 +3,11 @@ import { env } from './utils'
 
 export const Tracking = {
   gaId: 'UA-110493614-1',
-  shouldTrack: env() === 'production' && !this.hasDoNotTrackEnabled(),
+  shouldTrack: false,
 
   setup() {
+    this.shouldTrack = env() === 'production' && !this.hasDoNotTrackEnabled()
+
     if (!this.shouldTrack) return
 
     galite('create', 'UA-110493614-1', 'auto')
