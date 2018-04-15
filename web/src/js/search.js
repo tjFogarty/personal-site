@@ -10,7 +10,7 @@ export const Search = {
   body: document.body,
   index: null,
 
-  init () {
+  init() {
     this.handleTriggerClick = this.handleTriggerClick.bind(this)
     this.performSearch = this.performSearch.bind(this)
 
@@ -28,38 +28,30 @@ export const Search = {
     this.input.addEventListener('keyup', this.performSearch)
   },
 
-  async performSearch (event) {
+  async performSearch(event) {
     if (!this.index) return
 
-    let query = event.target.value
+    let { hits } = await this.index.search({ query: event.target.value })
 
-    try {
-      let content = await this.index.search({ query })
+    if (!hits || !hits.length) return this.displayNoResults()
 
-      if (content.hits && content.hits.length) {
-        this.displayResults(content.hits)
-      } else {
-        this.displayNoResults()
-      }
-    } catch (e) {
-      console.log('Error performing search: ', e)
-    }
+    this.displayResults(hits)
   },
 
-  resetSearch () {
+  resetSearch() {
     this.body.style.overflow = ''
     this.input.value = ''
     this.focusTrap.deactivate()
     this.emptyResultContainer()
   },
 
-  showSearch () {
+  showSearch() {
     this.body.style.overflow = 'hidden'
     this.input.focus()
     this.focusTrap.activate()
   },
 
-  async handleTriggerClick (e) {
+  handleTriggerClick(e) {
     e.preventDefault()
     this.container.classList.toggle('is-open')
 
@@ -69,32 +61,22 @@ export const Search = {
       this.resetSearch()
     }
 
-    try {
-      await this.loadSearchClient()
-    } catch (e) {
-      console.log('Error: ', e)
-    }
+    this.loadSearchClient()
   },
 
-  async loadSearchClient () {
-    try {
-      let algoliasearch = await System.import(
-        /* webpackChunkName: "search" */ 'algoliasearch/lite'
-      )
+  async loadSearchClient() {
+    let algoliasearch = await System.import(
+      /* webpackChunkName: "search" */ 'algoliasearch/lite'
+    )
 
-      let client = algoliasearch(
-        'B5ZTA540XE',
-        '5760522b641a5ab4334c5a2806c4aa67'
-      )
-      this.index = client.initIndex(
-        env() === 'development' ? 'dev_posts' : 'prod_posts'
-      )
-    } catch (e) {
-      console.log('Error loading search client', e)
-    }
+    let client = algoliasearch('B5ZTA540XE', '5760522b641a5ab4334c5a2806c4aa67')
+
+    this.index = client.initIndex(
+      env() === 'development' ? 'dev_posts' : 'prod_posts'
+    )
   },
 
-  displayResults (results) {
+  displayResults(results) {
     this.emptyResultContainer()
 
     results.forEach(result => {
@@ -103,13 +85,13 @@ export const Search = {
     })
   },
 
-  emptyResultContainer () {
+  emptyResultContainer() {
     while (this.resultsContainer.firstChild) {
       this.resultsContainer.removeChild(this.resultsContainer.firstChild)
     }
   },
 
-  getResultLink (result) {
+  getResultLink(result) {
     let link = document.createElement('a')
     let title = document.createElement('h4')
 
@@ -124,7 +106,7 @@ export const Search = {
     return link
   },
 
-  displayNoResults () {
+  displayNoResults() {
     this.resultsContainer.innerHTML = `<h3>No results found</h3>`
   }
 }
