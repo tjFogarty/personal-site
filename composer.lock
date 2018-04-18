@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88b82920e20047e87a25ef7c40772804",
+    "content-hash": "44c7b29310dcb4f95ea8db24ef2a35f8",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -2145,16 +2145,16 @@
         },
         {
             "name": "rias/craft-scout",
-            "version": "0.3.0",
+            "version": "0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Rias500/craft-scout.git",
-                "reference": "9c92bbf47a5d8c81f41d8c1f877ba25056517a57"
+                "reference": "574510a41c6859d99511a3ac064c6853f03e6d77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Rias500/craft-scout/zipball/9c92bbf47a5d8c81f41d8c1f877ba25056517a57",
-                "reference": "9c92bbf47a5d8c81f41d8c1f877ba25056517a57",
+                "url": "https://api.github.com/repos/Rias500/craft-scout/zipball/574510a41c6859d99511a3ac064c6853f03e6d77",
+                "reference": "574510a41c6859d99511a3ac064c6853f03e6d77",
                 "shasum": ""
             },
             "require": {
@@ -2198,7 +2198,7 @@
                 "craftcms",
                 "scout"
             ],
-            "time": "2018-03-12T14:03:04+00:00"
+            "time": "2018-04-17T09:40:54+00:00"
         },
         {
             "name": "roave/security-advisories",
