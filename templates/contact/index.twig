@@ -6,43 +6,18 @@
 
     {{ entry.postContent }}
 
-    {% macro errorList(errors) %}
-        {% if errors %}
-            <ul class="errors list-reset">
-                {% for error in errors %}
-                    <li>
-                        <p class="text-red">
-                            {{ error }}
-                        </p>
-                    </li>
-                {% endfor %}
-            </ul>
-        {% endif %}
-    {% endmacro %}
-
-    {% from _self import errorList %}
-
-    <form method="post" action="" class="max-w-md mt-4" accept-charset="UTF-8">
-        {{ csrfInput() }}
-        <input type="hidden" name="action" value="contact-form/send">
-        <input type="hidden" name="redirect" value="{{ 'contact/thanks'|hash }}">
-        <input id="dontdoit" name="dontdoit" type="text" class="hidden">
-
+    <form method="post" action="https://usebasin.com/f/efb8ce44c505" class="max-w-md mt-4" accept-charset="UTF-8">
         <label for="from-name">Your Name</label>
-        <input id="from-name" type="text" name="fromName" value="{{ message.fromName ?? '' }}">
-        {{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+        <input id="from-name" type="text" name="fromName" value="">
 
-        <label for="from-email">Your Email</label>
-        <input id="from-email" type="email" name="fromEmail" value="{{ message.fromEmail ?? '' }}" required>
-        {{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+        <label for="from-email">Your Email (required)</label>
+        <input id="from-email" type="email" name="fromEmail" value="" required>
 
         <label for="subject">Subject</label>
-        <input id="subject" type="text" name="subject" value="{{ message.subject ?? '' }}">
-        {{ message is defined and message ? errorList(message.getErrors('subject')) }}
+        <input id="subject" type="text" name="subject" value="">
 
-        <label for="message">Message</label>
-        <textarea rows="10" cols="40" id="message" name="message" required>{{ message.message ?? '' }}</textarea>
-        {{ message is defined and message ? errorList(message.getErrors('message')) }}
+        <label for="message">Message (required)</label>
+        <textarea rows="10" cols="40" id="message" name="message" required></textarea>
 
         <button type="submit" value="Send" class="c-btn c-btn-primary">Send</button>
     </form>
