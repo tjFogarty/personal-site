@@ -15,7 +15,13 @@ ready(async () => {
   showDeveloperMessage()
 
   if (document.querySelector('pre')) {
-    let hljs = await import(/* webpackChunkName: "hljs" */ 'highlight.js')
-    hljs.initHighlightingOnLoad()
+    let microlight = await import(/* webpackChunkName: "microlight" */ 'microlight')
+    let codeBlocks = document.querySelectorAll('pre')
+
+    codeBlocks.forEach(block => {
+      block.classList.add('microlight')
+    })
+
+    microlight.reset()
   }
 })

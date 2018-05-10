@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
     "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=webpack.config.js",
-    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.production.js"
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.46",
@@ -40,11 +40,12 @@
     "not ie <= 10"
   ],
   "dependencies": {
-    "ga-lite": "^2.0.1",
     "algoliasearch": "^3.27.1",
     "basicscroll": "^2.1.1",
     "focus-trap": "^2.4.4",
+    "ga-lite": "^2.0.1",
     "highlight.js": "^9.12.0",
+    "microlight": "0.0.7",
     "tailwindcss": "^0.5.3"
   }
 }
