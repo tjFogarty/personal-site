@@ -15,9 +15,7 @@ ready(async () => {
   showDeveloperMessage()
 
   if (document.querySelector('pre')) {
-    let hljs = await System.import(
-      /* webpackChunkName: "hljs" */ 'highlight.js'
-    )
+    let hljs = await import(/* webpackChunkName: "hljs" */ 'highlight.js')
     hljs.initHighlightingOnLoad()
   }
 })

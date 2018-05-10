@@ -1,12 +1,11 @@
 import { env } from './utils'
-import createFocusTrap from 'focus-trap'
 
 export const Search = {
   trigger: document.querySelectorAll('.js-search'),
   input: document.querySelector('.js-search-input'),
   container: document.querySelector('.js-search-container'),
   resultsContainer: document.querySelector('.js-search-results'),
-  focusTrap: createFocusTrap('#search-dialog'),
+  focusTrap: null,
   body: document.body,
   index: null,
 
@@ -51,9 +50,13 @@ export const Search = {
     this.focusTrap.activate()
   },
 
-  handleTriggerClick(e) {
+  async handleTriggerClick(e) {
     e.preventDefault()
     this.container.classList.toggle('is-open')
+
+    let createFocusTrap = await import(/* webpackChunkName: "focus-trap" */ 'focus-trap')
+
+    this.focusTrap = createFocusTrap.default('#search-dialog')
 
     if (this.container.classList.contains('is-open')) {
       this.showSearch()
@@ -65,11 +68,12 @@ export const Search = {
   },
 
   async loadSearchClient() {
-    let algoliasearch = await System.import(
-      /* webpackChunkName: "search" */ 'algoliasearch/lite'
-    )
+    let algoliasearch = await import(/* webpackChunkName: "search" */ 'algoliasearch/lite')
 
-    let client = algoliasearch('B5ZTA540XE', '5760522b641a5ab4334c5a2806c4aa67')
+    let client = algoliasearch.default(
+      'B5ZTA540XE',
+      '5760522b641a5ab4334c5a2806c4aa67'
+    )
 
     this.index = client.initIndex(
       env() === 'development' ? 'dev_posts' : 'prod_posts'
