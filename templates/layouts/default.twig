@@ -26,16 +26,6 @@
 
     <script src="/assets/js/main.js" defer></script>
 
-{% if not craft.app.config.general.devMode %}
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/sw.js')
-  })
-}
-</script>
-{% endif %}
-
     {% include 'components/_footer' %}
 
     {% include 'components/_search' %}
