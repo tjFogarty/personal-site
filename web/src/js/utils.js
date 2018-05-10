@@ -1,19 +1,13 @@
 export function ready(fn) {
-  if (
-    document.attachEvent
-      ? document.readyState === 'complete'
-      : document.readyState !== 'loading'
-  ) {
-    fn()
-  } else {
-    document.addEventListener('DOMContentLoaded', fn)
-  }
+  document.addEventListener('DOMContentLoaded', fn)
 }
 
-export const env = () => {
-  return process && process.env && process.env.NODE_ENV
-    ? process.env.NODE_ENV
-    : null
+export function env() {
+  if (process && process.env && process.env.NODE_ENV) {
+    return process.env.NODE_ENV
+  }
+
+  return 'production'
 }
 
 export function showDeveloperMessage() {
@@ -25,15 +19,7 @@ export function showDeveloperMessage() {
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Navigator/doNotTrack
 export function hasDoNotTrackEnabled() {
-  let doNotTrack = navigator.doNotTrack
-
-  // some browsers have this in the window object
-  if ('doNotTrack' in window) {
-    doNotTrack = window.doNotTrack
-  }
-
-  // if it isn't specified, let's not assume
-  if (doNotTrack === 'unspecified') return true
+  let doNotTrack = navigator.doNotTrack || window.doNotTrack
 
   return doNotTrack === '1'
 }

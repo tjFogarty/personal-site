@@ -5,22 +5,29 @@ export const Intro = {
 
   init() {
     if (this.hero) {
-      const instance = create({
-        elem: this.hero,
-        from: '0',
-        to: '300px',
-        props: {
-          '--hero-position-y': {
-            from: '0%',
-            to: '5%'
-          }
-        }
-      })
-
+      this.loadBasicScroll()
       this.registerWorklet()
-
-      instance.start()
     }
+  },
+
+  async loadBasicScroll() {
+    let {
+      create
+    } = await import(/* webpackChunkName: "basicscroll" */ 'basicscroll')
+
+    const instance = create({
+      elem: this.hero,
+      from: '0',
+      to: '300px',
+      props: {
+        '--hero-position-y': {
+          from: '0%',
+          to: '5%'
+        }
+      }
+    })
+
+    instance.start()
   },
 
   async registerWorklet() {
