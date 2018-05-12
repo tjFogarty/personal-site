@@ -28,6 +28,8 @@ return [
         'pageTrigger' => 'page/',
 
         'lastFmKey' => getenv('LAST_FM_API_KEY'),
+
+        'lastFmUser' => getenv('LAST_FM_USER'),
     ],
 
     // Dev environment settings

@@ -9,7 +9,7 @@
 {% set options = {
   form_params: {
     method: 'user.getrecenttracks',
-    user: 'cowpuncher',
+    user: craft.app.config.general.lastFmUser,
     api_key: craft.app.config.general.lastFmKey,
     format: 'json',
     limit: '5'
