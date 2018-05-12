@@ -29,7 +29,13 @@
           by
           {{ item['artist']['#text'] }}
         </a>
-        <small class="block">{{ item['date']['#text'] }}</small>
+        <small class="block">
+          {% if item['date'] is defined %}
+            {{ item['date']['#text'] }}
+            {% else %}
+            Currently playing
+          {% endif %}
+        </small>
       </p>
     </li>
   {% endfor %}
