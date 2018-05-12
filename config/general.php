@@ -1,4 +1,5 @@
 <?php
+
 /**
  * General Configuration
  *
@@ -23,8 +24,10 @@ return [
 
         // The secure key Craft will use for hashing and encrypting data
         'securityKey' => getenv('SECURITY_KEY'),
-        
+
         'pageTrigger' => 'page/',
+
+        'lastFmKey' => getenv('LAST_FM_API_KEY'),
     ],
 
     // Dev environment settings
