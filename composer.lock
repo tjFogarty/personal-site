@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44c7b29310dcb4f95ea8db24ef2a35f8",
+    "content-hash": "b051341aac3c2ef877e5283f6a487b64",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -2507,16 +2507,16 @@
         },
         {
             "name": "selvinortiz/doxter",
-            "version": "3.1.9",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/selvinortiz/craft-plugin-doxter.git",
-                "reference": "8e2d62a12db585afc4f1b6dd064e8c6ef03e81c8"
+                "reference": "94a9eafbbbf136ebee3bcd490b2c3be15dd0f3bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/selvinortiz/craft-plugin-doxter/zipball/8e2d62a12db585afc4f1b6dd064e8c6ef03e81c8",
-                "reference": "8e2d62a12db585afc4f1b6dd064e8c6ef03e81c8",
+                "url": "https://api.github.com/repos/selvinortiz/craft-plugin-doxter/zipball/94a9eafbbbf136ebee3bcd490b2c3be15dd0f3bf",
+                "reference": "94a9eafbbbf136ebee3bcd490b2c3be15dd0f3bf",
                 "shasum": ""
             },
             "require": {
@@ -2564,7 +2564,7 @@
                 "doxter",
                 "plugin"
             ],
-            "time": "2018-05-11T15:47:49+00:00"
+            "time": "2018-04-19T01:44:58+00:00"
         },
         {
             "name": "superbig/craft3-http2serverpush",
