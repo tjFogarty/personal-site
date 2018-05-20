@@ -374,16 +374,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.7",
+            "version": "3.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "4b041728306579aec5badab7df7d4bf42440305b"
+                "reference": "d443e51ce496620abd56a711f7484da7ce366422"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/4b041728306579aec5badab7df7d4bf42440305b",
-                "reference": "4b041728306579aec5badab7df7d4bf42440305b",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/d443e51ce496620abd56a711f7484da7ce366422",
+                "reference": "d443e51ce496620abd56a711f7484da7ce366422",
                 "shasum": ""
             },
             "require": {
@@ -452,7 +452,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-05-10T18:26:07+00:00"
+            "time": "2018-05-15T23:56:55+00:00"
         },
         {
             "name": "craftcms/contact-form",
