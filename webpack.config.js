@@ -59,6 +59,7 @@ if (!isDev) {
       // @ts-ignore
       cacheId: 'tj',
       filename: 'sw.js',
+      stripPrefix: 'web/',
       staticFileGlobs: ['web/assets/**/*.js']
     })
   )
