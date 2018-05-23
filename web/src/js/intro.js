@@ -1,5 +1,3 @@
-import { create } from 'basicscroll'
-
 export const Intro = {
   hero: document.querySelector('.c-hero'),
 
@@ -13,6 +11,7 @@ export const Intro = {
   async loadBasicScroll() {
     let {
       create
+      // @ts-ignore
     } = await import(/* webpackChunkName: "basicscroll" */ 'basicscroll')
 
     const instance = create({
@@ -31,7 +30,9 @@ export const Intro = {
   },
 
   async registerWorklet() {
+    // @ts-ignore
     if ('paintWorklet' in window.CSS) {
+      // @ts-ignore
       await window.CSS.paintWorklet.addModule('/paint/separator.js')
       this.hero.setAttribute(
         'style',
