@@ -1,5 +1,5 @@
 const path = require('path')
-const glob = require('glob')
+const glob = require('glob-all')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const PurgecssPlugin = require('purgecss-webpack-plugin')
@@ -56,11 +56,12 @@ if (!isDev) {
   }
 
   WEBPACK_CONFIG.plugins.push(
-    // new PurgecssPlugin({
-    //   paths: glob.sync(`${path.join(__dirname, 'templates')}/*`, {
-    //     nodir: true
-    //   })
-    // }),
+    new PurgecssPlugin({
+      paths: glob.sync([
+        `${__dirname}/templates/**/*.twig`,
+        `${__dirname}/web/src/**/*.js`
+      ])
+    }),
     // @ts-ignore
     new SWPrecacheWebpackPlugin({
       // @ts-ignore

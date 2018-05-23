@@ -20,7 +20,7 @@ ready(async () => {
   }
 })
 
-if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator && env() === 'production') {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').catch(registrationError => {
       console.log('SW registration failed: ', registrationError)
