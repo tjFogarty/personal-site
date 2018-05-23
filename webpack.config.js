@@ -56,11 +56,11 @@ if (!isDev) {
   }
 
   WEBPACK_CONFIG.plugins.push(
-    new PurgecssPlugin({
-      paths: glob.sync(`${path.join(__dirname, 'templates')}/*`, {
-        nodir: true
-      })
-    }),
+    // new PurgecssPlugin({
+    //   paths: glob.sync(`${path.join(__dirname, 'templates')}/*`, {
+    //     nodir: true
+    //   })
+    // }),
     // @ts-ignore
     new SWPrecacheWebpackPlugin({
       // @ts-ignore
