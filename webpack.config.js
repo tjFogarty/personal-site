@@ -1,6 +1,8 @@
 const path = require('path')
+const glob = require('glob')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const PurgecssPlugin = require('purgecss-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
@@ -54,12 +56,19 @@ if (!isDev) {
   }
 
   WEBPACK_CONFIG.plugins.push(
+    new PurgecssPlugin({
+      paths: glob.sync(`${path.join(__dirname, 'templates')}/*`, {
+        nodir: true
+      })
+    }),
     // @ts-ignore
     new SWPrecacheWebpackPlugin({
       // @ts-ignore
       cacheId: 'tj',
+      minify: true,
       filename: 'sw.js',
       stripPrefix: 'web/',
+      replacePrefix: '/',
       staticFileGlobs: ['web/assets/**/*.js']
     })
   )
