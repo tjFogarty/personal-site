@@ -3,7 +3,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const workboxPlugin = require('workbox-webpack-plugin')
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 
 let env = process.env.NODE_ENV
 let isDev = env === 'development'
@@ -55,9 +55,11 @@ if (!isDev) {
 
   WEBPACK_CONFIG.plugins.push(
     // @ts-ignore
-    new workboxPlugin.InjectManifest({
-      swSrc: './web/src/js/sw.js',
-      swDest: 'sw.js'
+    new SWPrecacheWebpackPlugin({
+      // @ts-ignore
+      cacheId: 'tj',
+      filename: 'sw.js',
+      staticFileGlobs: ['web/assets/**/*.js']
     })
   )
 }
