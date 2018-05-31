@@ -12,6 +12,7 @@ ready(async () => {
 
   if (document.querySelector('pre')) {
     let codeBlocks = document.querySelectorAll('pre')
+    // @ts-ignore
     let microlight = await import(/* webpackChunkName: "microlight" */ 'microlight')
 
     codeBlocks.forEach(block => block.classList.add('microlight'))

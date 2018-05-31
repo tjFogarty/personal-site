@@ -39,6 +39,7 @@ export const Search = {
 
   resetSearch() {
     this.body.style.overflow = ''
+    // @ts-ignore
     this.input.value = ''
     this.focusTrap.deactivate()
     this.emptyResultContainer()
@@ -46,6 +47,7 @@ export const Search = {
 
   showSearch() {
     this.body.style.overflow = 'hidden'
+    // @ts-ignore
     this.input.focus()
     this.focusTrap.activate()
   },

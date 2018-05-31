@@ -1,7 +1,8 @@
 module.exports = {
-  globals: {
-    System: true
+  env: {
+    browser: true
   },
+  parser: 'babel-eslint',
   extends: 'standard',
   rules: {
     'space-before-function-paren': 0
