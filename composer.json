@@ -27,7 +27,8 @@
     "lukeyouell/craft-fetch": "^1.1",
     "craftcms/contact-form": "^2.1",
     "craftcms/contact-form-honeypot": "^1.0",
-    "erusev/parsedown": "1.7.1"
+    "erusev/parsedown": "1.7.1",
+    "craftcms/element-api": "^2.5"
   },
   "config": {
     "optimize-autoloader": true
