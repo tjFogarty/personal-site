@@ -35,7 +35,7 @@ return [
               'date_published' => $entry->postDate->format(\DateTime::ATOM),
               'date_modified' => $entry->dateUpdated->format(\DateTime::ATOM),
               'body' => $entry->postContent,
-              'categories' => array_map('strval', $entry->categories->find()),
+              'categories' => array_map('strval', $entry->categories->all()),
           ];
         },
       ];
