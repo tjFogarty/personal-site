@@ -9,7 +9,7 @@ return [
       'elementType' => Entry::class,
       'criteria' => ['section' => 'posts'],
       'transformer' => function(Entry $entry) {
-        Craft::$app->getResponse()->getHeaders()->set('Access-Control-Allow-Origin', getenv('ENVIRONMENT') === 'dev' ? 'http://localhost:8080' : 'https://vue.tj.ie');
+        Craft::$app->getResponse()->getHeaders()->set('Access-Control-Allow-Origin', getenv('ENVIRONMENT') === 'dev' ? 'http://localhost:3000' : 'https://vue.tj.ie');
 
         return [
           'title' => $entry->title,
@@ -26,7 +26,7 @@ return [
         'criteria' => ['id' => $entryId],
         'one' => true,
         'transformer' => function(Entry $entry) {
-          Craft::$app->getResponse()->getHeaders()->set('Access-Control-Allow-Origin', getenv('ENVIRONMENT') === 'dev' ? 'http://localhost:8080' : 'https://vue.tj.ie');
+          Craft::$app->getResponse()->getHeaders()->set('Access-Control-Allow-Origin', getenv('ENVIRONMENT') === 'dev' ? 'http://localhost:3000' : 'https://vue.tj.ie');
 
           return [
               'title' => $entry->title,
