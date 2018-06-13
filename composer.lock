@@ -375,16 +375,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.10.3",
+            "version": "3.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "672378182526d819bd06aad66b2d60d4e7870734"
+                "reference": "8cb1ec0f12691683bcba7d94003065c7d7a2693c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/672378182526d819bd06aad66b2d60d4e7870734",
-                "reference": "672378182526d819bd06aad66b2d60d4e7870734",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/8cb1ec0f12691683bcba7d94003065c7d7a2693c",
+                "reference": "8cb1ec0f12691683bcba7d94003065c7d7a2693c",
                 "shasum": ""
             },
             "require": {
@@ -453,7 +453,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-06-07T22:06:26+00:00"
+            "time": "2018-06-12T16:58:59+00:00"
         },
         {
             "name": "craftcms/contact-form",
@@ -1936,20 +1936,20 @@
         },
         {
             "name": "nystudio107/craft-typogrify",
-            "version": "1.1.10",
+            "version": "1.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-typogrify.git",
-                "reference": "ac69b6b2db40958ce2679f2154be12438b746117"
+                "reference": "2a59863e4c797212300e69a7c184f20c8771ca35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/ac69b6b2db40958ce2679f2154be12438b746117",
-                "reference": "ac69b6b2db40958ce2679f2154be12438b746117",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/2a59863e4c797212300e69a7c184f20c8771ca35",
+                "reference": "2a59863e4c797212300e69a7c184f20c8771ca35",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC1",
+                "craftcms/cms": "^3.0.0",
                 "michelf/php-smartypants": "^1.8",
                 "mundschenk-at/php-typography": "^6.0"
             },
@@ -1989,7 +1989,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2018-04-25T19:29:06+00:00"
+            "time": "2018-06-13T03:03:12+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3307,16 +3307,16 @@
         },
         {
             "name": "tightenco/collect",
-            "version": "v5.6.24",
+            "version": "v5.6.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tightenco/collect.git",
-                "reference": "bfd7ee16ae285b8e4589e2f9fc60b5a2082b7d68"
+                "reference": "d1c093876f98f2406941af31c14788e53d7ffeee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tightenco/collect/zipball/bfd7ee16ae285b8e4589e2f9fc60b5a2082b7d68",
-                "reference": "bfd7ee16ae285b8e4589e2f9fc60b5a2082b7d68",
+                "url": "https://api.github.com/repos/tightenco/collect/zipball/d1c093876f98f2406941af31c14788e53d7ffeee",
+                "reference": "d1c093876f98f2406941af31c14788e53d7ffeee",
                 "shasum": ""
             },
             "require": {
@@ -3353,7 +3353,7 @@
                 "collection",
                 "laravel"
             ],
-            "time": "2018-06-04T18:27:56+00:00"
+            "time": "2018-06-12T15:43:49+00:00"
         },
         {
             "name": "twig/twig",
