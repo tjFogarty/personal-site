@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
-            "version": "1.26.0",
+            "version": "1.26.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/algolia/algoliasearch-client-php.git",
-                "reference": "aeb8ab5df50fef94acbee8168382da80539acc9a"
+                "reference": "2352c9e27e405eab0ee87aedac53a1ed79cd2578"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/algolia/algoliasearch-client-php/zipball/aeb8ab5df50fef94acbee8168382da80539acc9a",
-                "reference": "aeb8ab5df50fef94acbee8168382da80539acc9a",
+                "url": "https://api.github.com/repos/algolia/algoliasearch-client-php/zipball/2352c9e27e405eab0ee87aedac53a1ed79cd2578",
+                "reference": "2352c9e27e405eab0ee87aedac53a1ed79cd2578",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
             ],
             "description": "Algolia Search API Client for PHP",
             "homepage": "https://github.com/algolia/algoliasearch-client-php",
-            "time": "2018-06-07T12:28:42+00:00"
+            "time": "2018-06-15T13:38:22+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -375,16 +375,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.11",
+            "version": "3.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "8cb1ec0f12691683bcba7d94003065c7d7a2693c"
+                "reference": "10d8b9fdcfd17638095c46c7139d74d4ab98c3b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/8cb1ec0f12691683bcba7d94003065c7d7a2693c",
-                "reference": "8cb1ec0f12691683bcba7d94003065c7d7a2693c",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/10d8b9fdcfd17638095c46c7139d74d4ab98c3b7",
+                "reference": "10d8b9fdcfd17638095c46c7139d74d4ab98c3b7",
                 "shasum": ""
             },
             "require": {
@@ -453,7 +453,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-06-12T16:58:59+00:00"
+            "time": "2018-06-18T19:20:11+00:00"
         },
         {
             "name": "craftcms/contact-form",
