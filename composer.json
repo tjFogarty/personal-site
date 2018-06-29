@@ -28,7 +28,8 @@
     "craftcms/contact-form": "^2.1",
     "craftcms/contact-form-honeypot": "^1.0",
     "erusev/parsedown": "1.7.1",
-    "craftcms/element-api": "^2.5"
+    "craftcms/element-api": "^2.5",
+    "putyourlightson/craft-entry-count": "^2.0"
   },
   "config": {
     "optimize-autoloader": true

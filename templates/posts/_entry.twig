@@ -11,6 +11,10 @@
       <p itemprop="author">Author: {{ entry.author.firstName }} {{ entry.author.lastName }}</p>
       <p itemprop="publisher">Publisher: {{ entry.author.firstName }} {{ entry.author.lastName }}</p>
       <p itemprop="dateModified">Modified: {{ entry.dateUpdated | date('Y-m-d') }}</p>
+
+      {% do craft.entryCount.increment(entry.id) %}
+      {% set count = craft.entryCount.count(entry.id) %}
+      Entry count: {{ count }}
     </div>
 
     {{ entry.postContent | typogrify }}

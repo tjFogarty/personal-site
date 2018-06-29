@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3a3c0d1fecc6b0984784427139eefaf",
+    "content-hash": "354c730a2bdadb70cfb2731581b446ab",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -2195,6 +2195,48 @@
                 "psr-3"
             ],
             "time": "2016-10-10T12:19:37+00:00"
+        },
+        {
+            "name": "putyourlightson/craft-entry-count",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/putyourlightson/craft-entry-count.git",
+                "reference": "036545e072ba8b2173b31b4ae6ccfa372fae1901"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/putyourlightson/craft-entry-count/zipball/036545e072ba8b2173b31b4ae6ccfa372fae1901",
+                "reference": "036545e072ba8b2173b31b4ae6ccfa372fae1901",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Entry Count",
+                "handle": "entry-count",
+                "developer": "PutYourLightsOn",
+                "developerUrl": "https://www.putyourlightson.net/",
+                "schemaVersion": "2.0.0",
+                "hasCpSettings": true,
+                "hasCpSection": true,
+                "changelogUrl": "https://raw.githubusercontent.com/putyourlightson/craft-entry-count/v2/CHANGELOG.md",
+                "class": "putyourlightson\\entrycount\\EntryCount"
+            },
+            "autoload": {
+                "psr-4": {
+                    "putyourlightson\\entrycount\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Count and display the number of times that an entry has been viewed.",
+            "homepage": "https://www.putyourlightson.net/craft-entry-count",
+            "time": "2018-05-17T16:04:57+00:00"
         },
         {
             "name": "rias/craft-scout",
