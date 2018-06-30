@@ -1,6 +1,8 @@
 {% extends 'layouts/default' %}
 
 {% block content %}
+{% do craft.entryCount.increment(entry.id) %}
+
 <div class="l-container">
   <article class="c-post" itemscope itemtype="http://schema.org/Article">
     <time class="c-post__date" itemprop="datePublished" datetime="{{ entry.postDate.date | date('Y-m-d') }}">{{ entry.postDate | date('d F Y') }}</time>
@@ -11,10 +13,6 @@
       <p itemprop="author">Author: {{ entry.author.firstName }} {{ entry.author.lastName }}</p>
       <p itemprop="publisher">Publisher: {{ entry.author.firstName }} {{ entry.author.lastName }}</p>
       <p itemprop="dateModified">Modified: {{ entry.dateUpdated | date('Y-m-d') }}</p>
-
-      {% do craft.entryCount.increment(entry.id) %}
-      {% set count = craft.entryCount.count(entry.id) %}
-      Entry count: {{ count }}
     </div>
 
     {{ entry.postContent | typogrify }}

@@ -1,6 +1,7 @@
 {% extends 'layouts/default' %}
 
 {% block content %}
+{% do craft.entryCount.increment(entry.id) %}
 <div class="l-container">
   <div class="l-about">
     <div>
