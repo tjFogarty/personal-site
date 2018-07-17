@@ -10,6 +10,7 @@
 <div class="l-container">
   <h1>Archive</h1>
 
+  {% cache %}
   <p>
     I post about things such as
     {% for category in craft.categories.group('category').all() %}
@@ -18,8 +19,9 @@
     {% endfor %}
   </p>
 
-  {% set allPosts = craft.entries.section('posts').orderBy('postDate desc').limit(null).all() %}
-  {% for year, entriesInYear in allPosts | group('postDate | date("Y")') %}
+  {% set allPosts = craft.entries.section('posts').limit(null).all() %}
+  {% set allPostsByYear = allPosts | group('postDate | date("Y")') %}
+  {% for year, entriesInYear in allPostsByYear %}
   <div class="c-sticky-list">
     <h2 class="c-sticky-list__title">{{ year }}</h2>
     <ul class="l-post-list">
@@ -32,4 +34,5 @@
   </div>
   {% endfor %}
 </div>
+{% endcache %}
 {% endblock %}
