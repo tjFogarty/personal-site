@@ -375,16 +375,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.16",
+            "version": "3.0.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "9190983d804212b1d24b464bd01757fb2bf007d3"
+                "reference": "aef7f8472169bf412448dcf9a3238f23e661146e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/9190983d804212b1d24b464bd01757fb2bf007d3",
-                "reference": "9190983d804212b1d24b464bd01757fb2bf007d3",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/aef7f8472169bf412448dcf9a3238f23e661146e",
+                "reference": "aef7f8472169bf412448dcf9a3238f23e661146e",
                 "shasum": ""
             },
             "require": {
@@ -454,24 +454,24 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-07-17T17:33:53+00:00"
+            "time": "2018-07-18T22:38:28+00:00"
         },
         {
             "name": "craftcms/contact-form",
-            "version": "2.1.1",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/contact-form.git",
-                "reference": "84a76265f1258e9b9450ae4df5c80db970c16e39"
+                "reference": "8e6d41d68736b955a324e7dc34790bbc7f419a55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/84a76265f1258e9b9450ae4df5c80db970c16e39",
-                "reference": "84a76265f1258e9b9450ae4df5c80db970c16e39",
+                "url": "https://api.github.com/repos/craftcms/contact-form/zipball/8e6d41d68736b955a324e7dc34790bbc7f419a55",
+                "reference": "8e6d41d68736b955a324e7dc34790bbc7f419a55",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-beta.27"
+                "craftcms/cms": "^3.0.0-RC11"
             },
             "type": "craft-plugin",
             "extra": {
@@ -501,10 +501,12 @@
             "description": "Add a simple contact form to your Craft CMS site",
             "keywords": [
                 "cms",
+                "contact",
                 "craftcms",
+                "form",
                 "yii2"
             ],
-            "time": "2017-12-05T00:33:27+00:00"
+            "time": "2018-07-19T18:09:16+00:00"
         },
         {
             "name": "craftcms/contact-form-honeypot",
@@ -697,16 +699,16 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "1.1.1",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "a39dea7f05c66751532a0ad09d51cae46da3f9cf"
+                "reference": "85a1052f9501357edf6cb1aea12f526f27ac7683"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/a39dea7f05c66751532a0ad09d51cae46da3f9cf",
-                "reference": "a39dea7f05c66751532a0ad09d51cae46da3f9cf",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/85a1052f9501357edf6cb1aea12f526f27ac7683",
+                "reference": "85a1052f9501357edf6cb1aea12f526f27ac7683",
                 "shasum": ""
             },
             "type": "library",
@@ -727,7 +729,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2017-12-15T16:00:57+00:00"
+            "time": "2018-07-18T23:31:44+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -1819,16 +1821,16 @@
         },
         {
             "name": "misterbk/mix",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mister-bk/craft-plugin-mix.git",
-                "reference": "5f115f09db242af2404e0f15ada749ebf9a94196"
+                "reference": "c30704f07f84d81f018fbbc4c617eb8652ee2d48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mister-bk/craft-plugin-mix/zipball/5f115f09db242af2404e0f15ada749ebf9a94196",
-                "reference": "5f115f09db242af2404e0f15ada749ebf9a94196",
+                "url": "https://api.github.com/repos/mister-bk/craft-plugin-mix/zipball/c30704f07f84d81f018fbbc4c617eb8652ee2d48",
+                "reference": "c30704f07f84d81f018fbbc4c617eb8652ee2d48",
                 "shasum": ""
             },
             "require": {
@@ -1875,7 +1877,7 @@
                 "laravel-mix",
                 "mix"
             ],
-            "time": "2018-06-30T11:29:32+00:00"
+            "time": "2018-07-20T14:32:06+00:00"
         },
         {
             "name": "mundschenk-at/php-typography",
@@ -2306,12 +2308,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "731d60f7fc78a8816dae7049df255cd55e30c313"
+                "reference": "053766d789f6393e5bc0896635d35abf8d2d362e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/731d60f7fc78a8816dae7049df255cd55e30c313",
-                "reference": "731d60f7fc78a8816dae7049df255cd55e30c313",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/053766d789f6393e5bc0896635d35abf8d2d362e",
+                "reference": "053766d789f6393e5bc0896635d35abf8d2d362e",
                 "shasum": ""
             },
             "conflict": {
@@ -2360,7 +2362,7 @@
                 "kreait/firebase-php": ">=3.2,<3.8.1",
                 "laravel/framework": ">=4,<4.0.99|>=4.1,<=4.1.31|>=4.2,<=4.2.22|>=5,<=5.0.35|>=5.1,<=5.1.46|>=5.2,<=5.2.45|>=5.3,<=5.3.31|>=5.4,<=5.4.36|>=5.5,<5.5.40|>=5.6,<5.6.15",
                 "laravel/socialite": ">=1,<1.0.99|>=2,<2.0.10",
-                "magento/magento1ce": ">=1.5.0.1,<1.9.3.2",
+                "magento/magento1ce": "<1.9.3.9",
                 "magento/magento1ee": ">=1.9,<1.14.3.2",
                 "magento/product-community-edition": ">=2,<2.2.5",
                 "monolog/monolog": ">=1.8,<1.12",
@@ -2418,7 +2420,8 @@
                 "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
                 "titon/framework": ">=0,<9.9.99",
                 "twig/twig": "<1.20",
-                "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
+                "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.30|>=8,<8.7.17|>=9,<9.3.2",
+                "typo3/cms-core": ">=8,<8.7.17|>=9,<9.3.2",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
                 "typo3/neos": ">=1.1,<1.1.3|>=1.2,<1.2.13|>=2,<2.0.4",
                 "willdurand/js-translation-bundle": "<2.1.1",
@@ -2467,7 +2470,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-07-09T14:09:25+00:00"
+            "time": "2018-07-18T13:51:34+00:00"
         },
         {
             "name": "seld/cli-prompt",
