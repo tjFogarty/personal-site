@@ -1,48 +1,37 @@
 <!doctype html>
 <html lang="en" {% include 'components/_style-switcher' %}>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% include 'components/_meta' %}
+        {% include 'components/_meta' %}
 
-    {{ mix('/assets/css/app.css', true, true) | raw }}
+        {{ mix('/assets/css/app.css', true, true) | raw }}
 
-    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/tjfogarty">
+        <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/tjfogarty">
 
-    <meta name="google-site-verification" content="GVfTcYpZR7Iujvbox7Vft-ghdIbHmZmVwoRADA880Jc" />
+        <meta name="google-site-verification" content="GVfTcYpZR7Iujvbox7Vft-ghdIbHmZmVwoRADA880Jc"/>
 
-    <meta name="theme-color" content="#197b8f" />
+        <meta name="theme-color" content="#197b8f"/>
 
-    <link rel="manifest" href="/manifest.json">
+        <link rel="manifest" href="/manifest.json">
 
-    <link rel="preload" href="/assets/js/main.js" as="script" crossorigin>
-  </head>
-  <body>
-    {% include 'components/_dev-warning' %}
-    {% include 'components/_navigation' %}
-    {% include 'components/_icons' %}
+        <link rel="preload" href="/assets/js/main.js" as="script" crossorigin="crossorigin">
+    </head>
+    <body>
+        {% include 'components/_dev-warning' %}
+        {% include 'components/_navigation' %}
+        {% include 'components/_icons' %}
 
-    <main class="content">
-      {% block content %}{% endblock %}
-    </main>
+        <main class="content">
+            {% block content %}{% endblock %}
+        </main>
 
-    <script src="/assets/js/main.js" defer></script>
+        <script src="/assets/js/main.js" defer="defer"></script>
 
-    {% include 'components/_footer' %}
+        {% include 'components/_footer' %}
 
-    {% include 'components/_search' %}
-
-    {% if not craft.app.config.general.devMode %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110493614-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-110493614-1');
-    </script>
-    {% endif %}
-  </body>
+        {% include 'components/_search' %}
+    </body>
 </html>
