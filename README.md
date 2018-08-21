@@ -1,6 +1,8 @@
-# Personal Site
+# Personal Site 
 
-This is the repo for my personal site.
+🚧This is no longer being maintained. I've swapped to using a static site.
+
+This is the repo for what was my personal site.
 
 ## Links
 
